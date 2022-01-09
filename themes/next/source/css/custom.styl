@@ -1,0 +1,64 @@
+// toc expand level2
+// https://github.com/iissnan/hexo-theme-next/issues/710
+//.post-toc .nav .nav-level-2>.nav-child {
+//   display: block;
+//}
+
+// hide toc scrollbar
+//.sidebar-panel {
+//  //-ms-overflow-style: none; /* IE 10+ */
+//  scrollbar-width: none; /* Firefox */
+//  &::-webkit-scrollbar {
+//    display: none; /* Chrome Safari */
+//  }
+//}
+
+// 禁用默认的背景，改为卡片式
+.content-wrap {
+  background: none!important;
+  padding: 0!important;
+}
+
+card() {
+  padding: 40px!important;
+  margin-top: 15px!important;
+  background: var(--content-bg-color)!important;
+}
+
+// 正文卡片
+.content {
+  padding-top: 0!important;
+
+  .post-block {
+    card();
+  }
+}
+
+// 首页隐藏列表之间的分割
+.content.index {
+  .post-footer {
+    display: none!important;
+  }
+}
+
+// 评论设置卡片样式
+.comments {
+  card();
+}
+
+// 导航去掉上边线
+nav.pagination {
+  margin-top: 20px!important;
+  border-top: none!important;
+}
+
+.pagination .prev, .pagination .next, .pagination .page-number {
+  border-top: none!important;
+}
+
+// 字体
+.post-body {
+  font-size: 1em!important;
+  //line-height: 1.8!important;
+  margin-bottom: 1em!important;
+}

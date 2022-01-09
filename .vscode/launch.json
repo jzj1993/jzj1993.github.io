@@ -1,0 +1,24 @@
+{
+  // 使用 IntelliSense 了解相关属性。
+  // 悬停以查看现有属性的描述。
+  // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "pwa-node",
+      "request": "launch",
+      "name": "HexoGenerate",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "program": "./node_modules/hexo-cli/bin/hexo",
+      "args": [
+        "generate",
+        "--debug" //设置Hexo的 log基本，以便输出更多的日志内容
+      ],
+      "outFiles": [
+        "${workspaceFolder}/**/*.js"
+      ]
+    }
+  ]
+}

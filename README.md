@@ -8,9 +8,9 @@
 
 测试文章放在`source-test`目录，用于开发测试。
 
-发布到GitHub：`hexo deploy`
-
 本地编译发布：`hexo clean && hexo generate && hexo server`
+
+发布到GitHub：`hexo deploy`
 
 功能配置
 
@@ -25,5 +25,6 @@
 1. [x] 相关文章
 1. [x] 评论(valine)
 1. [x] 阅读量(valine)
-1. [ ] 站点地图
-1. [ ] 搜索引擎SEO
+1. [x] 站点地图
+1. [x] 搜索引擎SEO
+1. [ ] 增量deploy

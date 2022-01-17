@@ -42,12 +42,15 @@
   {%- endif %}
 </div>
 
+{%- if theme.footer.sitemap %}
+  <div class="sitemap">
+    {{- next_url('/sitemap.xml', __('menu.sitemap'), {class: 'theme-link'}) }}
+  </div>
+{%- endif %}
+
 {%- if theme.footer.powered %}
   <div class="powered-by">
-    {%- set next_site = 'https://theme-next.org' %}
-    {%- if theme.scheme !== 'Gemini' %}
-      {%- set next_site = 'https://' + theme.scheme | lower + '.theme-next.org' %}
-    {%- endif %}
+    {%- set next_site = 'https://theme-next.js.org/' %}
     {{- __('footer.powered', next_url('https://hexo.io', 'Hexo', {class: 'theme-link'}) + ' & ' + next_url(next_site, 'NexT.' + theme.scheme, {class: 'theme-link'})) }}
   </div>
 {%- endif %}

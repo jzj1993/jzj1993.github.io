@@ -112,6 +112,9 @@ deploy:
   repo: git@github.com:jzj1993/jzj1993.github.io.git
   branch: gh-pages
 
+plugins:
+- hexo-generator-cname
+
 excerpt:
   depth: 2  #按层来算，也就是按代码块来算
   excerpt_excludes: []

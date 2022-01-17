@@ -27,4 +27,4 @@
 1. [x] 阅读量(valine)
 1. [x] 站点地图
 1. [x] 搜索引擎SEO
-1. [ ] 增量deploy
+1. [x] 增量deploy

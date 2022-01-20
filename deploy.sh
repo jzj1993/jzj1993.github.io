@@ -75,7 +75,6 @@ fi
 
 # git push changes from public directory to remote
 # reset remote diretory to lasted commit
-# git push blog directory to remote
 if [ "$TEST" = true ]; then
   echo
   echo 'Test mode, check the status in public directory'
@@ -95,10 +94,4 @@ else
   pushd remote > /dev/null
   git reset --hard HEAD
   popd > /dev/null
-
-  echo
-  echo "Update blog to remote"
-  git add .
-  git commit -m "$DEPLOY_MESSAGE"
-  git push
 fi

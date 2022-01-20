@@ -86,7 +86,7 @@ else
   echo "Incremental deploy with git"
   pushd public > /dev/null
   git add .
-  git commit -m $DEPLOY_MESSAGE
+  git commit -m "$DEPLOY_MESSAGE"
   git push origin HEAD:gh-pages
   popd > /dev/null
 
@@ -95,6 +95,6 @@ else
   popd > /dev/null
 
   git add .
-  git commit -m $DEPLOY_MESSAGE
+  git commit -m "$DEPLOY_MESSAGE"
   git push
 fi

@@ -10,7 +10,11 @@
 
 本地编译发布：`hexo clean && hexo generate && hexo server`
 
-发布到GitHub：`hexo deploy`
+发布到GitHub Pages:
+
+1. 全量发布：`hexo deploy`，重新生成博客文件，清空Git历史记录并push最新文件，需要消耗较多网络资源
+1. 增量发布：`./deploy.sh "MESSAGE" full`，重新生成博客文件，不清空Git历史记录，只push改动的文件
+1. 快速增量发布：`./deploy.sh ["MESSAGE"] [fast]`，增量生成博客文件，可能会残留多余文件，但是速度最快
 
 功能配置
 

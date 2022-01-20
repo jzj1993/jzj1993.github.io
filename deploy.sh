@@ -90,10 +90,14 @@ else
   git push origin HEAD:gh-pages
   popd > /dev/null
 
+  echo
+  echo "Set remote directory to lastest"
   pushd remote > /dev/null
   git reset --hard HEAD
   popd > /dev/null
 
+  echo
+  echo "Update blog to remote"
   git add .
   git commit -m "$DEPLOY_MESSAGE"
   git push

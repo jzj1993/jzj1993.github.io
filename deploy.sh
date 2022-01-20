@@ -61,8 +61,7 @@ popd > /dev/null
 # link .git from remote to public, and let git to track public directory
 echo
 echo "Track public directory with git"
-[ -e `pwd`/public/.git ] && rm `pwd`/public/.git
-ln -s `pwd`/remote/.git `pwd`/public/.git
+[ ! -e `pwd`/public/.git ] && ln -s `pwd`/remote/.git `pwd`/public/.git
 
 
 # message

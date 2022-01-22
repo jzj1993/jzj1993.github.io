@@ -1948,13 +1948,13 @@ hexo-generator-cname@^0.3.0:
   resolved "https://registry.yarnpkg.com/hexo-generator-cname/-/hexo-generator-cname-0.3.0.tgz#9dead58ae568ccfb4ea9aee28715e093658d2d09"
   integrity sha1-nerViuVozPtOqa7ihxXgk2WNLQk=
 
-hexo-generator-index@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/hexo-generator-index/-/hexo-generator-index-2.0.0.tgz#15e71f4d28ee9d2172e2d77e8d1dba04882edc8f"
-  integrity sha512-q/29Vj9BZs0dwBcF+s9IT8ymS4aYZsDwBEYDnh96C8tsX+KPY5v6TzCdttz58BchifaJpP/l9mi6u9rZuYqA0g==
+hexo-generator-index-pin-top@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/hexo-generator-index-pin-top/-/hexo-generator-index-pin-top-0.2.2.tgz#34b5b9ef90e1bca8fbe957d3b3c183ca33ade937"
+  integrity sha512-1mVXHoUL5a3Q3yvIqoRVFhbJPlVAnRfc9ibToWpIlxU7ILTJwxhT6NFiS/jf/yZ0Suq1HvTI68yViMQMQVoDvg==
   dependencies:
-    hexo-pagination "1.0.0"
-    timsort "^0.3.0"
+    hexo-pagination "0.0.2"
+    object-assign "^4.0.1"
 
 hexo-generator-searchdb@^1.4.0:
   version "1.4.0"
@@ -2026,6 +2026,13 @@ hexo-migrator-wordpress@^2.1.2:
     hexo-util "^2.1.0"
     turndown "^6.0.0"
 
+hexo-pagination@0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/hexo-pagination/-/hexo-pagination-0.0.2.tgz#8cf470c7db0de5b18a3926a76deb194015df7f2b"
+  integrity sha1-jPRwx9sN5bGKOSanbesZQBXffys=
+  dependencies:
+    utils-merge "^1.0.0"
+
 hexo-pagination@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/hexo-pagination/-/hexo-pagination-1.0.0.tgz#c9c0ca3665267b9e9d0a89fc3edcaf3276907dc1"
@@ -2053,10 +2060,10 @@ hexo-renderer-ejs@^2.0.0:
   dependencies:
     ejs "^3.1.6"
 
-hexo-renderer-markdown-it-jzj@^5.0.2:
-  version "5.0.2"
-  resolved "https://registry.yarnpkg.com/hexo-renderer-markdown-it-jzj/-/hexo-renderer-markdown-it-jzj-5.0.2.tgz#3241a80176a140a6c020d4095b98727ea544d74a"
-  integrity sha512-B6fZ/hyDK2p48kJYMgV0ptQqXrqzqlXIw9NDxO5r4PF6s44RVoe8Jm7ZylPeEPpoAUft7QOLeHHhxsPOU4RBaw==
+hexo-renderer-markdown-it-jzj@^5.0.3:
+  version "5.0.3"
+  resolved "https://registry.yarnpkg.com/hexo-renderer-markdown-it-jzj/-/hexo-renderer-markdown-it-jzj-5.0.3.tgz#243acacd4c4ac7722e3fbd384e0094ee81613093"
+  integrity sha512-2OYl92MMmZYkaTWrIm79dzgWr2LDuZd82jB6cwm9DaEcSWhcyPp+Q0QVreYohVhhhEH2qm9IFVj3qzmA9o9OlQ==
   dependencies:
     hexo-util "^2.1.0"
     markdown-it "^11.0.0"
@@ -3346,6 +3353,11 @@ object-assign@^1.0.0:
   resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-1.0.0.tgz#e65dc8766d3b47b4b8307465c8311da030b070a6"
   integrity sha1-5l3Idm07R7S4MHRlyDEdoDCwcKY=
 
+object-assign@^4.0.1:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/object-assign/-/object-assign-4.1.1.tgz#2109adc7965887cfc05cbbd442cac8bfbb360863"
+  integrity sha1-IQmtx5ZYh8/AXLvUQsrIv7s2CGM=
+
 object-copy@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/object-copy/-/object-copy-0.1.0.tgz#7e7d858b781bd7c991a41ba975ed3812754e998c"
@@ -4202,11 +4214,6 @@ tildify@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/tildify/-/tildify-2.0.0.tgz#f205f3674d677ce698b7067a99e949ce03b4754a"
   integrity sha512-Cc+OraorugtXNfs50hU9KS369rFXCfgGLpfCfvlc+Ud5u6VWmUQsOAa9HbTvheQdYnrdJqqv1e5oIqXppMYnSw==
-
-timsort@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/timsort/-/timsort-0.3.0.tgz#405411a8e7e6339fe64db9a234de11dc31e02bd4"
-  integrity sha1-QFQRqOfmM5/mTbmiNN4R3DHgK9Q=
 
 titlecase@^1.1.2:
   version "1.1.3"

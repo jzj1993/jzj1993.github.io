@@ -40,10 +40,10 @@ custom_file_path:
 # ---------------------------------------------------------------
 
 favicon:
-  small: /images/favicon-16x16-next.png
-  medium: /images/favicon-32x32-next.png
-  apple_touch_icon: /images/apple-touch-icon-next.png
-  safari_pinned_tab: /images/logo.svg
+  small: /images/logo-16.png
+  medium: /images/logo-32.png
+  apple_touch_icon: /images/logo-128.png
+  safari_pinned_tab: /images/logo-128.png
   #android_manifest: /images/manifest.json
   #ms_browserconfig: /images/browserconfig.xml
 
@@ -688,7 +688,7 @@ baidu_analytics: 01cb9081555fb604776b223fe01db45d
 growingio_analytics: # <project_id>
 
 # CNZZ count
-cnzz_siteid: 1254001083
+# cnzz_siteid: 1254001083
 
 # Show number of visitors of each article.
 # You can visit https://leancloud.cn to get AppID and AppKey.

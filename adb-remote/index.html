@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.0.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/logo-128.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/logo-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/logo-16.png">
+  <link rel="mask-icon" href="/images/logo-128.png" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"www.paincker.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="Some times we develop Android on a remote Linux machine (or WSL). We need to use adb in remote machine and connect to the local Android device. Here is how we can achieve this:">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Use ADB in Remote Machine">
+<meta property="og:url" content="https://www.paincker.com/adb-remote/">
+<meta property="og:site_name" content="Paincker">
+<meta property="og:description" content="Some times we develop Android on a remote Linux machine (or WSL). We need to use adb in remote machine and connect to the local Android device. Here is how we can achieve this:">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://www.paincker.com/blog-imgs/images/image-20210812153212102.png">
+<meta property="og:image" content="https://www.paincker.com/blog-imgs/images/adb-firewall.png">
+<meta property="article:published_time" content="2021-08-12T04:00:00.000Z">
+<meta property="article:modified_time" content="2022-01-24T10:46:12.022Z">
+<meta property="article:author" content="jzj1993">
+<meta property="article:tag" content="Android">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.paincker.com/blog-imgs/images/image-20210812153212102.png">
+
+<link rel="canonical" href="https://www.paincker.com/adb-remote/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>Use ADB in Remote Machine | Paincker</title>
+  
+
+
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?01cb9081555fb604776b223fe01db45d";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">Paincker</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">269</span></a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">111</span></a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">6</span></a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://www.paincker.com/adb-remote/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="jzj1993">
+      <meta itemprop="description" content="江子健的个人博客，90后理工男、微软程序员、互联网从业者，分享软件编程、开发技术、学习与思考">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Paincker">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Use ADB in Remote Machine
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-08-12 12:00:00" itemprop="dateCreated datePublished" datetime="2021-08-12T12:00:00+08:00">2021-08-12</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/develop/" itemprop="url" rel="index"><span itemprop="name">开发技术</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/adb-remote/" class="post-meta-item leancloud_visitors" data-flag-title="Use ADB in Remote Machine" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/adb-remote/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/adb-remote/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>6.3k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>6 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>Some times we develop Android on a remote Linux machine (or WSL). We need to use adb in remote machine and connect to the local Android device.</p>
+<p>Here is how we can achieve this:</p>
+<ol>
+<li>Connect physical devices to / run emulators on local machine.</li>
+<li>Run adb in nodaemon server mode on local machine.</li>
+<li>Create a TCP port forwarding from local machine to remove machine using socat (or ssh).</li>
+<li>Use adb in remote to connect local devices.</li>
+</ol>
+<p><img data-src="/blog-imgs/images/image-20210812153212102.png" alt="image-20210812153212102"></p>
+<h2 id="Prepare-the-Environment">Prepare the Environment</h2>
+<h3 id="Install-ADB">Install ADB</h3>
+<p>Install ADB on both local and remote machine. <strong>Please make sure</strong>:</p>
+<ul>
+<li>ADB in local machine and remote machine are the <strong>same version</strong>.</li>
+<li>On remote machine, ADB in command line and Android Studio are the <strong>same one</strong>. Normally Android Studio will install Android SDK automatically on first start. Then we can add the directory to PATH environment.</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># show adb path</span></span><br><span class="line">$ <span class="built_in">which</span> adb</span><br><span class="line">/home/xxx/Android/Sdk/platform-tools/adb</span><br><span class="line"></span><br><span class="line"><span class="comment"># show adb version</span></span><br><span class="line">$ adb version</span><br><span class="line">Android Debug Bridge version 1.0.41</span><br><span class="line">Version 31.0.2-7242960</span><br><span class="line">Installed as /home/xxx/Android/sdk/platform-tools/adb</span><br></pre></td></tr></table></figure>
+<p><a target="_blank" rel="noopener" href="https://developer.android.com/studio/releases/platform-tools">https://developer.android.com/studio/releases/platform-tools</a></p>
+<p><a target="_blank" rel="noopener" href="https://developer.android.com/studio/command-line/adb">https://developer.android.com/studio/command-line/adb</a></p>
+<h3 id="Windows-Only-Configure-Firewall-for-ADB">(Windows Only) Configure Firewall for ADB</h3>
+<p>On Windows, we need to enable ADB network access in firewall settings.</p>
+<p><img data-src="/blog-imgs/images/adb-firewall.png" alt=""></p>
+<h3 id="WSL-Only-Install-socat">(WSL Only) Install socat</h3>
+<p>For WSL, install socat first. It is used to do the port forwarding.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt update &amp;&amp; sudo apt install -y socat</span><br></pre></td></tr></table></figure>
+<h3 id="Remote-Linux-Machine-Only-Configure-SSH-Key">(Remote Linux Machine Only) Configure SSH Key</h3>
+<p>If you are using remote Linux machine, it is recommended to configure ssh key instead of input password every time.</p>
+<h2 id="Start-ADB-and-Port-Forwarding-Manually">Start ADB and Port Forwarding Manually</h2>
+<p>We can start ADB and port forwarding manually or use a script to run automatically.</p>
+<p>It is recommended to use a script to do it. But I will show you how to run it manually first so that we can know what we actually do and it will help us debug if something goes wrong.</p>
+<h3 id="Optional-Kill-Existing-Process">(Optional) Kill Existing Process</h3>
+<p>If you have started ADB or port forward before, you need to kill ADB and port forwarding process if exists on both local and remote machine.</p>
+<p><strong>For WSL:</strong></p>
+<p>Run in windows:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">adb kill-server</span><br></pre></td></tr></table></figure>
+<p>Run in WSL:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">adb kill-server</span><br><span class="line"><span class="comment"># kill adb process</span></span><br><span class="line">pkill -9 adb</span><br><span class="line"><span class="comment"># kill Windows adb.exe process in WSL</span></span><br><span class="line">pkill -9 adb.exe</span><br><span class="line"><span class="comment"># kill socat process</span></span><br><span class="line">pkill -9 socat</span><br></pre></td></tr></table></figure>
+<p><strong>For remote linux machine:</strong></p>
+<p>Run in local:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">adb kill-server</span><br><span class="line"><span class="comment"># kill adb process</span></span><br><span class="line">pkill -9 adb</span><br><span class="line"><span class="comment"># kill ssh command which contains 5037 (used for port forward)</span></span><br><span class="line">ps -lef | grep ssh | grep 5037 | awk <span class="string">&quot;&#123;print \$2&#125;&quot;</span> | xargs <span class="built_in">kill</span></span><br></pre></td></tr></table></figure>
+<p>Run in remote:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">adb kill-server</span><br><span class="line">pkill -9 adb</span><br></pre></td></tr></table></figure>
+<h3 id="Check-Local-Device-Status">Check Local Device Status</h3>
+<p>Run <code>adb devices</code> on local machine to see if the device can be connected successfully.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">adb devices</span><br><span class="line"><span class="comment"># don&#x27;t forget to kill server</span></span><br><span class="line">adb kill-server</span><br></pre></td></tr></table></figure>
+<h3 id="Start-adb-server-mode-on-local-machine">Start adb server mode on local machine</h3>
+<p>Run in Windows or local Linux machine:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">adb -a -P 5037 nodaemon server start</span><br></pre></td></tr></table></figure>
+<h3 id="Setup-TCP-port-forwarding">Setup TCP port forwarding</h3>
+<ul>
+<li>We can use socat to do port forwarding if the local and remote machine are in the same network and can connect directly.</li>
+<li>We can also use ssh to do port forwarding if we can access remote machine with ssh.</li>
+<li>Don’t forget to configure firewall if exists.</li>
+</ul>
+<p><strong>For WSL</strong>, we chose socat to do port forwarding. Run in WSL:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># get host Windows IP</span></span><br><span class="line">HOST_IP=`cat /etc/resolv.conf | tail -n1 | cut -d <span class="string">&quot; &quot;</span> -f 2`</span><br><span class="line"></span><br><span class="line"><span class="comment"># start socat port forward</span></span><br><span class="line">socat TCP-LISTEN:5037,reuseaddr,fork TCP:<span class="variable">$&#123;HOST_IP&#125;</span>:5037</span><br></pre></td></tr></table></figure>
+<p><strong>For remote Linux machine</strong>, we chose ssh to do port forwarding. Run in local Linux machine:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># change this to your remote Linux machine user and address, make sure you have already configured ssh key, or you can input password manaully</span></span><br><span class="line">USER=<span class="string">&#x27;root&#x27;</span></span><br><span class="line">HOST=<span class="string">&#x27;192.168.1.100&#x27;</span></span><br><span class="line"></span><br><span class="line">ssh -R 5037:localhost:5037 -f -N <span class="variable">$USER</span>@<span class="variable">$HOST</span> -o ServerAliveInterval=240</span><br></pre></td></tr></table></figure>
+<h3 id="Start-ADB-on-Remote-Machine-and-Verify">Start ADB on Remote Machine and Verify</h3>
+<p>Run in WSL or remote Linux machine to see if it works:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">adb devices</span><br></pre></td></tr></table></figure>
+<h2 id="Start-the-Environment-Automatically-for-WSL">Start the Environment Automatically for WSL</h2>
+<p>Usage</p>
+<ol>
+<li>Install adb on Windows and change <code>$WSL_HOST_ADB</code> to the adb location following the example format.</li>
+<li>Install adb and socat on WSL. Make sure you are using the same adb in terminal and Android Studio. And make sure you installed the same version of adb in Windows and WSL.</li>
+<li>Add the following content to your WSL <code>~/.bashrc</code> and run <code>source ~/.bashrc</code> to refresh.</li>
+<li>Run <code>wsl-start-adb-daemon</code> / <code>wsl-stop-adb-daemon</code> to start/stop adb environment.</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line">WSL_HOST_ADB=<span class="string">&#x27;/mnt/d/AndroidSdk/platform-tools/adb.exe&#x27;</span></span><br><span class="line"></span><br><span class="line">wsl-start-adb-<span class="function"><span class="title">daemon</span></span>() &#123;</span><br><span class="line">  <span class="keyword">if</span> ! [ -x <span class="string">&quot;<span class="subst">$(command -v socat)</span>&quot;</span> ]; <span class="keyword">then</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">&#x27;Please install socat first:&#x27;</span> &gt;&amp;2</span><br><span class="line">    <span class="built_in">echo</span> <span class="string">&#x27;sudo apt update &amp;&amp; sudo apt install -y socat&#x27;</span></span><br><span class="line">    <span class="built_in">return</span> 1</span><br><span class="line">  <span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># stop service</span></span><br><span class="line">  wsl-stop-adb-daemon</span><br><span class="line">  <span class="built_in">echo</span></span><br><span class="line"></span><br><span class="line">  <span class="built_in">echo</span> <span class="string">&quot;Get adb devices on host...&quot;</span></span><br><span class="line">  <span class="variable">$WSL_HOST_ADB</span> devices</span><br><span class="line">  sleep 1</span><br><span class="line">  <span class="variable">$WSL_HOST_ADB</span> kill-server</span><br><span class="line">  sleep 1</span><br><span class="line"></span><br><span class="line">  <span class="built_in">local</span> HOST_IP=`cat /etc/resolv.conf | tail -n1 | cut -d <span class="string">&quot; &quot;</span> -f 2`</span><br><span class="line"></span><br><span class="line">  <span class="built_in">echo</span> <span class="string">&quot;Start services...&quot;</span></span><br><span class="line">  nohup <span class="variable">$WSL_HOST_ADB</span> -a nodaemon server start &gt; /dev/null 2&gt;&amp;1 &amp;</span><br><span class="line">  nohup socat TCP-LISTEN:5037,reuseaddr,fork TCP:<span class="variable">$&#123;HOST_IP&#125;</span>:5037 &gt; /dev/null 2&gt;&amp;1 &amp;</span><br><span class="line">  sleep 1</span><br><span class="line">  <span class="built_in">echo</span> <span class="string">&quot;Forward adb to <span class="variable">$&#123;HOST_IP&#125;</span>:5037.&quot;</span></span><br><span class="line">  <span class="built_in">echo</span></span><br><span class="line"></span><br><span class="line">  <span class="built_in">echo</span> <span class="string">&quot;Get adb devices...&quot;</span></span><br><span class="line">  adb devices</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">wsl-stop-adb-<span class="function"><span class="title">daemon</span></span>() &#123;</span><br><span class="line">  <span class="built_in">echo</span> <span class="string">&quot;Kill running processes...&quot;</span></span><br><span class="line">  pkill -9 socat</span><br><span class="line"></span><br><span class="line">  <span class="comment"># $WSL_HOST_ADB kill-server &gt; /dev/null 2&gt;&amp;1</span></span><br><span class="line">  <span class="comment"># adb kill-server &gt; /dev/null 2&gt;&amp;1</span></span><br><span class="line"></span><br><span class="line">  pkill -9 adb.exe</span><br><span class="line">  pkill -9 adb</span><br><span class="line">  sleep 1</span><br><span class="line">  <span class="built_in">echo</span> <span class="string">&quot;Complete&quot;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="Start-the-Environment-Automatically-for-Remote-Linux-Machine">Start the Environment Automatically for Remote Linux Machine</h2>
+<p>Usage</p>
+<ol>
+<li>Setup ssh key for remote machine.</li>
+<li>Install adb on local machine.</li>
+<li>Install adb on remote machine and change <code>REMOTE_ADB_PATH</code> value to the adb location. Make sure you are using the same adb in terminal and Android Studio. And make sure you installed the same version of adb in local and remote machine.</li>
+<li>Add the following content to your local <code>~/.bashrc</code> and run <code>source ~/.bashrc</code> to refresh.</li>
+<li>Run <code>startRemoteAdb USER HOST</code> / <code>stopRemoteAdb USER HOST</code> to start/stop adb environment.</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br></pre></td><td class="code"><pre><span class="line">REMOTE_ADB_PATH=<span class="string">&#x27;$HOME/Android/Sdk/platform-tools/adb&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="title">_remoteCmd</span></span>() &#123;</span><br><span class="line">  <span class="built_in">local</span> USER=<span class="variable">$1</span></span><br><span class="line">  <span class="built_in">local</span> HOST=<span class="variable">$2</span></span><br><span class="line">  ssh <span class="variable">$USER</span>@<span class="variable">$HOST</span> <span class="variable">$3</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="title">_remoteAdb</span></span>() &#123;</span><br><span class="line">  <span class="built_in">local</span> USER=<span class="variable">$1</span></span><br><span class="line">  <span class="built_in">local</span> HOST=<span class="variable">$2</span></span><br><span class="line">  _remoteCmd <span class="variable">$USER</span> <span class="variable">$HOST</span> <span class="string">&quot;<span class="variable">$REMOTE_ADB_PATH</span> <span class="variable">$3</span>&quot;</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="title">startRemoteAdb</span></span>() &#123;</span><br><span class="line">  <span class="keyword">if</span> [ <span class="variable">$#</span> -ne 2 ]; <span class="keyword">then</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">&#x27;Usage: startRemoteAdb USER HOST&#x27;</span></span><br><span class="line">    <span class="built_in">echo</span> <span class="string">&#x27;Example: startRemoteAdb jzj 192.168.5.200&#x27;</span></span><br><span class="line">    <span class="built_in">return</span> 1</span><br><span class="line">  <span class="keyword">fi</span></span><br><span class="line"></span><br><span class="line">  <span class="built_in">local</span> USER=<span class="variable">$1</span></span><br><span class="line">  <span class="built_in">local</span> HOST=<span class="variable">$2</span></span><br><span class="line"></span><br><span class="line">  stopRemoteAdb <span class="variable">$USER</span> <span class="variable">$HOST</span></span><br><span class="line">  <span class="built_in">echo</span></span><br><span class="line"></span><br><span class="line">  <span class="built_in">echo</span> <span class="string">&#x27;Get adb devices on local...&#x27;</span></span><br><span class="line">  adb devices</span><br><span class="line">  sleep 1</span><br><span class="line">  adb kill-server</span><br><span class="line">  sleep 1</span><br><span class="line"></span><br><span class="line">  <span class="built_in">echo</span> <span class="string">&#x27;Start services...&#x27;</span></span><br><span class="line">  nohup adb -a nodaemon server start &gt; /dev/null 2&gt;&amp;1 &amp;</span><br><span class="line">  ssh -R 5037:localhost:5037 -f -N <span class="variable">$USER</span>@<span class="variable">$HOST</span> -o ServerAliveInterval=240</span><br><span class="line"></span><br><span class="line">  sleep 1</span><br><span class="line">  <span class="built_in">echo</span> <span class="string">&quot;Forward localhost:5037 to <span class="variable">$HOST</span>:5037.&quot;</span></span><br><span class="line">  <span class="built_in">echo</span></span><br><span class="line"></span><br><span class="line">  <span class="built_in">echo</span> <span class="string">&#x27;Remote get adb devices...&#x27;</span></span><br><span class="line">  _remoteAdb <span class="variable">$USER</span> <span class="variable">$HOST</span> devices</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="title">stopRemoteAdb</span></span>() &#123;</span><br><span class="line">  <span class="built_in">local</span> USER=<span class="variable">$1</span></span><br><span class="line">  <span class="built_in">local</span> HOST=<span class="variable">$2</span></span><br><span class="line"></span><br><span class="line">  <span class="built_in">echo</span> <span class="string">&#x27;Kill running processes...&#x27;</span></span><br><span class="line">  _remoteAdb <span class="variable">$USER</span> <span class="variable">$HOST</span> kill-server</span><br><span class="line">  adb kill-server</span><br><span class="line">  <span class="comment"># kill ssh command which contains 5037</span></span><br><span class="line">  ps -lef | grep ssh | grep 5037 | awk <span class="string">&quot;&#123;print \$2&#125;&quot;</span> | xargs <span class="built_in">kill</span></span><br><span class="line"></span><br><span class="line">  sleep 1</span><br><span class="line">  <span class="built_in">echo</span> <span class="string">&#x27;Complete&#x27;</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+    </div>
+
+    
+    
+    
+      
+  <div class="popular-posts-header">相关文章</div>
+  <ul class="popular-posts">
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/chromium-print-cpp-stack/" rel="bookmark">Chromium打印C++ Stack Trace</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/jni-in-chromium/" rel="bookmark">JNI Basics and Usage in Chromium</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/gn-chromium-android/" rel="bookmark">GN Cheat Sheet for Chromium Android</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/android-performance/" rel="bookmark">Android性能优化流程与思路</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/android-scroll-velocity/" rel="bookmark">Android滚动组件图片加载优化与滚动速度的精确监听</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/android-crash-sdk/" rel="bookmark">Android Crash监控SDK设计思路</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/java-reference/" rel="bookmark">Java引用类型简介与应用</a></div>
+    </li>
+    <li class="popular-posts-item">
+      <div class="popular-posts-title"><a href="/sparse-array/" rel="bookmark">SparseArray源码分析与性能优化</a></div>
+    </li>
+  </ul>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Android/" rel="tag"># Android</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/desktop-computer-knowledge/" rel="prev" title="台式机组装知识系统梳理">
+      <i class="fa fa-chevron-left"></i> 台式机组装知识系统梳理
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/network-learning/" rel="next" title="计算机网络相关知识学习">
+      计算机网络相关知识学习 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Prepare-the-Environment"><span class="nav-number">1.</span> <span class="nav-text">Prepare the Environment</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Install-ADB"><span class="nav-number">1.1.</span> <span class="nav-text">Install ADB</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Windows-Only-Configure-Firewall-for-ADB"><span class="nav-number">1.2.</span> <span class="nav-text">(Windows Only) Configure Firewall for ADB</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#WSL-Only-Install-socat"><span class="nav-number">1.3.</span> <span class="nav-text">(WSL Only) Install socat</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Remote-Linux-Machine-Only-Configure-SSH-Key"><span class="nav-number">1.4.</span> <span class="nav-text">(Remote Linux Machine Only) Configure SSH Key</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Start-ADB-and-Port-Forwarding-Manually"><span class="nav-number">2.</span> <span class="nav-text">Start ADB and Port Forwarding Manually</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Optional-Kill-Existing-Process"><span class="nav-number">2.1.</span> <span class="nav-text">(Optional) Kill Existing Process</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Check-Local-Device-Status"><span class="nav-number">2.2.</span> <span class="nav-text">Check Local Device Status</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Start-adb-server-mode-on-local-machine"><span class="nav-number">2.3.</span> <span class="nav-text">Start adb server mode on local machine</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Setup-TCP-port-forwarding"><span class="nav-number">2.4.</span> <span class="nav-text">Setup TCP port forwarding</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Start-ADB-on-Remote-Machine-and-Verify"><span class="nav-number">2.5.</span> <span class="nav-text">Start ADB on Remote Machine and Verify</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Start-the-Environment-Automatically-for-WSL"><span class="nav-number">3.</span> <span class="nav-text">Start the Environment Automatically for WSL</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Start-the-Environment-Automatically-for-Remote-Linux-Machine"><span class="nav-number">4.</span> <span class="nav-text">Start the Environment Automatically for Remote Linux Machine</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">jzj1993</p>
+  <div class="site-description" itemprop="description">江子健的个人博客，90后理工男、微软程序员、互联网从业者，分享软件编程、开发技术、学习与思考</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">269</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">6</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">111</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/jzj1993" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;jzj1993" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      友情链接
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="http://www.dappchaser.com/" title="http:&#x2F;&#x2F;www.dappchaser.com" rel="noopener" target="_blank">DAppChaser</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://www.chenwenguan.com/" title="https:&#x2F;&#x2F;www.chenwenguan.com&#x2F;" rel="noopener" target="_blank">陈文管的博客</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="http://yifeiyuan.me/" title="http:&#x2F;&#x2F;yifeiyuan.me&#x2F;" rel="noopener" target="_blank">程序亦非猿</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://www.trinea.cn/" title="https:&#x2F;&#x2F;www.trinea.cn&#x2F;" rel="noopener" target="_blank">Trinea</a>
+        </li>
+        <li class="links-of-blogroll-item">
+          <a href="https://blog.weshinekx.cn/" title="https:&#x2F;&#x2F;blog.weshinekx.cn&#x2F;" rel="noopener" target="_blank">Shinya</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+        <div class="back-to-top motion-element">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2022</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">jzj1993</span>
+</div>
+  <div class="sitemap"><a href="/sitemap.xml" class="theme-link">站点地图</a>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/lozad@1/dist/lozad.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : true,
+      notify     : true,
+      appId      : '3YlzwEecQlMdJPH9KEbFt6PX-gzGzoHsz',
+      appKey     : 'raIB2P7DewB4SAboVtpHakbh',
+      placeholder: "输入评论...",
+      avatar     : 'mm',
+      meta       : guest,
+      pageSize   : '20' || 10,
+      visitor    : true,
+      lang       : 'zh-cn' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
+
+</body>
+</html>

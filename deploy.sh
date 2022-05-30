@@ -40,9 +40,9 @@ echo "MODE = $MODE, FULL = $FULL, TEST = $TEST"
 echo
 echo "Generate blog to public dir"
 if [ "$FULL" = true ]; then
-  yarn hexo clean
+  hexo clean
 fi
-yarn hexo generate
+hexo generate
 
 
 # fetch git data from remote repo to remote directory

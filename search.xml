@@ -378,6 +378,43 @@
       </tags>
   </entry>
   <entry>
+    <title>程序员高效工作的一些工具或习惯</title>
+    <url>/work-efficiently/</url>
+    <content><![CDATA[<h1>程序员高效工作的一些工具或习惯</h1>
+<p>这篇文章介绍一些有利于提高程序员学习工作效率的工具或习惯。文章目前先发一个版本，未来如果有更新，可能会发新版本。</p>
+<p>有些习惯在前期可能会非常痛苦，因为有学习成本，并且难以适应，但是一旦学会并形成了习惯，可能会对日常学习工作起到非常大的帮助作用。本文中的一些观点在我的2021年终总结里也有讨论（例如要不要写博客），可以自行查阅博客。</p>
+<ol>
+<li>使用Markdown或类似工具写文档。不需要花过多时间思考排版从而可以专注于写作本身，且文件排版美观统一，文件尺寸小，非常容易在不同工具之间迁移，还可以使用git进行版本管理。在这之前用过Word等各种富文本编辑工具，编辑的时候需要频繁在键盘和鼠标之间切换，文件版本不好管理，非常麻烦。</li>
+<li>选择好用的笔记工具，养成适度做笔记的习惯。比较关键的几个点：支持批量导入导出笔记，这样可以确保笔记安全性，随时可以迁移到其他笔记工具；支持Markdown或类似的编辑方式，前面已经讲了Markdown为什么好。我之前有用为知笔记，后来迁移到Typora + Github，现在主要在用Obsidian。</li>
+<li>使用浏览器收藏夹保存有用文章。以前喜欢用笔记软件存一些文章，但是后来发现存进去之后也不会再看，还要花时间整理笔记，而遇到技术问题还是习惯于直接浏览器搜索（毕竟笔记里能保存的内容很有限）。所以不如直接存浏览器收藏夹，说不定下次搜索还能直接搜到。除非是一些非常好且印象深刻、不太容易被搜索到的文章，可以考虑存到笔记里，避免文章以后不见了。</li>
+<li>可以适当写一些博客。一方面总结知识发布出来，对自己而言可以巩固知识，促进更加系统全面的认识，提高语言表达能力。另一方面以后遇到问题可以直接在自己博客搜，等于是笔记软件。还有就是或许能帮到其他人，还有助于求职、增加个人影响力，甚至发展成自媒体获得一些收入。</li>
+<li>学术问题优先使用谷歌搜索。曾经用百度搜索一个技术问题翻了好几页都没解决，无奈之下只好想办法用了谷歌搜索，没想到第一条就找到了靠谱的解决方法。另外很多技术问题是英文结果，百度对英文站点的支持是非常差的。至于怎么访问谷歌，可以自行研究。实在用不了谷歌的，用Bing也会比百度好一些。</li>
+<li>使用git管理代码和一些纯文本文档。做项目的时候用git进行版本管理非常方便，不懂git实在费劲。学习某项技术的时候，也使用git管理觉得有用的code snippet，例如建一个LearnAndroid项目，遇到一段代码用来判断App在前后台，觉得不错，直接加到这个项目里面，以后用的时候可以直接复制粘贴。多年前不会用git，整理当时的学习资料总结，发现自己搞了很多压缩包和文件，费时费力也不优雅。</li>
+<li>使用github或类似应用保存git仓库。代码和一些小文档直接上传到github了，免得本地保存费劲。对于私有内容，现在github支持免费的私有仓库。对于公开内容，放github可能还会被别人搜到，也算是对行业做出了一点小小的贡献。【更新】前阵子github因为俄乌战争删除俄罗斯开发者账号，以及国内的Gitee开源项目审核事件，让我感觉任何产品一旦扯上了政治就不再靠谱，有必要考虑在自己的NAS上搭建私有gitlab来管理代码。或者至少保证所有重要的repo都有额外的备份，以免哪天真的出现意外直接丢失了。</li>
+<li>学习使用shell。有时候我们需要进行一些文件操作，例如搜索文件名、搜索文件内容、统计文件数量、统计代码行数等，如果对shell比较熟悉，可以很轻松的搞定。虽然Python也能做到，但是对于这类任务，Python写起来还是更加费劲，而且需要安装Python环境。shell的有些命令设计非常精妙，功能十分强大，例如 find, grep, wc, xargs, awk, ssh, tar等，使用几个命令配合管道组合起来就可以解决一些很复杂的问题。我学到过一个特别神奇的操作，只需要一行shell命令，就可以在一个远程服务器上用tar压缩文件，同时利用管道将中间结果传输到另一个远程服务器，并在另一个服务器上再用tar实时解压出来，从而实现大量小文件的快速转移（这个在我的博客里有介绍，搜索“Linux借助管道远程复制大量文件”即可）。</li>
+<li>建设自己的shell仓库。我创建了一个shellutils的私有git仓库，里面存放了各种shell脚本或alias，支持Mac、Linux、WSL环境，这样有些问题不需要每次去查资料，也不用额外记笔记了。每次换新系统，直接克隆shellutils，就可以调用这些工具了。例如我在Linux和WSL环境下实现了类似Mac的open命令（命令行中输入open+文件或文件夹名，即可使用默认的GUI工具打开），例如设置Gnome的文字缩放，一条命令自动安装常用软件（vim, oh-my-zsh, docker等），ssh切换用户，mac显示隐藏文件，切换网关IP，git、Android的一些alias等。本来这个项目是计划开源出来一部分，但是包含了不少私有配置，问题也比较多，就先搁置了。</li>
+</ol>
+<p>下面还有一些需要花钱购买硬件设备的建议，可以根据实际条件自行配备。</p>
+<ol>
+<li>使用外接较大的显示器，双屏更佳。避免频繁的窗口切换，内容滚动，可以同时看到多个软件界面，好的显示器也可以减轻视觉疲劳。这个不用多解释。</li>
+<li>使用机械键盘或者静电容键盘，打字久了不容易累，打字体验更好甚至会上瘾。我目前用的是国产的Niz Micro 84，非常不错，推荐一下。</li>
+<li>配备升降桌/升降座椅。这个在一些公司可能会给员工配备，有条件自己也可以在家配备。升降桌的一个主要作用是累了可以把桌子升高站起来办公一会，不过我不太需要所以也没有用到。座椅升降或者是准备合适高度的座椅是很有必要的，座椅高度和桌子、身高匹配，可以减少颈椎病等各种问题发生的可能。</li>
+<li>搭建软路由。软路由相比常规路由器功能更加强大全面，性能通常也好很多。如果你有外网访问家里设备、透明代理、NAS等需求，有软路由很多事情都会灵活很多，再也不担心自己的路由器不支持某些功能，因为一切都可以通过自己安装软件解决。</li>
+<li>搭建透明代理。由于一些原因，访问某些网站特别是国外网站会很慢，例如Ubuntu软件源更新、npm依赖安装、Android开发环境配置、命令行安装应用、开发调用一些SDK，都要分别给每个应用设置国内镜像或代理，有些还要写代码设置，还有些完全无法设置。如果有条件搭建透明代理，路由器上就可以全局解决网络慢的问题了，不需要每个设备每个应用去设置了，可以节省很多时间精力，极大的提高学习工作效率。注意这里仅讨论技术学习用途，请自觉遵守有关规定。</li>
+<li>搭建NAS。NAS可以保存自己的各种数据，手机电脑电视所有设备都能访问，不用再费力考虑电脑硬盘又不够用了的问题，设备间转移数据也很方便。配置RAID存储确保重要数据不会丢失。出门在外也可以远程访问家里NAS上的文件。对于个人的各种密码、私有文档、各种key备份文件等，可以在NAS上建一个单独的加密文件夹全部放进去，平时加密，要用的时候解密。前面说的透明代理，也可以在NAS上搭建。如果在家组建千兆甚至万兆局域网，还可以把NAS当做本地硬盘使用，这对于笔记本特别是MacBook硬盘容量不大的情况很有帮助。移动硬盘虽然也可以解决存储空间不够的问题，但是移动硬盘很容易因为供电、频繁搬运、插拔电线导致不稳定甚至丢数据，更没有RAID功能。我自己的一个实际应用就是拍照修图，会把照片保存到NAS上，一张照片原始数据就有50M，全都存到笔记本的SSD里存不下也不安全，存到NAS上电脑直接通过5G WiFi或者有线网访问，就很方便了。</li>
+<li>搭建PVE主机。PVE是一个基于Linux的操作系统，在电脑上安装好后，其他设备可以直接在网页里访问主机，并通过网页在PVE上安装各种虚拟机。这个对于需要经常装各种系统的人来说比较有用。我自己的实际使用场景有两个：一个是工控小主机上安装了PVE，PVE里运行了爱快+OpenWRT实现软路由，由于PVE可以给虚拟机做快照，所以我配置软路由的时候可以尽情折腾，配置错了改不回来，直接回退到快照就瞬间恢复正常了。另一个是由于工作需要，我们必须用Linux或WSL且性能好的电脑编译项目，同时我希望日常生活和工作共用一台电脑免得反复切换很麻烦（我们可以部分在家办公），希望能用Mac而不是装Windows的台式机（用了没几天Windows就遇到病毒有心理阴影了），于是给台式机装了PVE，里面有Ubuntu系统用于编译项目，Windows系统用来运行一些微软的软件，Android x86系统用于开发测试，办公时用Mac远程连接PVE即可，并且只要网速还行，我不在家也可以连接家里的PVE主机编译代码。而且，我不需要坐在台式机旁边听着台式机风扇转动的噪音，我还可以拿着MacBook，Work From 卧室/客厅/厨房/阳台。</li>
+</ol>
+<p>最近刚搬完家正在折腾新的硬件设备，后续应该还会写一篇文章介绍我家里所有网络设备、主机、智能家居的配置，感兴趣可以关注我的公众号“搬砖的小明”。</p>
+<p>还有其他好的工具或习惯，也可以在评论区留言。</p>
+]]></content>
+      <categories>
+        <category>学习思考</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>数学计算对比买房和长期租房的经济效益</title>
     <url>/buy-vs-rent-house/</url>
     <content><![CDATA[<p>有同事说不想买房了，还转发了一段来自网上的计算。</p>
@@ -798,8 +835,8 @@
         <category>开发技术</category>
       </categories>
       <tags>
-        <tag>计算机</tag>
         <tag>学习</tag>
+        <tag>计算机</tag>
         <tag>网络</tag>
       </tags>
   </entry>
@@ -1699,9 +1736,9 @@ AMD：“嚄~~~还有这么好的事情，不用怎么改GPU，驱动还有人�
         <category>开发技术</category>
       </categories>
       <tags>
+        <tag>Android</tag>
         <tag>cpp</tag>
         <tag>计算机</tag>
-        <tag>Android</tag>
         <tag>Chromium</tag>
       </tags>
   </entry>
@@ -1746,6 +1783,21 @@ AMD：“嚄~~~还有这么好的事情，不用怎么改GPU，驱动还有人�
       </tags>
   </entry>
   <entry>
+    <title>PVE中虚拟机不能联网问题解决案例</title>
+    <url>/pve-cannot-connect-network/</url>
+    <content><![CDATA[<p>PVE自身可以联网，LXC容器也可以联网，但是VM虚拟机不能联网。反复尝试修改Ubuntu的网络配置始终没效果，怀疑是路由器问题，但是其他设备都能正常上网。</p>
+<p>最后突然想到改硬件，把VirtIO改成Intel E1000，结果没想到网马上就好了。之后重新改回VirtIO也没问题。记录一下供有需要的人参考。</p>
+<p><img data-src="/blog-imgs/images/image-20210405022118864.png" alt="image-20210405022118864"></p>
+]]></content>
+      <categories>
+        <category>开发技术</category>
+      </categories>
+      <tags>
+        <tag>PVE</tag>
+        <tag>虚拟机</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>PVE换网卡后重新设置网络</title>
     <url>/pve-config-nic/</url>
     <content><![CDATA[<h2 id="背景">背景</h2>
@@ -1784,24 +1836,9 @@ AMD：“嚄~~~还有这么好的事情，不用怎么改GPU，驱动还有人�
       </categories>
       <tags>
         <tag>计算机</tag>
+        <tag>PVE</tag>
+        <tag>虚拟机</tag>
         <tag>网络</tag>
-        <tag>PVE</tag>
-        <tag>虚拟机</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>PVE中虚拟机不能联网问题解决案例</title>
-    <url>/pve-cannot-connect-network/</url>
-    <content><![CDATA[<p>PVE自身可以联网，LXC容器也可以联网，但是VM虚拟机不能联网。反复尝试修改Ubuntu的网络配置始终没效果，怀疑是路由器问题，但是其他设备都能正常上网。</p>
-<p>最后突然想到改硬件，把VirtIO改成Intel E1000，结果没想到网马上就好了。之后重新改回VirtIO也没问题。记录一下供有需要的人参考。</p>
-<p><img data-src="/blog-imgs/images/image-20210405022118864.png" alt="image-20210405022118864"></p>
-]]></content>
-      <categories>
-        <category>开发技术</category>
-      </categories>
-      <tags>
-        <tag>PVE</tag>
-        <tag>虚拟机</tag>
       </tags>
   </entry>
   <entry>
@@ -2106,8 +2143,8 @@ AMD：“嚄~~~还有这么好的事情，不用怎么改GPU，驱动还有人�
         <category>开发技术</category>
       </categories>
       <tags>
-        <tag>cpp</tag>
         <tag>Android</tag>
+        <tag>cpp</tag>
         <tag>Chromium</tag>
         <tag>Java</tag>
       </tags>
@@ -3362,8 +3399,8 @@ AMD：“嚄~~~还有这么好的事情，不用怎么改GPU，驱动还有人�
       </categories>
       <tags>
         <tag>Android</tag>
-        <tag>性能</tag>
         <tag>内存</tag>
+        <tag>性能</tag>
       </tags>
   </entry>
   <entry>
@@ -4261,9 +4298,9 @@ n 是非负整数，且不会超过输入数组的大小。</p>
       <tags>
         <tag>Android</tag>
         <tag>Java</tag>
-        <tag>性能</tag>
         <tag>内存</tag>
         <tag>基础知识</tag>
+        <tag>性能</tag>
       </tags>
   </entry>
   <entry>
@@ -4409,9 +4446,9 @@ n 是非负整数，且不会超过输入数组的大小。</p>
       <tags>
         <tag>Java</tag>
         <tag>编程</tag>
-        <tag>数据结构</tag>
-        <tag>算法</tag>
         <tag>基础知识</tag>
+        <tag>算法</tag>
+        <tag>数据结构</tag>
       </tags>
   </entry>
   <entry>
@@ -5002,9 +5039,9 @@ n 是非负整数，且不会超过输入数组的大小。</p>
         <tag>编程</tag>
         <tag>Markdown</tag>
         <tag>node</tag>
-        <tag>开源</tag>
         <tag>electron</tag>
         <tag>vue</tag>
+        <tag>开源</tag>
       </tags>
   </entry>
   <entry>
@@ -5103,8 +5140,8 @@ n 是非负整数，且不会超过输入数组的大小。</p>
       <tags>
         <tag>编程</tag>
         <tag>Markdown</tag>
-        <tag>WordPress</tag>
         <tag>开源</tag>
+        <tag>WordPress</tag>
       </tags>
   </entry>
   <entry>
@@ -5289,8 +5326,8 @@ n 是非负整数，且不会超过输入数组的大小。</p>
         <tag>Android</tag>
         <tag>Java</tag>
         <tag>编程</tag>
-        <tag>软件工程</tag>
         <tag>代码质量</tag>
+        <tag>软件工程</tag>
       </tags>
   </entry>
   <entry>
@@ -5586,8 +5623,8 @@ n 是非负整数，且不会超过输入数组的大小。</p>
         <category>学习思考</category>
       </categories>
       <tags>
-        <tag>计算机</tag>
         <tag>Android</tag>
+        <tag>计算机</tag>
         <tag>安卓</tag>
         <tag>编程</tag>
         <tag>代码设计</tag>
@@ -15761,9 +15798,9 @@ Tomcat 8.5.8的地址 <a href="http://apache.fayea.com/tomcat/tomcat-8/v8.5.8/bi
       </categories>
       <tags>
         <tag>Android</tag>
+        <tag>#Android测试初探#</tag>
         <tag>安卓</tag>
         <tag>移动开发</tag>
-        <tag>#Android测试初探#</tag>
       </tags>
   </entry>
   <entry>
@@ -16534,9 +16571,9 @@ Tomcat 8.5.8的地址 <a href="http://apache.fayea.com/tomcat/tomcat-8/v8.5.8/bi
       </categories>
       <tags>
         <tag>Android</tag>
+        <tag>#Android测试初探#</tag>
         <tag>安卓</tag>
         <tag>移动开发</tag>
-        <tag>#Android测试初探#</tag>
       </tags>
   </entry>
   <entry>
@@ -16686,9 +16723,9 @@ Tomcat 8.5.8的地址 <a href="http://apache.fayea.com/tomcat/tomcat-8/v8.5.8/bi
       </categories>
       <tags>
         <tag>Android</tag>
+        <tag>#Android测试初探#</tag>
         <tag>安卓</tag>
         <tag>移动开发</tag>
-        <tag>#Android测试初探#</tag>
       </tags>
   </entry>
   <entry>
@@ -17051,9 +17088,9 @@ Tomcat 8.5.8的地址 <a href="http://apache.fayea.com/tomcat/tomcat-8/v8.5.8/bi
       </categories>
       <tags>
         <tag>Android</tag>
+        <tag>#Android测试初探#</tag>
         <tag>安卓</tag>
         <tag>移动开发</tag>
-        <tag>#Android测试初探#</tag>
       </tags>
   </entry>
   <entry>
@@ -17147,9 +17184,9 @@ Tomcat 8.5.8的地址 <a href="http://apache.fayea.com/tomcat/tomcat-8/v8.5.8/bi
       </categories>
       <tags>
         <tag>Android</tag>
+        <tag>#Android测试初探#</tag>
         <tag>安卓</tag>
         <tag>移动开发</tag>
-        <tag>#Android测试初探#</tag>
       </tags>
   </entry>
   <entry>
@@ -17362,9 +17399,9 @@ Tomcat 8.5.8的地址 <a href="http://apache.fayea.com/tomcat/tomcat-8/v8.5.8/bi
       </categories>
       <tags>
         <tag>Android</tag>
+        <tag>#Android测试初探#</tag>
         <tag>安卓</tag>
         <tag>移动开发</tag>
-        <tag>#Android测试初探#</tag>
       </tags>
   </entry>
   <entry>
@@ -17454,9 +17491,9 @@ Tomcat 8.5.8的地址 <a href="http://apache.fayea.com/tomcat/tomcat-8/v8.5.8/bi
       </categories>
       <tags>
         <tag>Android</tag>
+        <tag>#Android测试初探#</tag>
         <tag>安卓</tag>
         <tag>移动开发</tag>
-        <tag>#Android测试初探#</tag>
       </tags>
   </entry>
   <entry>
@@ -18634,8 +18671,8 @@ Tomcat 8.5.8的地址 <a href="http://apache.fayea.com/tomcat/tomcat-8/v8.5.8/bi
         <category>开发技术</category>
       </categories>
       <tags>
-        <tag>编程</tag>
         <tag>Web开发</tag>
+        <tag>编程</tag>
       </tags>
   </entry>
   <entry>
@@ -23917,8 +23954,8 @@ MBR只能支持四个主分区，而GPT至少可以划分128个主分区（后�
         <category>开发技术</category>
       </categories>
       <tags>
-        <tag>编程</tag>
         <tag>Web开发</tag>
+        <tag>编程</tag>
       </tags>
   </entry>
   <entry>
@@ -24521,8 +24558,8 @@ $$</p>
         <category>开发技术</category>
       </categories>
       <tags>
-        <tag>编程</tag>
         <tag>Web开发</tag>
+        <tag>编程</tag>
       </tags>
   </entry>
   <entry>
@@ -26780,15 +26817,15 @@ $$</p>
         <category>单片机小白学步</category>
       </categories>
       <tags>
-        <tag>计算机</tag>
         <tag>学习</tag>
-        <tag>编程</tag>
+        <tag>计算机</tag>
         <tag>单片机</tag>
         <tag>嵌入式</tag>
         <tag>电路设计</tag>
         <tag>硬件开发</tag>
-        <tag>C</tag>
+        <tag>编程</tag>
         <tag>入门</tag>
+        <tag>C</tag>
         <tag>#单片机小白学步#</tag>
       </tags>
   </entry>
@@ -26924,15 +26961,15 @@ $$</p>
         <category>单片机小白学步</category>
       </categories>
       <tags>
-        <tag>计算机</tag>
         <tag>学习</tag>
-        <tag>编程</tag>
+        <tag>计算机</tag>
         <tag>单片机</tag>
         <tag>嵌入式</tag>
         <tag>电路设计</tag>
         <tag>硬件开发</tag>
-        <tag>C</tag>
+        <tag>编程</tag>
         <tag>入门</tag>
+        <tag>C</tag>
         <tag>#单片机小白学步#</tag>
       </tags>
   </entry>
@@ -27096,15 +27133,15 @@ $$</p>
         <category>单片机小白学步</category>
       </categories>
       <tags>
-        <tag>计算机</tag>
         <tag>学习</tag>
-        <tag>编程</tag>
+        <tag>计算机</tag>
         <tag>单片机</tag>
         <tag>嵌入式</tag>
         <tag>电路设计</tag>
         <tag>硬件开发</tag>
-        <tag>C</tag>
+        <tag>编程</tag>
         <tag>入门</tag>
+        <tag>C</tag>
         <tag>#单片机小白学步#</tag>
       </tags>
   </entry>
@@ -27202,15 +27239,15 @@ $$</p>
         <category>单片机小白学步</category>
       </categories>
       <tags>
-        <tag>计算机</tag>
         <tag>学习</tag>
-        <tag>编程</tag>
+        <tag>计算机</tag>
         <tag>单片机</tag>
         <tag>嵌入式</tag>
         <tag>电路设计</tag>
         <tag>硬件开发</tag>
-        <tag>C</tag>
+        <tag>编程</tag>
         <tag>入门</tag>
+        <tag>C</tag>
         <tag>#单片机小白学步#</tag>
       </tags>
   </entry>
@@ -27237,15 +27274,15 @@ $$</p>
         <category>单片机小白学步</category>
       </categories>
       <tags>
-        <tag>计算机</tag>
         <tag>学习</tag>
-        <tag>编程</tag>
+        <tag>计算机</tag>
         <tag>单片机</tag>
         <tag>嵌入式</tag>
         <tag>电路设计</tag>
         <tag>硬件开发</tag>
-        <tag>C</tag>
+        <tag>编程</tag>
         <tag>入门</tag>
+        <tag>C</tag>
         <tag>#单片机小白学步#</tag>
       </tags>
   </entry>
@@ -27288,15 +27325,15 @@ $$</p>
         <category>单片机小白学步</category>
       </categories>
       <tags>
-        <tag>计算机</tag>
         <tag>学习</tag>
-        <tag>编程</tag>
+        <tag>计算机</tag>
         <tag>单片机</tag>
         <tag>嵌入式</tag>
         <tag>电路设计</tag>
         <tag>硬件开发</tag>
-        <tag>C</tag>
+        <tag>编程</tag>
         <tag>入门</tag>
+        <tag>C</tag>
         <tag>#单片机小白学步#</tag>
       </tags>
   </entry>
@@ -27352,15 +27389,15 @@ $$</p>
         <category>单片机小白学步</category>
       </categories>
       <tags>
-        <tag>计算机</tag>
         <tag>学习</tag>
-        <tag>编程</tag>
+        <tag>计算机</tag>
         <tag>单片机</tag>
         <tag>嵌入式</tag>
         <tag>电路设计</tag>
         <tag>硬件开发</tag>
-        <tag>C</tag>
+        <tag>编程</tag>
         <tag>入门</tag>
+        <tag>C</tag>
         <tag>#单片机小白学步#</tag>
       </tags>
   </entry>
@@ -27408,9 +27445,9 @@ $$</p>
       </categories>
       <tags>
         <tag>学习</tag>
-        <tag>编程</tag>
         <tag>单片机</tag>
         <tag>嵌入式</tag>
+        <tag>编程</tag>
         <tag>方法</tag>
       </tags>
   </entry>
@@ -27484,15 +27521,15 @@ $$</p>
         <category>单片机小白学步</category>
       </categories>
       <tags>
-        <tag>计算机</tag>
         <tag>学习</tag>
-        <tag>编程</tag>
+        <tag>计算机</tag>
         <tag>单片机</tag>
         <tag>嵌入式</tag>
         <tag>电路设计</tag>
         <tag>硬件开发</tag>
-        <tag>C</tag>
+        <tag>编程</tag>
         <tag>入门</tag>
+        <tag>C</tag>
         <tag>#单片机小白学步#</tag>
       </tags>
   </entry>
@@ -27574,11 +27611,11 @@ $$</p>
       </categories>
       <tags>
         <tag>学习</tag>
-        <tag>编程</tag>
         <tag>单片机</tag>
         <tag>嵌入式</tag>
         <tag>电路设计</tag>
         <tag>硬件开发</tag>
+        <tag>编程</tag>
         <tag>C</tag>
         <tag>#单片机小白学步#</tag>
       </tags>
@@ -27632,15 +27669,15 @@ $$</p>
         <category>单片机小白学步</category>
       </categories>
       <tags>
-        <tag>计算机</tag>
         <tag>学习</tag>
-        <tag>编程</tag>
+        <tag>计算机</tag>
         <tag>单片机</tag>
         <tag>嵌入式</tag>
         <tag>电路设计</tag>
         <tag>硬件开发</tag>
-        <tag>C</tag>
+        <tag>编程</tag>
         <tag>入门</tag>
+        <tag>C</tag>
         <tag>#单片机小白学步#</tag>
       </tags>
   </entry>
@@ -27681,15 +27718,15 @@ $$</p>
         <category>单片机小白学步</category>
       </categories>
       <tags>
-        <tag>计算机</tag>
         <tag>学习</tag>
-        <tag>编程</tag>
+        <tag>计算机</tag>
         <tag>单片机</tag>
         <tag>嵌入式</tag>
         <tag>电路设计</tag>
         <tag>硬件开发</tag>
-        <tag>C</tag>
+        <tag>编程</tag>
         <tag>入门</tag>
+        <tag>C</tag>
         <tag>#单片机小白学步#</tag>
       </tags>
   </entry>
@@ -27769,15 +27806,15 @@ $$</p>
         <category>单片机小白学步</category>
       </categories>
       <tags>
-        <tag>计算机</tag>
         <tag>学习</tag>
-        <tag>编程</tag>
+        <tag>计算机</tag>
         <tag>单片机</tag>
         <tag>嵌入式</tag>
         <tag>电路设计</tag>
         <tag>硬件开发</tag>
-        <tag>C</tag>
+        <tag>编程</tag>
         <tag>入门</tag>
+        <tag>C</tag>
         <tag>#单片机小白学步#</tag>
       </tags>
   </entry>
@@ -28712,15 +28749,15 @@ ps -e grep ssh #如果看到sshd，说明ssh-server已经启动</p>
         <category>单片机小白学步</category>
       </categories>
       <tags>
-        <tag>计算机</tag>
         <tag>学习</tag>
-        <tag>编程</tag>
+        <tag>计算机</tag>
         <tag>单片机</tag>
         <tag>嵌入式</tag>
         <tag>电路设计</tag>
         <tag>硬件开发</tag>
-        <tag>C</tag>
+        <tag>编程</tag>
         <tag>入门</tag>
+        <tag>C</tag>
         <tag>#单片机小白学步#</tag>
       </tags>
   </entry>
@@ -28908,9 +28945,9 @@ ps -e grep ssh #如果看到sshd，说明ssh-server已经启动</p>
       <tags>
         <tag>Web开发</tag>
         <tag>WordPress</tag>
-        <tag>网站</tag>
         <tag>用户体验</tag>
         <tag>社交</tag>
+        <tag>网站</tag>
       </tags>
   </entry>
   <entry>
@@ -28969,15 +29006,15 @@ ps -e grep ssh #如果看到sshd，说明ssh-server已经启动</p>
         <category>单片机小白学步</category>
       </categories>
       <tags>
-        <tag>计算机</tag>
         <tag>学习</tag>
-        <tag>编程</tag>
+        <tag>计算机</tag>
         <tag>单片机</tag>
         <tag>嵌入式</tag>
         <tag>电路设计</tag>
         <tag>硬件开发</tag>
-        <tag>C</tag>
+        <tag>编程</tag>
         <tag>入门</tag>
+        <tag>C</tag>
         <tag>#单片机小白学步#</tag>
       </tags>
   </entry>
@@ -29969,8 +30006,8 @@ void onClick(View v) {<br>
         <category>开发技术</category>
       </categories>
       <tags>
-        <tag>计算机</tag>
         <tag>Android</tag>
+        <tag>计算机</tag>
         <tag>安卓</tag>
         <tag>移动开发</tag>
         <tag>编程</tag>
@@ -30035,15 +30072,15 @@ void onClick(View v) {<br>
         <category>单片机小白学步</category>
       </categories>
       <tags>
-        <tag>计算机</tag>
         <tag>学习</tag>
-        <tag>编程</tag>
+        <tag>计算机</tag>
         <tag>单片机</tag>
         <tag>嵌入式</tag>
         <tag>电路设计</tag>
         <tag>硬件开发</tag>
-        <tag>C</tag>
+        <tag>编程</tag>
         <tag>入门</tag>
+        <tag>C</tag>
         <tag>#单片机小白学步#</tag>
       </tags>
   </entry>
@@ -30195,15 +30232,15 @@ void onClick(View v) {<br>
         <category>单片机小白学步</category>
       </categories>
       <tags>
-        <tag>计算机</tag>
         <tag>学习</tag>
-        <tag>编程</tag>
+        <tag>计算机</tag>
         <tag>单片机</tag>
         <tag>嵌入式</tag>
         <tag>电路设计</tag>
         <tag>硬件开发</tag>
-        <tag>C</tag>
+        <tag>编程</tag>
         <tag>入门</tag>
+        <tag>C</tag>
         <tag>#单片机小白学步#</tag>
       </tags>
   </entry>
@@ -30519,8 +30556,8 @@ Remover一般就能很快移除加密限制，从而复制其中的文本。</p>
         <category>开发技术</category>
       </categories>
       <tags>
-        <tag>计算机</tag>
         <tag>总结</tag>
+        <tag>计算机</tag>
         <tag>Windows</tag>
       </tags>
   </entry>
@@ -31361,9 +31398,9 @@ AT命令手册 <a href="http://download.csdn.net/detail/jzj1993/5507747">http://
         <category>开发技术</category>
       </categories>
       <tags>
-        <tag>编程</tag>
         <tag>单片机</tag>
         <tag>嵌入式</tag>
+        <tag>编程</tag>
         <tag>C</tag>
         <tag>GPRS</tag>
         <tag>GSM</tag>
@@ -31595,15 +31632,15 @@ $$ X = O * F $$</p>
         <category>单片机小白学步</category>
       </categories>
       <tags>
-        <tag>计算机</tag>
         <tag>学习</tag>
-        <tag>编程</tag>
+        <tag>计算机</tag>
         <tag>单片机</tag>
         <tag>嵌入式</tag>
         <tag>电路设计</tag>
         <tag>硬件开发</tag>
-        <tag>C</tag>
+        <tag>编程</tag>
         <tag>入门</tag>
+        <tag>C</tag>
         <tag>#单片机小白学步#</tag>
       </tags>
   </entry>
@@ -31634,15 +31671,15 @@ $$ X = O * F $$</p>
         <category>单片机小白学步</category>
       </categories>
       <tags>
-        <tag>计算机</tag>
         <tag>学习</tag>
-        <tag>编程</tag>
+        <tag>计算机</tag>
         <tag>单片机</tag>
         <tag>嵌入式</tag>
         <tag>电路设计</tag>
         <tag>硬件开发</tag>
-        <tag>C</tag>
+        <tag>编程</tag>
         <tag>入门</tag>
+        <tag>C</tag>
         <tag>#单片机小白学步#</tag>
       </tags>
   </entry>
@@ -31682,15 +31719,15 @@ $$ X = O * F $$</p>
         <category>单片机小白学步</category>
       </categories>
       <tags>
-        <tag>计算机</tag>
         <tag>学习</tag>
-        <tag>编程</tag>
+        <tag>计算机</tag>
         <tag>单片机</tag>
         <tag>嵌入式</tag>
         <tag>电路设计</tag>
         <tag>硬件开发</tag>
-        <tag>C</tag>
+        <tag>编程</tag>
         <tag>入门</tag>
+        <tag>C</tag>
         <tag>#单片机小白学步#</tag>
       </tags>
   </entry>
@@ -31716,15 +31753,15 @@ $$ X = O * F $$</p>
         <category>单片机小白学步</category>
       </categories>
       <tags>
-        <tag>计算机</tag>
         <tag>学习</tag>
-        <tag>编程</tag>
+        <tag>计算机</tag>
         <tag>单片机</tag>
         <tag>嵌入式</tag>
         <tag>电路设计</tag>
         <tag>硬件开发</tag>
-        <tag>C</tag>
+        <tag>编程</tag>
         <tag>入门</tag>
+        <tag>C</tag>
         <tag>#单片机小白学步#</tag>
       </tags>
   </entry>
@@ -31754,15 +31791,15 @@ $$ X = O * F $$</p>
         <category>单片机小白学步</category>
       </categories>
       <tags>
-        <tag>计算机</tag>
         <tag>学习</tag>
-        <tag>编程</tag>
+        <tag>计算机</tag>
         <tag>单片机</tag>
         <tag>嵌入式</tag>
         <tag>电路设计</tag>
         <tag>硬件开发</tag>
-        <tag>C</tag>
+        <tag>编程</tag>
         <tag>入门</tag>
+        <tag>C</tag>
         <tag>#单片机小白学步#</tag>
       </tags>
   </entry>
@@ -31781,15 +31818,15 @@ $$ X = O * F $$</p>
         <category>单片机小白学步</category>
       </categories>
       <tags>
-        <tag>计算机</tag>
         <tag>学习</tag>
-        <tag>编程</tag>
+        <tag>计算机</tag>
         <tag>单片机</tag>
         <tag>嵌入式</tag>
         <tag>电路设计</tag>
         <tag>硬件开发</tag>
-        <tag>C</tag>
+        <tag>编程</tag>
         <tag>入门</tag>
+        <tag>C</tag>
         <tag>#单片机小白学步#</tag>
       </tags>
   </entry>
@@ -31821,15 +31858,15 @@ $$ X = O * F $$</p>
         <category>单片机小白学步</category>
       </categories>
       <tags>
-        <tag>计算机</tag>
         <tag>学习</tag>
-        <tag>编程</tag>
+        <tag>计算机</tag>
         <tag>单片机</tag>
         <tag>嵌入式</tag>
         <tag>电路设计</tag>
         <tag>硬件开发</tag>
-        <tag>C</tag>
+        <tag>编程</tag>
         <tag>入门</tag>
+        <tag>C</tag>
         <tag>#单片机小白学步#</tag>
       </tags>
   </entry>
@@ -31864,15 +31901,15 @@ $$ X = O * F $$</p>
         <category>单片机小白学步</category>
       </categories>
       <tags>
-        <tag>计算机</tag>
         <tag>学习</tag>
-        <tag>编程</tag>
+        <tag>计算机</tag>
         <tag>单片机</tag>
         <tag>嵌入式</tag>
         <tag>电路设计</tag>
         <tag>硬件开发</tag>
-        <tag>C</tag>
+        <tag>编程</tag>
         <tag>入门</tag>
+        <tag>C</tag>
         <tag>#单片机小白学步#</tag>
       </tags>
   </entry>
@@ -31905,15 +31942,15 @@ $$ X = O * F $$</p>
         <category>单片机小白学步</category>
       </categories>
       <tags>
-        <tag>计算机</tag>
         <tag>学习</tag>
-        <tag>编程</tag>
+        <tag>计算机</tag>
         <tag>单片机</tag>
         <tag>嵌入式</tag>
         <tag>电路设计</tag>
         <tag>硬件开发</tag>
-        <tag>C</tag>
+        <tag>编程</tag>
         <tag>入门</tag>
+        <tag>C</tag>
         <tag>#单片机小白学步#</tag>
       </tags>
   </entry>

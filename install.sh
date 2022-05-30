@@ -8,6 +8,9 @@ echo "Create link: $LINK_SRC -> $LINK_DST"
 ln -s $LINK_SRC $LINK_DST
 echo
 
+echo "Install hexo globally"
+yarn global add hexo
+
 echo "Install dependencies"
 yarn
 

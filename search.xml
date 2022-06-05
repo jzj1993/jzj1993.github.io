@@ -384,18 +384,18 @@
 <h2 id="光纤">光纤</h2>
 <p>光纤是使用全反射原理制成的可以传播光线的纤维，常用于通信。相比电线有成本低、稳定性好、容量大、传输距离远、抗干扰、保密性好等优势。</p>
 <p><a href="https://zh.m.wikipedia.org/zh-hans/%E5%85%89%E5%B0%8E%E7%BA%96%E7%B6%AD">光导纤维 - 维基百科，自由的百科全书 (wikipedia.org)</a></p>
-<p><img data-src="/blog-imgs/optical-fiber/images/f05dc805063fc680a6fd3a18eb40737f.png" alt=""></p>
+<p><img data-src="/blog-imgs/optical-fiber/images/8e4192f78cd2e71c1d5ca36193c3b6e7.png" alt=""></p>
 <h2 id="单模、多模光纤">单模、多模光纤</h2>
 <p>多模光纤纤维比较粗，可以传输多种模式的光，传输距离较短，光纤本身稍贵一点。收发光信号的模块使用LED作为光源，成本低，发热小。多模常用850nm波长的光。</p>
 <p>单模光纤纤维更细，传输距离远，带宽高，光纤本身更便宜。光模块用激光作为光源，成本高（可以选择二手模块降低成本），发热大。单模常用1270-1550nm波长的光。</p>
 <p>家用室内距离较短，单模多模都可以用。</p>
-<p><img data-src="/blog-imgs/optical-fiber/images/8a3f00d29f3e4229c50cf29d4ce1f32d.png" alt=""><br>
-<img data-src="/blog-imgs/optical-fiber/images/5b7744901f6b7b20f010ed66867ce2a3.png" alt=""></p>
+<p><img data-src="/blog-imgs/optical-fiber/images/6a4e33f733a10af5e186369652cc335b.png" alt=""><br>
+<img data-src="/blog-imgs/optical-fiber/images/ca9b82accb93ccac8571f97cdf446d27.png" alt=""></p>
 <p>单模：橙黄色</p>
-<p><img data-src="/blog-imgs/optical-fiber/images/f17137a38c77c53df9e81278a9bcc3fb.png" alt=""></p>
+<p><img data-src="/blog-imgs/optical-fiber/images/c4d79cb4344e0b9b97c49d97e46f9f7a.png" alt=""></p>
 <p>多模：橘黄色(OM1, OM2), 水蓝色(OM3, OM4), 紫色(OM4), 绿色(OM5). OM1-OM5传输质量和距离不一样。</p>
-<p><img data-src="/blog-imgs/optical-fiber/images/7a16577df70bc6b32c291b4284c6ea4b.png" alt=""></p>
-<p><img data-src="/blog-imgs/optical-fiber/images/9b41a6ba2e94a8cf74d0b8639d1aceec.png" alt=""></p>
+<p><img data-src="/blog-imgs/optical-fiber/images/21c9b733c064761aa1eb665ef334e576.png" alt=""></p>
+<p><img data-src="/blog-imgs/optical-fiber/images/2edc2bf7ae811c9dfd1ec4b62ef59806.png" alt=""></p>
 <p><a href="https://www.ecomcabling.com/newsinfo/1283913.html">单模光纤和多模光纤的区别 详解两者的优缺点-深圳市腾飞腾达科技有限公司 (ecomcabling.com)</a><br>
 <a href="https://www.v2ex.com/t/266659">家用光纤应该用多少芯的？单模还是多模？ - V2EX</a><br>
 <a href="https://wukong.toutiao.com/answer/6630639237010030861/">为什么光猫用一根单模光纤可以同时收发数据，光纤收发器却要用两根？-智能化弱电圈的回答-头条问答 (toutiao.com)</a><br>
@@ -404,22 +404,22 @@
 <h2 id="光缆，皮线，铠装">光缆，皮线，铠装</h2>
 <p>多跟光纤封装起来就成为光缆，或者叫皮线光缆，可以增加强度避免拉升弯折断掉。</p>
 <p>对于1/2/4芯的光缆，常做成下面的样式（蝶形光缆、8字光缆线），用金属丝加固。电信入户光纤常常就是这样的。</p>
-<p><img data-src="/blog-imgs/optical-fiber/images/a7c2133515b3007013a731888bbbd4fe.png" alt=""></p>
+<p><img data-src="/blog-imgs/optical-fiber/images/b77ec2922b8bf2e5889a98fc5b44fa7a.png" alt=""></p>
 <p>三根钢丝的是室外光缆，两根钢丝的是室内光缆。</p>
-<p><img data-src="/blog-imgs/optical-fiber/images/b36a105a4b7415d17018469a157b78fc.png" alt=""></p>
+<p><img data-src="/blog-imgs/optical-fiber/images/33d0edc90e3d38eb311643c26adb7d2d.png" alt=""></p>
 <p>对于更多光纤的光缆，常做成下图的样式，用非金属丝加固。</p>
-<p><img data-src="/blog-imgs/optical-fiber/images/0afb1b86805329462e2595990ba04730.png" alt=""></p>
+<p><img data-src="/blog-imgs/optical-fiber/images/972c7a344ef648d434ece93695dfba75.png" alt=""></p>
 <p>还有铠装光纤，在光纤外有金属材质的“铠甲”，能避免被老鼠咬等。这种比较难切割，一般是带有连接头的成品线使用，自己安装接头比较困难。</p>
-<p><img data-src="/blog-imgs/optical-fiber/images/00090040e17ffb3d0170a7351f82bdfd.png" alt=""></p>
+<p><img data-src="/blog-imgs/optical-fiber/images/33288e36a31db8b24aecbc1154e18c2b.png" alt=""></p>
 <p><a href="https://zhuanlan.zhihu.com/p/359651826">皮线光缆的特点是什么 - 知乎 (zhihu.com)</a><br>
 <a href="https://zhuanlan.zhihu.com/p/389704488">你不可不知的铠装光缆常识 - 知乎 (zhihu.com)</a></p>
 <h2 id="光纤通断检测，红光笔，光功率计">光纤通断检测，红光笔，光功率计</h2>
 <p>光纤弯折过度可能会导致断裂。使用红光笔可以观察到光纤断裂，光从断裂的位置出来了。</p>
-<p><img data-src="/blog-imgs/optical-fiber/images/14269f528f701bb676320e59b15fb9fd.png" alt=""></p>
+<p><img data-src="/blog-imgs/optical-fiber/images/2c8391b8eedf4473479aea2690383800.png" alt=""></p>
 <p>红光笔</p>
-<p><img data-src="/blog-imgs/optical-fiber/images/7bef2e40cd6a16121d11c9a66b93fe78.png" alt=""></p>
+<p><img data-src="/blog-imgs/optical-fiber/images/ffb43cee31b235ed5e91736cb1b99b67.png" alt=""></p>
 <p>光功率计可以检测光纤发出的光</p>
-<p><img data-src="/blog-imgs/optical-fiber/images/63e10bd49364c35adb9aa475a6e4fe90.png" alt=""></p>
+<p><img data-src="/blog-imgs/optical-fiber/images/653839099b5d53dd6885fefe1ddb3770.png" alt=""></p>
 <p><a href="https://www.zhihu.com/question/39304529/answer/1234378085">如何在家庭布设万兆局域网？ - 知乎 (zhihu.com)</a></p>
 <h2 id="光纤接口">光纤接口</h2>
 <p>电线的接口通过直接接触传递电流实现连接。而光纤接口则是让很细的光纤之间对准，从而使得光可以从一根光纤传导到另一根光纤。</p>
@@ -428,40 +428,59 @@
 <li>SC：一般电信入户连接光猫用的光纤用的就是SC接口，也叫大方口。</li>
 <li>LC：也叫小方口，比SC更小，常用在SFP光模块上。</li>
 </ul>
-<p><img data-src="/blog-imgs/optical-fiber/images/ebe2c1b338ac61c25c5d5051a939b334.png" alt=""></p>
+<p><img data-src="/blog-imgs/optical-fiber/images/be632db3470d083b792a83d07635b14e.png" alt=""></p>
 <p><a href="https://zhuanlan.zhihu.com/p/166021241">带您认识常见的光纤接口 - 知乎 (zhihu.com)</a></p>
-<h2 id="冷接、冷接子、米勒钳、光纤切割刀">冷接、冷接子、米勒钳、光纤切割刀</h2>
-<p>在光纤一端连接光纤接口，通常使用冷接的方式。光纤插头也被称为冷接子。</p>
+<h2 id="冷接、热熔、冷接子、米勒钳、光纤切割刀、热熔机">冷接、热熔、冷接子、米勒钳、光纤切割刀、热熔机</h2>
+<p>两根光纤要连接到一起有冷接和热熔两种办法。</p>
+<ul>
+<li>冷接方式，在光纤一端连接光纤插头（也叫冷接子），然后通过光纤插头可以连接两根光纤。冷接方式不需要复杂的工具，但是连接处损耗比较大，工具成本低但是冷接子本身有一定成本（一个SC冷接子几块钱）。适合少量连接的情况，以及需要插拔的场景。</li>
+<li>热熔方式，加热熔接使两根光纤直接连接到一起。连接处损耗比冷接小，且在需要大量对接的情况下成本低。但是热熔机本身成本高，操作相对复杂。</li>
+</ul>
+<p>冷接和热熔具体步骤：</p>
+<ol>
+<li>使用米勒钳给光纤剥皮。</li>
+<li>用99%以上的酒精清洁表面。</li>
+<li>用光纤切割刀将光纤端面切割平整。</li>
+<li>冷接：安装到冷接子上。热熔：使用热熔机将两根端面处理好的光纤连接。</li>
+</ol>
+<p>这里面比较重要的一步是光纤切割刀切割。如果想让切口很平整，就需要比较好但也比较贵的切割刀。</p>
+<ul>
+<li>冷接如果使用直通式SC光纤冷接子，切割的光纤直接露出接头，则对切割的要求非常高，如果切的不好可能损耗非常大，导致信号很弱。</li>
+<li>冷接如果使用预埋式SC光纤冷接子，切口即使不太平整也能用，因为冷接子里带有匹配液，可以填充在不平整的切口缝隙里。</li>
+<li>热熔时则要求切口足够平整。</li>
+</ul>
+<p><a href="https://www.zhihu.com/question/284293943/answer/1032219233">徒手接光纤现实吗？ - 知乎 (zhihu.com)</a></p>
 <p>冷接子</p>
-<p><img data-src="/blog-imgs/optical-fiber/images/7858facaeca8debe5fd11a39e599e313.png" alt=""></p>
-<p>冷接使用一些比较简单的工具（全套工具几十块），把光纤剥皮，把光纤端点切割平整，用99%以上的酒精清洁表面，即可安装到冷接子上。</p>
+<p><img data-src="/blog-imgs/optical-fiber/images/4f6685621b954b606d76bb3f389810bf.png" alt=""></p>
+<p>冷接操作步骤</p>
+<p><img data-src="/blog-imgs/optical-fiber/images/d2a890380af995785204654c518c26f1.png" alt=""></p>
+<p><img data-src="/blog-imgs/optical-fiber/images/6d2f436844bc44c17a89761861b17068.png" alt=""></p>
 <p>用于光纤剥线的米勒钳：</p>
-<p><img data-src="/blog-imgs/optical-fiber/images/98389a776b388d6fff76cb3f8b470c44.png" alt=""></p>
+<p><img data-src="/blog-imgs/optical-fiber/images/defb83cfe4c87d9ba73b2f155d24a489.png" alt=""></p>
 <p>用于将端面切割平整的光纤切割刀：</p>
-<p><img data-src="/blog-imgs/optical-fiber/images/f9734af97ed3c67dc816170dc183f9d7.png" alt=""><br>
+<p><img data-src="/blog-imgs/optical-fiber/images/e2c89d85912a5457d063cb42bca3a33f.png" alt=""><br>
 端面处理前：</p>
-<p><img data-src="/blog-imgs/optical-fiber/images/78973e44ba3f0a90da685c8d1cec9dcb.png" alt=""></p>
+<p><img data-src="/blog-imgs/optical-fiber/images/6b959f6b545a88494a1b9cbea9376d7d.png" alt=""></p>
 <p>端面处理后：</p>
-<p><img data-src="/blog-imgs/optical-fiber/images/bd9618466b32c7ff6c00168b7e09626b.png" alt=""></p>
-<h2 id="热熔熔接、热熔机">热熔熔接、热熔机</h2>
-<p>两根光纤还可以通过热熔的方式直接对接，连接处损耗小，且大量对接的情况下成本低（不需要很多冷接子了）。但是热熔机本身成本高、操作复杂。</p>
-<p><img data-src="/blog-imgs/optical-fiber/images/83dbaca2472496a58a79ef9f3937e1f1.png" alt=""></p>
+<p><img data-src="/blog-imgs/optical-fiber/images/79a07b145811846088355eae6613d3a1.png" alt=""></p>
+<p>热熔机</p>
+<p><img data-src="/blog-imgs/optical-fiber/images/cd73620643d1db57e243b1ef1a528477.png" alt=""></p>
 <h2 id="光纤耦合器-光纤适配器-光纤法兰盘">光纤耦合器/光纤适配器/光纤法兰盘</h2>
 <p>用于对接两个光纤插头，例如两根光纤都是SC插头，则可以用一个SC-SC法兰盘对接。</p>
 <p>一个很常见且直观的使用场景就是在墙壁面板上，墙壁里的光纤要和面板外面可插拔的光纤对接。</p>
-<p><img data-src="/blog-imgs/optical-fiber/images/6745e2c99d3bb2e09890993e2fcc81f2.png" alt=""></p>
+<p><img data-src="/blog-imgs/optical-fiber/images/838be0a1453d3f5c6e46486ccb0f7279.png" alt=""></p>
 <h2 id="尾纤、跳线">尾纤、跳线</h2>
 <p>一端已经有接头的是光纤尾纤，两端都有接头的是光纤跳线。</p>
-<p><img data-src="/blog-imgs/optical-fiber/images/45f447ae966bb60101fd9a51bda71f34.png" alt=""></p>
+<p><img data-src="/blog-imgs/optical-fiber/images/2b533899df7c1f65055192963221445c.png" alt=""></p>
 <p><a href="https://zhuanlan.zhihu.com/p/97001442">全面解析光纤跳线与尾纤的区别及使用注意事项 - 知乎 (zhihu.com)</a></p>
 <h2 id="光通信设备（光纤收发器-光电转换器、SFP光模块，视频光端机）">光通信设备（光纤收发器/光电转换器、SFP光模块，视频光端机）</h2>
 <p>光纤本身只能收发光信号，通信需要用光通信设备。光纤并不是专门用来做网络的，只要两端有合适的设备，可以传输网络、电话、电视、HDMI、KVM等信号，并且比电线传输距离远、抗干扰、保密。</p>
 <p>光纤收发器/光电转换器：RJ45网口转光纤接口（常用SC接口）</p>
-<p><img data-src="/blog-imgs/optical-fiber/images/e4ae70499f066143d6d3d52dd8175afe.png" alt=""></p>
+<p><img data-src="/blog-imgs/optical-fiber/images/6783d329425b230ebe026cba039c13d1.png" alt=""></p>
 <p>SFP光模块，常用于交换机、万兆网卡：SFP/SFP+接口转光纤接口（常用LC接口）</p>
-<p><img data-src="/blog-imgs/optical-fiber/images/c88203a0f06ea31643f70aeebc9c5a8f.png" alt=""></p>
+<p><img data-src="/blog-imgs/optical-fiber/images/3d21af65278f79607691d3d156050618.png" alt=""></p>
 <p>视频光端机：模拟视频信号转光纤接口（常用FC接口）</p>
-<p><img data-src="/blog-imgs/optical-fiber/images/543ad06b79b6fae6951871c030de74b7.png" alt=""></p>
+<p><img data-src="/blog-imgs/optical-fiber/images/0dc515062abab800101af64e3be77aa6.png" alt=""></p>
 <p><a href="https://zhuanlan.zhihu.com/p/166021241">带您认识常见的光纤接口 - 知乎 (zhihu.com)</a></p>
 <h2 id="单工、半双工、全双工、BiDi、PON">单工、半双工、全双工、BiDi、PON</h2>
 <p>在使用一种波长的光时，一根光纤同一时刻只能往一个方向传递光信号。</p>
@@ -488,35 +507,35 @@ DWDM = Dense Wavelength Division Multiplexing 密集型光波复用</p>
 <li>SFP+最大速率16Gbps。万兆交换机和网卡常用SFP+接口。</li>
 <li>剩下的几个速率更高，常用于数据中心，不展开了，详见下面的链接。</li>
 </ul>
-<p><img data-src="/blog-imgs/optical-fiber/images/b0f0bab8dfe058574eadc1b18cbe21d6.png" alt=""></p>
+<p><img data-src="/blog-imgs/optical-fiber/images/3fc360b77dba6e18cd79c1a0f4fc4951.png" alt=""></p>
 <p><a href="https://cn.fs.com/blog/23526.html">SFP、SFP+、SFP28、QSFP+和QSFP28光模块之间的区别解析 | 飞速(FS)资讯</a><br>
 <a href="https://zhuanlan.zhihu.com/p/138577781">SFP与SFP+光模块相关参数和区别在哪里？ - 知乎 (zhihu.com)</a></p>
 <h2 id="万兆交换机，万兆网卡">万兆交换机，万兆网卡</h2>
 <p>万兆交换机和网卡上常用SFP+接口，也有一些用万兆RJ45电口，以及SFP+/RJ45复合接口。电口价格会贵一些，且未来没法再扩展了。</p>
 <p>威联通QSW-308-1C入门万兆交换机，有8个千兆电口，2个万兆SFP+光口，1个万兆SFP+/RJ45复合端口。</p>
 <p><a href="https://www.qnap.com.cn/zh-cn/product/qsw-308-1c">QSW-308-1C | 高性价比入门款 10GbE 交换器，支持五速 10GbE 及 1GbE 以太网络 | QNAP</a></p>
-<p><img data-src="/blog-imgs/optical-fiber/images/e34675f9adae078ba17e69a8e036bf94.png" alt=""></p>
+<p><img data-src="/blog-imgs/optical-fiber/images/6c319e77223e10cea5d0b96821a90f75.png" alt=""></p>
 <p>MikroTik CRS305-1G-4S五口万兆交换机，1个千兆RJ45管理端口，4个SFP+万兆端口。</p>
-<p><img data-src="/blog-imgs/optical-fiber/images/122f3fe60709fa3bed7e58cf1445b012.png" alt=""></p>
+<p><img data-src="/blog-imgs/optical-fiber/images/f7f124482b6618d0ec0a887b1219df54.png" alt=""></p>
 <p>台式机用万兆网卡（X520芯片），PCI-E接口转SFP+接口。</p>
-<p><img data-src="/blog-imgs/optical-fiber/images/a3e923c5202238c194aa4acdbd62bf5d.png" alt=""></p>
+<p><img data-src="/blog-imgs/optical-fiber/images/21ebc8540ecd7a8c65aaf83206ed9697.png" alt=""></p>
 <p>Mac用雷电3万兆网卡，雷电3接口转SFP+接口。</p>
-<p><img data-src="/blog-imgs/optical-fiber/images/cc64cf4018a14492497ba88e9e6917b6.png" alt=""></p>
+<p><img data-src="/blog-imgs/optical-fiber/images/7bafa2b098dd94f0715a7fcf9721059d.png" alt=""></p>
 <p>威联通QNA-UC5G1T，USB3.0转RJ45电口（0.5万兆）。</p>
 <p><a href="https://www.qnap.com/zh-cn/product/qna-uc5g1t">QNA-UC5G1T | 透过 USB 3.2 Gen 1 接口转换 5GbE 高速以太网络 | QNAP</a></p>
-<p><img data-src="/blog-imgs/optical-fiber/images/cf004111b01e33680953a0fbe415afe5.png" alt=""></p>
+<p><img data-src="/blog-imgs/optical-fiber/images/32877b9e0791fe449a42b18b605ea009.png" alt=""></p>
 <h2 id="SFP-光模块">SFP+光模块</h2>
 <p>SFP+光模块，把SFP+接口转成LC光纤接口。</p>
 <p>光模块的光口通常有多模双纤、单模双纤、单模单纤。多模单纤光模块在网上没搜到，因为多模用850nm波长的光，不能复用一根光纤实现全双工（但是找到了多模单纤收发器，不知道什么原理）。</p>
 <p>下面这种模块，使用的是单模双纤LC口，也就是两个并列的单模LC接口，连接两根光纤，使用1310nm波长的光传输数据。</p>
 <p>光纤连接两个SFP+光模块时，需要保证接口、单芯多芯、单模多模、波长都要匹配，且距离不超过标注的最大距离。<strong>另外还要注意，SFP+模块和交换机、网卡存在兼容性问题，购买时需要确认清楚。</strong></p>
 <p><a href="https://item.jd.com/100013362096.html">【博扬BY-10GS120】博扬 BY-10GS120 SFP+光模块万兆10G单模双纤光纤模块(1310nm,20km,LC)适配华为交换机【行情 报价 价格 评测】-京东 (jd.com)</a></p>
-<p><img data-src="/blog-imgs/optical-fiber/images/691d3f4e28761eaacf1b7830f74dd569.png" alt=""></p>
+<p><img data-src="/blog-imgs/optical-fiber/images/c6a3a00080b667ff2b59ef1cdbe533b1.png" alt=""></p>
 <h2 id="SFP-电口模块">SFP+电口模块</h2>
 <p>SFP+电口模块，把SFP+接口转成RJ45电口。</p>
 <p>万兆电口模块相比光口模块，价格更贵且传输距离有限。</p>
 <p><a href="https://item.jd.com/43815579039.html">netLINK 光模块 sfp光模块 光口转电口模块 HTB- 10G-T 万兆电口模块 RJ45 30米 适用华为 一只【图片 价格 品牌 报价】-京东 (jd.com)</a></p>
-<p><img data-src="/blog-imgs/optical-fiber/images/ff278aaae2348c7b19643077c2f713bb.png" alt=""></p>
+<p><img data-src="/blog-imgs/optical-fiber/images/231480812a01d4697d636ab59b457eba.png" alt=""></p>
 <h2 id="AOC有源光缆、DAC高速线缆">AOC有源光缆、DAC高速线缆</h2>
 <p>在连接两个SFP+接口的交换机/网卡时有多种方案：</p>
 <ul>
@@ -525,7 +544,7 @@ DWDM = Dense Wavelength Division Multiplexing 密集型光波复用</p>
 <li>使用AOC有源光缆。和使用光模块的原理类似，使用光纤通信，适用于距离比较短的情况。但是由于是成品线，不需要自己安装，另外功耗也会更低，因为光模块是为了满足长距离传输功耗较大，而AOC已经提前确定了长度。</li>
 <li>使用DAC高速线缆。两头都是SFP+端口，直接使用电信号，中间省略了光电转换的步骤，大大节约了成本，不过距离也会受限。</li>
 </ul>
-<p><img data-src="/blog-imgs/optical-fiber/images/0daa7eba836b4b0b360ada3a56f28dab.png" alt=""></p>
+<p><img data-src="/blog-imgs/optical-fiber/images/321322c82605178237e8085246c641f9.png" alt=""></p>
 <p><a href="https://www.etulink.com/blog/-aoc-dac-_b484">一文看懂AOC有源光缆与DAC高速线缆的差异-易天光通信 (etulink.com)</a><br>
 <a href="https://cn.fs.com/blog/23459.html">40G QSFP+ DAC 与 40G QSFP+ AOC有何区别 | 飞速(FS)资讯</a></p>
 <p>万兆交换机、网卡使用SFP+接口，而不直接用光纤接口的原因：</p>
@@ -537,18 +556,18 @@ DWDM = Dense Wavelength Division Multiplexing 密集型光波复用</p>
 <p>墙上的插座、开关常用86暗盒+86面板（边长86毫米）。比较美观的装修，线都是埋在墙里面的管道里，接线处有暗盒在墙里面，墙面只有面板。</p>
 <p>可以买到单独的面板，自己选配模块（RJ45模块，光纤法兰模块，有线模块等），也可以买到直接带模块的面板。</p>
 <p>暗盒+面板+连接线示意图（<a href="https://item.jd.com/25714193559.html">图片来自京东</a>）</p>
-<p><img data-src="/blog-imgs/optical-fiber/images/ddd8c59146ac62523e8ce6e6e9e75b25.png" alt=""></p>
+<p><img data-src="/blog-imgs/optical-fiber/images/66106607fca81e34d0fe4e2df9a2cd87.png" alt=""></p>
 <p>一个光口+一个电口</p>
-<p><img data-src="/blog-imgs/optical-fiber/images/c95d6c7e58dcb155129e116745734fc8.png" alt=""></p>
+<p><img data-src="/blog-imgs/optical-fiber/images/eee2c3689756fdbf394941afbb5c40b7.png" alt=""></p>
 <p>四个电口</p>
-<p><img data-src="/blog-imgs/optical-fiber/images/8fbd579d8f64878bbf6f9302f4b1c829.png" alt=""></p>
+<p><img data-src="/blog-imgs/optical-fiber/images/3110dbbd79f43f17c94ac04fcbc75896.png" alt=""></p>
 <p>特殊接口</p>
-<p><img data-src="/blog-imgs/optical-fiber/images/970513ffca017925021f1796733ddb48.png" alt=""></p>
+<p><img data-src="/blog-imgs/optical-fiber/images/1518b29dde97d1ba51735482fe8626b0.png" alt=""></p>
 <p><a href="https://zhuanlan.zhihu.com/p/33274127">开关插座面板基础一文读懂，再也不怕被人忽悠了。 - 知乎 (zhihu.com)</a><br>
 <a href="https://zhuanlan.zhihu.com/p/270243321">2020年再谈家庭网络布线（入户光纤延长，预埋光纤及其他） - 知乎 (zhihu.com)</a></p>
 <h2 id="穿线器">穿线器</h2>
 <p>装修时会在弱电箱和每个房间的面板之间埋管道。对于管道里还没有线，或者已经预埋网线/有线但是需要更换的情况，可以借助穿线器把线穿进去。</p>
-<p><img data-src="/blog-imgs/optical-fiber/images/4d8f14a70197c42887963a77e440025a.png" alt=""></p>
+<p><img data-src="/blog-imgs/optical-fiber/images/fa08e8a135ee95a90051db81b3e4bae9.png" alt=""></p>
 <h2 id="家用室内预埋网线">家用室内预埋网线</h2>
 <p>在家用场景下预埋网线，考虑到当前成本和未来扩展性，可以考虑预埋六类/超六类网线+光纤。</p>
 <p>对于小户型，超五类已经足够跑万兆网（30m距离），但六类、超六类的稳定性更好，且线径较粗，对于需要使用POE的场景效果更好。并且这几种线的价格差距不大。</p>
@@ -556,12 +575,12 @@ DWDM = Dense Wavelength Division Multiplexing 密集型光波复用</p>
 <p><a href="https://www.zhihu.com/question/432378730">家里装修网线有必要用超六或者七类线吗？ - 知乎 (zhihu.com)</a></p>
 <h2 id="隐形光纤">隐形光纤</h2>
 <p>对于家里没有预埋管道或者无法在管道中埋网线的情况（管道太细、网线被拉断、管道中有石子水泥等障碍物），直接明线拉网线又觉得太丑，可以使用隐形光纤绕着墙角或屋顶拉线，不注意看不出来。</p>
-<p><img data-src="/blog-imgs/optical-fiber/images/b8bce35fcb249e1d512db25abf429b2a.png" alt=""></p>
+<p><img data-src="/blog-imgs/optical-fiber/images/9b97e55f8e8a1d6386eb2c9dd5e191e8.png" alt=""></p>
 <h2 id="MPO光口">MPO光口</h2>
 <p>一些高速光模块（40G/100G等）中使用MPO光纤接口。MPO光口使用8/12/24芯光缆传输数据。MPO可以转换成独立的8/12/24路LC口。</p>
-<p><img data-src="/blog-imgs/optical-fiber/images/fee83a04b9cfe81b40aa7f829d72dfa1.png" alt=""></p>
+<p><img data-src="/blog-imgs/optical-fiber/images/61b322295ca70a815086c8744e1a3fab.png" alt=""></p>
 <p>MPO转接模块，将MPO接口转为LC接口。</p>
-<p><img data-src="/blog-imgs/optical-fiber/images/55ba76033c107cd1c5e442b6515e082f.png" alt=""></p>
+<p><img data-src="/blog-imgs/optical-fiber/images/e33266cf45ee050c4f25bd80eb241f39.png" alt=""></p>
 <p><a href="https://detail.tmall.com/item.htm?spm=a230r.1.14.31.61ce44bcXUPOee&amp;id=636564575380&amp;ns=1&amp;abbucket=14&amp;sku_properties=1627207:3232483">永定mpo光纤跳线Mpo-lc 8芯12芯集束OM3/OM4万兆多模光纤线MTP光模块40G/100G数据中心跳线尾纤光缆电信级-tmall.com天猫</a><br>
 <a href="https://detail.tmall.com/item.htm?spm=a230r.1.14.1.763a3307rArifL&amp;id=638751323505&amp;ns=1&amp;abbucket=14&amp;skuId=4579348241643">山泽MPO模块盒预端光纤配线架盒子转LC12芯/LC24芯万兆多模OM3/OM4高密度转换盒-tmall.com天猫</a></p>
 <h2 id="其他参考资料">其他参考资料</h2>

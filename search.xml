@@ -507,6 +507,68 @@
       </tags>
   </entry>
   <entry>
+    <title>我如何使用ChatGPT和Copilot</title>
+    <url>/chat-gpt/</url>
+    <content><![CDATA[<p>ChatGPT最近一阵子很火，而OpenAI和微软的合作紧密，微软也在把GPT相关的技术积极整合到自家产品上，包括New Bing，Copilot，Office等。作为微软的员工，自然会对这个东西很关注，并且发现其真的很有用。这篇文章从程序员的视角，主要总结最近我用ChatGPT的一些经验，然后也简单提一下Copilot。</p>
+<h2 id="全新的英语学习方式">全新的英语学习方式</h2>
+<p>学英语的时候会学很多语法但是记不住，我平时主要还是靠语感，有时候一些表达总觉得不对。比如下面这个句子”它可能是这么被引入的“，我自己用likely来翻译，感觉读起来不顺口，这时可以让ChatGPT帮我纠正语法错误，还可以给我解释原因。</p>
+<p>而如果用常规翻译软件，没办法指定用likely这个词，翻译出来完全不是一回事。</p>
+<p>还有就是我记得以前学过一些表达概率的词，但是想不起来了，去网上搜会很费劲，问ChatGPT就会很轻松得到答案。</p>
+<p><img data-src="/blog-imgs/chat-gpt/images/422d819d0b6833c8b4d27a77f7af8196.png" alt=""><br>
+<img data-src="/blog-imgs/chat-gpt/images/5287c0723d85d2a4c9826c430214aef6.png" alt=""></p>
+<h2 id="写作文写故事写剧本">写作文写故事写剧本</h2>
+<p>ChatGPT很擅长写故事，只需要给出故事梗概，还能指定字数，并且可以反复提要求让ChatGPT修改直到满意。这对语言功底一般的人而言太有用了，ChatGPT的文采比我实在好太多了。</p>
+<p>比如小学时的经典记叙文情节。</p>
+<p><img data-src="/blog-imgs/chat-gpt/images/29e182ddb9d2118a2609bf7fd815fa00.png" alt=""></p>
+<p>再比如我突发奇想，AI如果以后真的开始取代人类程序员，可能会遭到人类程序员的抗议。ChatGPT直接帮我写成了短篇科幻小说，甚至还在末尾做了升华，很符合社会主义价值观。</p>
+<p><img data-src="/blog-imgs/chat-gpt/images/07729e6d6a287d7d0bf103abe5316492.png" alt=""></p>
+<p>爱好Vlog的朋友还可以让ChatGPT写剧本。</p>
+<p><img data-src="/blog-imgs/chat-gpt/images/31a0bb1069c967c83c24137a578da22b.png" alt=""></p>
+<p>也可以写小红书风格的文案。</p>
+<p><img data-src="/blog-imgs/chat-gpt/images/32c8866d0b79ff2efe02ed3fcf7f6f1a.png" alt=""></p>
+<h2 id="提炼关键信息、扩充文字、转述文字">提炼关键信息、扩充文字、转述文字</h2>
+<p>ChatGPT可以轻松的从一大段文字中提炼关键点，把简单的几句话扩展成一整篇文章，或是把文字用不同方式转述出来。</p>
+<p><img data-src="/blog-imgs/chat-gpt/images/05785e2e8fdba4a050e2d6cae13d1bd5.png" alt=""></p>
+<p>可以指定风格，转述同一段话。</p>
+<p><img data-src="/blog-imgs/chat-gpt/images/11cfecd7899d0c7461c8aada567d6f78.png" alt=""></p>
+<h2 id="自动写代码片段">自动写代码片段</h2>
+<p>经常需要写点bash帮我实现一些功能，但是bash命令实在太多了根本记不住，这个时候用ChatGPT就会很有帮助了，不过它写出来的也不一定完全符合要求，但是复制粘贴改改就能用了，节省了很多查资料的时间。</p>
+<p><img data-src="/blog-imgs/chat-gpt/images/1cfde4108936c5c8f092cb2e98ce6139.png" alt=""></p>
+<h2 id="学习编程基础知识">学习编程基础知识</h2>
+<p>我之前主要做Android开发，最近刚好需要学习C++和OC做iOS开发，很多基础知识不了解或者学过但是记不清了，ChatGPT真的是帮了大忙。</p>
+<p>可以问各种弱智的基础问题，不用担心被人嘲笑，也不会把同事问烦了，比搜索引擎效率又高很多。</p>
+<p>举个例子，网上的文章太多了，Demo太复杂了，我让ChatGPT给我写了一个极简Demo，让我很快就能对iOS上UIViewController的用法有个基本概念。</p>
+<p><img data-src="/blog-imgs/chat-gpt/images/0cf4b258071fb89d5bf166e6deec070e.png" alt=""></p>
+<h2 id="找代码BUG">找代码BUG</h2>
+<p>随便发一段代码给ChatGPT，就能给你找到各种Bug，还会给你修正后的结果。</p>
+<p><img data-src="/blog-imgs/chat-gpt/images/3755aa2da2730ecc9024340a6866559c.png" alt=""></p>
+<h2 id="Copilot">Copilot</h2>
+<p>这里顺便提一下Copilot。Copilot是最近开始用的，主要说几个让我感受到震撼的点。</p>
+<h3 id="自动补全bash脚本调用命令">自动补全bash脚本调用命令</h3>
+<p>最近想写个脚本设置mac的网卡使用DHCP而不是固定IP，我本来想去查一下networksetup命令要怎么设置这个，但是当我写下 macUseDhcp() 的时候，Copilot自动补全了整个函数，networksetup -setdhcp Wi-Fi，networksetup -setdnsservers Wi-Fi Empty。结果去看了下，发现这个命令真的就是这样用的。</p>
+<h3 id="自动写代码注释">自动写代码注释</h3>
+<p>有时候写了一段代码想注释一下，但是还得想想怎么组织语言，但是Copilot能看懂我的代码，直接把注释给我写好了，按一下tab就行了。</p>
+<h3 id="Copilot的使用感受">Copilot的使用感受</h3>
+<p>我主要用Copilot写工程代码，实际场景中的复杂需求都在我脑子里，Copilot很难从上下文推断出我下一步要干啥然后补全代码。如果是一些明确的需求，例如写一个排序算法，当我打出函数名SortData时，需求就很明确了，Copilot应该就知道自动补全了。从这个角度来看，AI想替代人类写代码，最难的问题大概就是理解实际需求了，特别是客户端项目，还得能理解设计师给出的设计图。</p>
+<p>在复杂项目中写C++时，Copilot推荐的代码有时会调用一个语法上不存在的API，而基于clangd语法解析后的自动补全功能，则不会提示一个不存在的API。这说明Copilot对当前项目的语法树和编译规则并不了解（实际上也不能配置相关的选项），而是仅凭阅读代码本身来实现自动补全的。这样的情况下还常常能补全我想要的代码，甚至知道从我同时打开的另一个源文件里帮我抄代码过来，真的挺厉害的。如果能把Copilot和编译工具（例如前面说的clangd）做个结合，再让他可以阅读需求文档和设计图，大概就更厉害了。</p>
+<p>总的来说，Copilot目前离全自动写代码还有很长的路要走，但仅仅靠阅读文本并猜测的方式补全代码，对于打字比较慢的我而言也挺有用的了，经常只需要按一下tab就能输入一整行代码，这时心情真的非常不错。</p>
+<h2 id="总结">总结</h2>
+<p>ChatGPT可以作为高级搜索引擎使用，它可以通过复杂的语言描述过滤搜索结果，而传统搜索引擎只能用关键字匹配。</p>
+<p>写文章一类需求，我认为本质上AI是把学到的各种文章做了整合，所以只要我给出梗概，就可以输出一篇看起来挺像回事的文章。</p>
+<p>ChatGPT的创造力有限。之前有朋友问能不能让他写三体的续集，果然ChatGPT写不出来，只是给了几个思考方向，估计也是从网上什么文章搬过来的。</p>
+<p>不能过于相信回答的结果，因为有时候会有错误，需要自己去验证。</p>
+<p>提问的方式很重要，如果问题描述不全很可能得不到想要的结果，但是因为他本身有上下文，可以一直补全问题从而逐渐获取更准确的结果。</p>
+<p>这篇文章本身也尝试用ChatGPT做润色修改，不过反复测试调整后，感觉还是不符合我一贯的表达方式且会丢失一些细节，所以放弃了。</p>
+]]></content>
+      <categories>
+        <category>学习思考</category>
+      </categories>
+      <tags>
+        <tag>总结</tag>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>光纤通信和家用万兆网络布线知识总结</title>
     <url>/optical-fiber-communication/</url>
     <content><![CDATA[<p>本文图片来自网络，已经尽可能注明来源。如果遗漏或错误，请指正。</p>

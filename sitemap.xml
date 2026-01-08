@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.paincker.com/learning-from-house/</loc>
+    
+    <lastmod>2026-01-08</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.paincker.com/microsoft-interview/</loc>
     
     <lastmod>2026-01-08</lastmod>
@@ -3431,6 +3440,13 @@
   
   <url>
     <loc>https://www.paincker.com/tags/%E8%82%A1%E5%B8%82/</loc>
+    <lastmod>2026-01-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.paincker.com/tags/%E6%88%BF%E5%AD%90/</loc>
     <lastmod>2026-01-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

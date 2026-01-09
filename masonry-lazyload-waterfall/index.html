@@ -17,30 +17,30 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"www.paincker.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"www.xiaoming.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta name="description" content="瀑布流布局 我们常能在网上看到很多瀑布流布局的页面，尤其是很多图片网站，例如百度图片。这种最典型的瀑布流布局，每个元素的宽度是固定的，但图片长度各不相同，于是通过下图这种样子竖着排列了下来，达到了最大的页面空间利用率。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="用Masonry和jQuery.lazyload插件实现网页瀑布流布局">
-<meta property="og:url" content="https://www.paincker.com/masonry-lazyload-waterfall/">
-<meta property="og:site_name" content="Paincker">
+<meta property="og:url" content="https://www.xiaoming.io/masonry-lazyload-waterfall/">
+<meta property="og:site_name" content="搬砖的小明">
 <meta property="og:description" content="瀑布流布局 我们常能在网上看到很多瀑布流布局的页面，尤其是很多图片网站，例如百度图片。这种最典型的瀑布流布局，每个元素的宽度是固定的，但图片长度各不相同，于是通过下图这种样子竖着排列了下来，达到了最大的页面空间利用率。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/dev/images/575b490c53c977bf8d321b8e82cbf859.jpg">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/dev/images/67cebaa87f3064dce52f5b5f2aa9c174.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/dev/images/a681c52cf8a5a6b01951c3572e892e5b.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/dev/images/1c833133de3ac1c22eab3677b168c40f.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/dev/images/c456551a34aaa96dfd66c06d063dce61.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/dev/images/a07fd3e1f73f787714546915c8746e34.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/dev/images/575b490c53c977bf8d321b8e82cbf859.jpg">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/dev/images/67cebaa87f3064dce52f5b5f2aa9c174.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/dev/images/a681c52cf8a5a6b01951c3572e892e5b.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/dev/images/1c833133de3ac1c22eab3677b168c40f.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/dev/images/c456551a34aaa96dfd66c06d063dce61.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/dev/images/a07fd3e1f73f787714546915c8746e34.png">
 <meta property="article:published_time" content="2015-03-18T03:29:10.000Z">
 <meta property="article:modified_time" content="2025-06-17T13:33:21.661Z">
-<meta property="article:author" content="jzj1993">
+<meta property="article:author" content="小明">
 <meta property="article:tag" content="Web开发">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://www.paincker.com/blog-imgs/dev/images/575b490c53c977bf8d321b8e82cbf859.jpg">
+<meta name="twitter:image" content="https://www.xiaoming.io/blog-imgs/dev/images/575b490c53c977bf8d321b8e82cbf859.jpg">
 
-<link rel="canonical" href="https://www.paincker.com/masonry-lazyload-waterfall/">
+<link rel="canonical" href="https://www.xiaoming.io/masonry-lazyload-waterfall/">
 
 
 <script id="page-configurations">
@@ -53,7 +53,7 @@
   };
 </script>
 
-  <title>用Masonry和jQuery.lazyload插件实现网页瀑布流布局 | Paincker</title>
+  <title>用Masonry和jQuery.lazyload插件实现网页瀑布流布局 | 搬砖的小明</title>
   
 
 
@@ -113,7 +113,7 @@
 
     <a href="/" class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">Paincker</h1>
+      <h1 class="site-title">搬砖的小明</h1>
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
@@ -206,16 +206,16 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://www.paincker.com/masonry-lazyload-waterfall/">
+    <link itemprop="mainEntityOfPage" href="https://www.xiaoming.io/masonry-lazyload-waterfall/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="jzj1993">
-      <meta itemprop="description" content="江子健的个人博客，90后理工男、微软程序员、互联网从业者，分享软件编程、开发技术、学习与思考">
+      <meta itemprop="name" content="小明">
+      <meta itemprop="description" content="小明的个人博客，90后理工男，先后就职于美团、微软，分享软件编程、开发技术、学习与思考">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Paincker">
+      <meta itemprop="name" content="搬砖的小明">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -518,8 +518,8 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">jzj1993</p>
-  <div class="site-description" itemprop="description">江子健的个人博客，90后理工男、微软程序员、互联网从业者，分享软件编程、开发技术、学习与思考</div>
+  <p class="site-author-name" itemprop="name">小明</p>
+  <div class="site-description" itemprop="description">小明的个人博客，90后理工男，先后就职于美团、微软，分享软件编程、开发技术、学习与思考</div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
@@ -601,7 +601,7 @@
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">jzj1993</span>
+  <span class="author" itemprop="copyrightHolder">小明</span>
 </div>
   <div class="sitemap"><a href="/sitemap.xml" class="theme-link">站点地图</a>
   </div>

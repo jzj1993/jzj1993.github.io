@@ -17,33 +17,33 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"www.paincker.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"www.xiaoming.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta name="description" content="很多互联网产品有个共性，就是其业务核心在数据库中，各种客户端包括网页、桌面、手机App，本质上只是将数据库中的数据，按照一定的结构和组织呈现在用户面前。 因此对于一款互联网产品的初期开发，数据库模型的设计是非常重要的。并且数据库的模型设计与产品需求有直接的关联，通过设计数据库模型，能将产品需求与实现有效的结合起来。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="互联网产品初期需求确定与数据库模型设计——基于Visio和Xmind">
-<meta property="og:url" content="https://www.paincker.com/web-product-design/">
-<meta property="og:site_name" content="Paincker">
+<meta property="og:url" content="https://www.xiaoming.io/web-product-design/">
+<meta property="og:site_name" content="搬砖的小明">
 <meta property="og:description" content="很多互联网产品有个共性，就是其业务核心在数据库中，各种客户端包括网页、桌面、手机App，本质上只是将数据库中的数据，按照一定的结构和组织呈现在用户面前。 因此对于一款互联网产品的初期开发，数据库模型的设计是非常重要的。并且数据库的模型设计与产品需求有直接的关联，通过设计数据库模型，能将产品需求与实现有效的结合起来。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/dev/images/a29b96734de4e451eed8302b93d83bde.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/dev/images/3383780691502922636285919564df75.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/dev/images/06d50a9e8daad0718975f5b4c5c4e263.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/dev/images/f78ebc5b03660d8e7386d8dac3eebbda.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/dev/images/39f2cc5a15988a4c8afc4211414920c3.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/dev/images/efc8471df39a4fd5f0b1079c6841b22f.jpg">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/dev/images/638133d554d04ce31d532b512a5d5a8a.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/dev/images/c6295994352c5801048869dea142f83c.jpg">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/dev/images/4ceb711c4d591b300dbff0dbefd21a47.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/dev/images/a29b96734de4e451eed8302b93d83bde.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/dev/images/3383780691502922636285919564df75.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/dev/images/06d50a9e8daad0718975f5b4c5c4e263.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/dev/images/f78ebc5b03660d8e7386d8dac3eebbda.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/dev/images/39f2cc5a15988a4c8afc4211414920c3.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/dev/images/efc8471df39a4fd5f0b1079c6841b22f.jpg">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/dev/images/638133d554d04ce31d532b512a5d5a8a.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/dev/images/c6295994352c5801048869dea142f83c.jpg">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/dev/images/4ceb711c4d591b300dbff0dbefd21a47.png">
 <meta property="article:published_time" content="2015-02-08T08:12:08.000Z">
 <meta property="article:modified_time" content="2026-01-09T08:05:09.416Z">
-<meta property="article:author" content="jzj1993">
+<meta property="article:author" content="小明">
 <meta property="article:tag" content="Web开发">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://www.paincker.com/blog-imgs/dev/images/a29b96734de4e451eed8302b93d83bde.png">
+<meta name="twitter:image" content="https://www.xiaoming.io/blog-imgs/dev/images/a29b96734de4e451eed8302b93d83bde.png">
 
-<link rel="canonical" href="https://www.paincker.com/web-product-design/">
+<link rel="canonical" href="https://www.xiaoming.io/web-product-design/">
 
 
 <script id="page-configurations">
@@ -56,7 +56,7 @@
   };
 </script>
 
-  <title>互联网产品初期需求确定与数据库模型设计——基于Visio和Xmind | Paincker</title>
+  <title>互联网产品初期需求确定与数据库模型设计——基于Visio和Xmind | 搬砖的小明</title>
   
 
 
@@ -116,7 +116,7 @@
 
     <a href="/" class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">Paincker</h1>
+      <h1 class="site-title">搬砖的小明</h1>
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
@@ -209,16 +209,16 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://www.paincker.com/web-product-design/">
+    <link itemprop="mainEntityOfPage" href="https://www.xiaoming.io/web-product-design/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="jzj1993">
-      <meta itemprop="description" content="江子健的个人博客，90后理工男、微软程序员、互联网从业者，分享软件编程、开发技术、学习与思考">
+      <meta itemprop="name" content="小明">
+      <meta itemprop="description" content="小明的个人博客，90后理工男，先后就职于美团、微软，分享软件编程、开发技术、学习与思考">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Paincker">
+      <meta itemprop="name" content="搬砖的小明">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -303,13 +303,13 @@
 <p>用户可以互相加好友（这里加好友是双向的）</p>
 <h2 id="数据表关系模型的设计">数据表关系模型的设计</h2>
 <p>这里我们使用的是关系型数据库，可参考《关系型数据库的基本概念》：</p>
-<p><a target="_blank" rel="noopener" href="http://www.xiaoming.io/relational-database">http://www.xiaoming.io/relational-database</a></p>
+<p><a href="http://www.xiaoming.io/relational-database">http://www.xiaoming.io/relational-database</a></p>
 <p>根据以上基本需求，拟定基本数据表User、Post、Img，分别表示用户，微博，图片。</p>
 <p>User和Post之间存在一个一对多的关系，也就是每个用户能发布多条微博，每条微博由一个用户发布。同样，Post和Img之间也是一对多的关系。</p>
 <p>User和User之间有一个多对多的关系，每个用户可以加多个其他用户为好友。而User和Post之间也有一个多对多的关系，就是评论，每个用户可以评论多条微博，每个微博可以被多个用户评论。</p>
 <p>据此，可以利用Visio的数据流图绘制关系图如下。我们用单向箭头表示一对多关系，用双向箭头表示多对多关系。</p>
 <p>Visio的使用可参考文章《Microsoft Visio绘图工具快速入门》</p>
-<p><a target="_blank" rel="noopener" href="http://www.xiaoming.io/visio-quick-start">http://www.xiaoming.io/visio-quick-start</a></p>
+<p><a href="http://www.xiaoming.io/visio-quick-start">http://www.xiaoming.io/visio-quick-start</a></p>
 <p><img data-src="/blog-imgs/dev/images/a29b96734de4e451eed8302b93d83bde.png" alt=""></p>
 <p>图例如下</p>
 <p><img data-src="/blog-imgs/dev/images/3383780691502922636285919564df75.png" alt=""></p>
@@ -459,8 +459,8 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">jzj1993</p>
-  <div class="site-description" itemprop="description">江子健的个人博客，90后理工男、微软程序员、互联网从业者，分享软件编程、开发技术、学习与思考</div>
+  <p class="site-author-name" itemprop="name">小明</p>
+  <div class="site-description" itemprop="description">小明的个人博客，90后理工男，先后就职于美团、微软，分享软件编程、开发技术、学习与思考</div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
@@ -542,7 +542,7 @@
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">jzj1993</span>
+  <span class="author" itemprop="copyrightHolder">小明</span>
 </div>
   <div class="sitemap"><a href="/sitemap.xml" class="theme-link">站点地图</a>
   </div>

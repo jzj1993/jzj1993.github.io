@@ -17,50 +17,50 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"www.paincker.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"www.xiaoming.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta name="description" content="完整源码可在此查看 https:&#x2F;&#x2F;github.com&#x2F;jzj1993&#x2F;ConstraintLayoutStudy 1.1 基本用法">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Android ConstraintLayout实例学习（含源码）">
-<meta property="og:url" content="https://www.paincker.com/constraint-layout/">
-<meta property="og:site_name" content="Paincker">
+<meta property="og:url" content="https://www.xiaoming.io/constraint-layout/">
+<meta property="og:site_name" content="搬砖的小明">
 <meta property="og:description" content="完整源码可在此查看 https:&#x2F;&#x2F;github.com&#x2F;jzj1993&#x2F;ConstraintLayoutStudy 1.1 基本用法">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/android/images/0b0a33be1ebfdb1e963bd2b1e21a0209.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/android/images/2548e811a53ff1de569496d06090e81f.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/android/images/6fb8c595c0eb7e9e642ec6fd30b71409.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/android/images/b287f6ddf70338693fb8c81feae3adb3.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/android/images/47917b387f4d141f8acbb2904379c3e9.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/android/images/2795ad5600cbc5ff39669d8d0ba4f881.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/android/images/10e34a211efcdc63f6ffab85f385d7e2.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/android/images/901c660b4951661f433cc7f017697112.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/android/images/d9af447ab9c76749d9833abcf6cede07.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/android/images/72aa4163e8de31cccdad4b85afdf9419.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/android/images/3cb735ce8febcc0c4ddcbbf49a687ac8.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/android/images/d64d728ea43b9bdfa2225860285a9ce8.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/android/images/3f76e5b5d4b0b2e5f8f71f4234b3de8c.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/android/images/39d3148ae290616fb93f1c8fe94b31c6.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/android/images/96dc3da2498c5760ba94c675d174e26c.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/android/images/8c1a27427248df72b0f323407866b6dc.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/android/images/f7002c44ff270ccefa06799ba99e7223.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/android/images/a7cf5e2c6e661712bf5651e0a1205695.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/android/images/673a6d4db5126db085c335e428619e89.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/android/images/5faa9c7734a05de495d288fada0ba470.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/android/images/0bf898263b7c15efdb159460a317bf0a.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/android/images/59a32caffde0948d1736815ff6087844.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/android/images/2dcab41bf9a1a3e200e46722258fa467.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/android/images/5636437519a45ef3f2db6b8326edf2eb.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/android/images/ca5a5d1df844dd76d07c9700321cf70e.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/android/images/c5b3947ac37e750c8669a69cd851b2e8.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/android/images/0b0a33be1ebfdb1e963bd2b1e21a0209.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/android/images/2548e811a53ff1de569496d06090e81f.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/android/images/6fb8c595c0eb7e9e642ec6fd30b71409.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/android/images/b287f6ddf70338693fb8c81feae3adb3.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/android/images/47917b387f4d141f8acbb2904379c3e9.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/android/images/2795ad5600cbc5ff39669d8d0ba4f881.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/android/images/10e34a211efcdc63f6ffab85f385d7e2.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/android/images/901c660b4951661f433cc7f017697112.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/android/images/d9af447ab9c76749d9833abcf6cede07.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/android/images/72aa4163e8de31cccdad4b85afdf9419.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/android/images/3cb735ce8febcc0c4ddcbbf49a687ac8.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/android/images/d64d728ea43b9bdfa2225860285a9ce8.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/android/images/3f76e5b5d4b0b2e5f8f71f4234b3de8c.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/android/images/39d3148ae290616fb93f1c8fe94b31c6.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/android/images/96dc3da2498c5760ba94c675d174e26c.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/android/images/8c1a27427248df72b0f323407866b6dc.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/android/images/f7002c44ff270ccefa06799ba99e7223.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/android/images/a7cf5e2c6e661712bf5651e0a1205695.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/android/images/673a6d4db5126db085c335e428619e89.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/android/images/5faa9c7734a05de495d288fada0ba470.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/android/images/0bf898263b7c15efdb159460a317bf0a.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/android/images/59a32caffde0948d1736815ff6087844.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/android/images/2dcab41bf9a1a3e200e46722258fa467.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/android/images/5636437519a45ef3f2db6b8326edf2eb.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/android/images/ca5a5d1df844dd76d07c9700321cf70e.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/android/images/c5b3947ac37e750c8669a69cd851b2e8.png">
 <meta property="article:published_time" content="2020-02-02T15:34:11.000Z">
 <meta property="article:modified_time" content="2025-06-17T13:33:21.573Z">
-<meta property="article:author" content="jzj1993">
+<meta property="article:author" content="小明">
 <meta property="article:tag" content="Android">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://www.paincker.com/blog-imgs/android/images/0b0a33be1ebfdb1e963bd2b1e21a0209.png">
+<meta name="twitter:image" content="https://www.xiaoming.io/blog-imgs/android/images/0b0a33be1ebfdb1e963bd2b1e21a0209.png">
 
-<link rel="canonical" href="https://www.paincker.com/constraint-layout/">
+<link rel="canonical" href="https://www.xiaoming.io/constraint-layout/">
 
 
 <script id="page-configurations">
@@ -73,7 +73,7 @@
   };
 </script>
 
-  <title>Android ConstraintLayout实例学习（含源码） | Paincker</title>
+  <title>Android ConstraintLayout实例学习（含源码） | 搬砖的小明</title>
   
 
 
@@ -133,7 +133,7 @@
 
     <a href="/" class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">Paincker</h1>
+      <h1 class="site-title">搬砖的小明</h1>
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
@@ -226,16 +226,16 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://www.paincker.com/constraint-layout/">
+    <link itemprop="mainEntityOfPage" href="https://www.xiaoming.io/constraint-layout/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="jzj1993">
-      <meta itemprop="description" content="江子健的个人博客，90后理工男、微软程序员、互联网从业者，分享软件编程、开发技术、学习与思考">
+      <meta itemprop="name" content="小明">
+      <meta itemprop="description" content="小明的个人博客，90后理工男，先后就职于美团、微软，分享软件编程、开发技术、学习与思考">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Paincker">
+      <meta itemprop="name" content="搬砖的小明">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -508,8 +508,8 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">jzj1993</p>
-  <div class="site-description" itemprop="description">江子健的个人博客，90后理工男、微软程序员、互联网从业者，分享软件编程、开发技术、学习与思考</div>
+  <p class="site-author-name" itemprop="name">小明</p>
+  <div class="site-description" itemprop="description">小明的个人博客，90后理工男，先后就职于美团、微软，分享软件编程、开发技术、学习与思考</div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
@@ -591,7 +591,7 @@
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">jzj1993</span>
+  <span class="author" itemprop="copyrightHolder">小明</span>
 </div>
   <div class="sitemap"><a href="/sitemap.xml" class="theme-link">站点地图</a>
   </div>

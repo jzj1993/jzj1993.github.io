@@ -17,30 +17,30 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"www.paincker.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"www.xiaoming.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta name="description" content="2014-11-22更新：感谢Ireland同学的提醒，修改了PNP型三极管驱动电路，蜂鸣器从三极管的发射极改到了集电极，这样效果会更好，电路也更合理。同时增加了备注4。 &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="单片机小白学步(22) IO口：蜂鸣器的使用&#x2F;三极管的工作原理">
-<meta property="og:url" content="https://www.paincker.com/mcu-primer-22/">
-<meta property="og:site_name" content="Paincker">
+<meta property="og:url" content="https://www.xiaoming.io/mcu-primer-22/">
+<meta property="og:site_name" content="搬砖的小明">
 <meta property="og:description" content="2014-11-22更新：感谢Ireland同学的提醒，修改了PNP型三极管驱动电路，蜂鸣器从三极管的发射极改到了集电极，这样效果会更好，电路也更合理。同时增加了备注4。 &#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/mcu-primer/images/00031b7992070433a03f7f191c1f0772.jpg">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/mcu-primer/images/9e57d5a81bdd6ced24238f43169c8d3a.jpg">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/mcu-primer/images/5c6c05bc52a47e8b98d50bd8509ede04.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/mcu-primer/images/8f5e8d753d4dab09c77705793b1f0a7d.jpg">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/mcu-primer/images/c7d81705ba5b22f04135ff4e7e4b67e0.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/mcu-primer/images/f218676eddd043036e5ca960cea1d42a.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/mcu-primer/images/41b4561344627ca18cb7b0b2172708c7.jpg">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/mcu-primer/images/3f5d01802108324b9d66a94c9dd319fa.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/mcu-primer/images/fdf08f882996368d1b092a7a9518deea.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/mcu-primer/images/e2ea2c2f1a9725a535923901ba53cc8b.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/mcu-primer/images/b3327495460ba6d885bc65cd37c75d73.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/mcu-primer/images/00031b7992070433a03f7f191c1f0772.jpg">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/mcu-primer/images/9e57d5a81bdd6ced24238f43169c8d3a.jpg">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/mcu-primer/images/5c6c05bc52a47e8b98d50bd8509ede04.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/mcu-primer/images/8f5e8d753d4dab09c77705793b1f0a7d.jpg">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/mcu-primer/images/c7d81705ba5b22f04135ff4e7e4b67e0.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/mcu-primer/images/f218676eddd043036e5ca960cea1d42a.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/mcu-primer/images/41b4561344627ca18cb7b0b2172708c7.jpg">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/mcu-primer/images/3f5d01802108324b9d66a94c9dd319fa.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/mcu-primer/images/fdf08f882996368d1b092a7a9518deea.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/mcu-primer/images/e2ea2c2f1a9725a535923901ba53cc8b.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/mcu-primer/images/b3327495460ba6d885bc65cd37c75d73.png">
 <meta property="article:published_time" content="2014-11-18T12:58:22.000Z">
 <meta property="article:modified_time" content="2025-06-17T13:33:21.773Z">
-<meta property="article:author" content="jzj1993">
+<meta property="article:author" content="小明">
 <meta property="article:tag" content="学习">
 <meta property="article:tag" content="计算机">
 <meta property="article:tag" content="编程">
@@ -52,9 +52,9 @@
 <meta property="article:tag" content="C">
 <meta property="article:tag" content="#单片机小白学步#">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://www.paincker.com/blog-imgs/mcu-primer/images/00031b7992070433a03f7f191c1f0772.jpg">
+<meta name="twitter:image" content="https://www.xiaoming.io/blog-imgs/mcu-primer/images/00031b7992070433a03f7f191c1f0772.jpg">
 
-<link rel="canonical" href="https://www.paincker.com/mcu-primer-22/">
+<link rel="canonical" href="https://www.xiaoming.io/mcu-primer-22/">
 
 
 <script id="page-configurations">
@@ -67,7 +67,7 @@
   };
 </script>
 
-  <title>单片机小白学步(22) IO口：蜂鸣器的使用/三极管的工作原理 | Paincker</title>
+  <title>单片机小白学步(22) IO口：蜂鸣器的使用/三极管的工作原理 | 搬砖的小明</title>
   
 
 
@@ -127,7 +127,7 @@
 
     <a href="/" class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">Paincker</h1>
+      <h1 class="site-title">搬砖的小明</h1>
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
@@ -220,16 +220,16 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://www.paincker.com/mcu-primer-22/">
+    <link itemprop="mainEntityOfPage" href="https://www.xiaoming.io/mcu-primer-22/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="jzj1993">
-      <meta itemprop="description" content="江子健的个人博客，90后理工男、微软程序员、互联网从业者，分享软件编程、开发技术、学习与思考">
+      <meta itemprop="name" content="小明">
+      <meta itemprop="description" content="小明的个人博客，90后理工男，先后就职于美团、微软，分享软件编程、开发技术、学习与思考">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Paincker">
+      <meta itemprop="name" content="搬砖的小明">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -487,8 +487,8 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">jzj1993</p>
-  <div class="site-description" itemprop="description">江子健的个人博客，90后理工男、微软程序员、互联网从业者，分享软件编程、开发技术、学习与思考</div>
+  <p class="site-author-name" itemprop="name">小明</p>
+  <div class="site-description" itemprop="description">小明的个人博客，90后理工男，先后就职于美团、微软，分享软件编程、开发技术、学习与思考</div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
@@ -570,7 +570,7 @@
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">jzj1993</span>
+  <span class="author" itemprop="copyrightHolder">小明</span>
 </div>
   <div class="sitemap"><a href="/sitemap.xml" class="theme-link">站点地图</a>
   </div>

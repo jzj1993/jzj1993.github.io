@@ -17,71 +17,71 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"www.paincker.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"www.xiaoming.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta name="description" content="这篇文章尝试较为系统的介绍台式机组装相关的知识，耗时很长时间终于完成，如有错误请及时指正。 文中具体的产品推荐、接口标准仅适用于2021年，之后更新情况又会不一样了。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="台式机组装知识系统梳理">
-<meta property="og:url" content="https://www.paincker.com/desktop-computer-knowledge/">
-<meta property="og:site_name" content="Paincker">
+<meta property="og:url" content="https://www.xiaoming.io/desktop-computer-knowledge/">
+<meta property="og:site_name" content="搬砖的小明">
 <meta property="og:description" content="这篇文章尝试较为系统的介绍台式机组装相关的知识，耗时很长时间终于完成，如有错误请及时指正。 文中具体的产品推荐、接口标准仅适用于2021年，之后更新情况又会不一样了。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/desktop-computer/images/flow.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/desktop-computer/images/cpu-4393376_960_720.jpg">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/desktop-computer/images/chipset-processor-support-list.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/desktop-computer/images/v2-d3ee04de98c3e5a8c48a8ac65693e498_1440w.jpg">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/desktop-computer/images/Motherboard-Sizes-Comparison-Chart-1024x401.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/desktop-computer/images/v2-4af20ccfa9f950e22db202e4a8816219_1440w.jpg">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/desktop-computer/images/X570.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/desktop-computer/images/11153127871807284111.jpg">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/desktop-computer/images/computer-624558_960_720.jpg">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/desktop-computer/images/v2-528398524f72793aba9b267b88db8f2c_1440w.jpg">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/desktop-computer/images/ktc-products-ssd-design-in-ssd-hero-md.jpg">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/desktop-computer/images/5e4b4fe83780c9554.jpg_e680.jpg">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/desktop-computer/images/ssd.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/desktop-computer/images/sata_img1_d.jpg">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/desktop-computer/images/v2-695f8c75fa11100625e18a0536a0df84_1440w.jpg">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/desktop-computer/images/SouthEast.jpeg">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/desktop-computer/images/Intel_750_10-20210602033353967.jpg">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/desktop-computer/images/20160713045608869.jpg">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/desktop-computer/images/Full-big.jpg">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/desktop-computer/images/MSI_3080_11.jpg">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/desktop-computer/images/front.jpg">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/desktop-computer/images/v2-d79cad8d5ba0e95f2bb752b962862acb_1440w.jpg">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/desktop-computer/images/2020033121385617.jpg">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/desktop-computer/images/7a3e980e7c75e5f4be3578b9b1ceaad7736bbc14-20210602040810947.jpg">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/desktop-computer/images/v2-1a54473695d26c2095eeeee8fc473e0b_1440w.jpg">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/desktop-computer/images/Thermalright_True_Spirit_90_CPU-Kuehler_Test_009.JPG">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/desktop-computer/images/Y7000.jpg">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/desktop-computer/images/v2-08e2ff4a0593d9202e298ee5af1206a8_1440w.jpg">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/desktop-computer/images/923a-kkciesr3735340.jpg">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/desktop-computer/images/20161011104952311.jpg">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/desktop-computer/images/8de6b7fb01d098fc56a065a6636ff8fd_1440w.jpg">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/desktop-computer/images/5f89686fa695c64287afe6ea8dc86d7a_1440w.jpg">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/desktop-computer/images/nh_d15_1_10.jpg">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/desktop-computer/images/maxresdefault.jpg">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/desktop-computer/images/14044856361232685274.jpg">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/desktop-computer/images/wallet-colling.jpg">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/desktop-computer/images/a4c696469197404982ff153250f221b9_th.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/desktop-computer/images/v2-3f715acee4b4aacdea8802991d54905c_1440w.jpg">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/desktop-computer/images/image-20210601032040191.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/desktop-computer/images/image-20210602012550346.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/desktop-computer/images/f9c4b43f8256b1f7.jpg">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/desktop-computer/images/image-20210601023357115.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/desktop-computer/images/dispbp.jpg">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/desktop-computer/images/zerotherm.jpg">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/desktop-computer/images/v2-471a8a88b58cc762a3c5dd704d34692c_1440w.jpg">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/desktop-computer/images/O1CN01zGAopl1QkS9s8bcN5_!!60002014.jpg">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/desktop-computer/images/v2-ed32633f049da80d61e617691a10cb23_1440w.jpg">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/desktop-computer/images/flow.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/desktop-computer/images/cpu-4393376_960_720.jpg">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/desktop-computer/images/chipset-processor-support-list.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/desktop-computer/images/v2-d3ee04de98c3e5a8c48a8ac65693e498_1440w.jpg">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/desktop-computer/images/Motherboard-Sizes-Comparison-Chart-1024x401.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/desktop-computer/images/v2-4af20ccfa9f950e22db202e4a8816219_1440w.jpg">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/desktop-computer/images/X570.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/desktop-computer/images/11153127871807284111.jpg">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/desktop-computer/images/computer-624558_960_720.jpg">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/desktop-computer/images/v2-528398524f72793aba9b267b88db8f2c_1440w.jpg">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/desktop-computer/images/ktc-products-ssd-design-in-ssd-hero-md.jpg">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/desktop-computer/images/5e4b4fe83780c9554.jpg_e680.jpg">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/desktop-computer/images/ssd.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/desktop-computer/images/sata_img1_d.jpg">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/desktop-computer/images/v2-695f8c75fa11100625e18a0536a0df84_1440w.jpg">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/desktop-computer/images/SouthEast.jpeg">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/desktop-computer/images/Intel_750_10-20210602033353967.jpg">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/desktop-computer/images/20160713045608869.jpg">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/desktop-computer/images/Full-big.jpg">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/desktop-computer/images/MSI_3080_11.jpg">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/desktop-computer/images/front.jpg">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/desktop-computer/images/v2-d79cad8d5ba0e95f2bb752b962862acb_1440w.jpg">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/desktop-computer/images/2020033121385617.jpg">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/desktop-computer/images/7a3e980e7c75e5f4be3578b9b1ceaad7736bbc14-20210602040810947.jpg">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/desktop-computer/images/v2-1a54473695d26c2095eeeee8fc473e0b_1440w.jpg">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/desktop-computer/images/Thermalright_True_Spirit_90_CPU-Kuehler_Test_009.JPG">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/desktop-computer/images/Y7000.jpg">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/desktop-computer/images/v2-08e2ff4a0593d9202e298ee5af1206a8_1440w.jpg">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/desktop-computer/images/923a-kkciesr3735340.jpg">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/desktop-computer/images/20161011104952311.jpg">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/desktop-computer/images/8de6b7fb01d098fc56a065a6636ff8fd_1440w.jpg">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/desktop-computer/images/5f89686fa695c64287afe6ea8dc86d7a_1440w.jpg">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/desktop-computer/images/nh_d15_1_10.jpg">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/desktop-computer/images/maxresdefault.jpg">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/desktop-computer/images/14044856361232685274.jpg">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/desktop-computer/images/wallet-colling.jpg">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/desktop-computer/images/a4c696469197404982ff153250f221b9_th.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/desktop-computer/images/v2-3f715acee4b4aacdea8802991d54905c_1440w.jpg">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/desktop-computer/images/image-20210601032040191.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/desktop-computer/images/image-20210602012550346.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/desktop-computer/images/f9c4b43f8256b1f7.jpg">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/desktop-computer/images/image-20210601023357115.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/desktop-computer/images/dispbp.jpg">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/desktop-computer/images/zerotherm.jpg">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/desktop-computer/images/v2-471a8a88b58cc762a3c5dd704d34692c_1440w.jpg">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/desktop-computer/images/O1CN01zGAopl1QkS9s8bcN5_!!60002014.jpg">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/desktop-computer/images/v2-ed32633f049da80d61e617691a10cb23_1440w.jpg">
 <meta property="article:published_time" content="2021-07-01T04:00:00.000Z">
 <meta property="article:modified_time" content="2025-06-17T13:33:21.596Z">
-<meta property="article:author" content="jzj1993">
+<meta property="article:author" content="小明">
 <meta property="article:tag" content="计算机">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://www.paincker.com/blog-imgs/desktop-computer/images/flow.png">
+<meta name="twitter:image" content="https://www.xiaoming.io/blog-imgs/desktop-computer/images/flow.png">
 
-<link rel="canonical" href="https://www.paincker.com/desktop-computer-knowledge/">
+<link rel="canonical" href="https://www.xiaoming.io/desktop-computer-knowledge/">
 
 
 <script id="page-configurations">
@@ -94,7 +94,7 @@
   };
 </script>
 
-  <title>台式机组装知识系统梳理 | Paincker</title>
+  <title>台式机组装知识系统梳理 | 搬砖的小明</title>
   
 
 
@@ -154,7 +154,7 @@
 
     <a href="/" class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">Paincker</h1>
+      <h1 class="site-title">搬砖的小明</h1>
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
@@ -247,16 +247,16 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://www.paincker.com/desktop-computer-knowledge/">
+    <link itemprop="mainEntityOfPage" href="https://www.xiaoming.io/desktop-computer-knowledge/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="jzj1993">
-      <meta itemprop="description" content="江子健的个人博客，90后理工男、微软程序员、互联网从业者，分享软件编程、开发技术、学习与思考">
+      <meta itemprop="name" content="小明">
+      <meta itemprop="description" content="小明的个人博客，90后理工男，先后就职于美团、微软，分享软件编程、开发技术、学习与思考">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Paincker">
+      <meta itemprop="name" content="搬砖的小明">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -1212,8 +1212,8 @@ AMD：“嚄~~~还有这么好的事情，不用怎么改GPU，驱动还有人�
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">jzj1993</p>
-  <div class="site-description" itemprop="description">江子健的个人博客，90后理工男、微软程序员、互联网从业者，分享软件编程、开发技术、学习与思考</div>
+  <p class="site-author-name" itemprop="name">小明</p>
+  <div class="site-description" itemprop="description">小明的个人博客，90后理工男，先后就职于美团、微软，分享软件编程、开发技术、学习与思考</div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
@@ -1295,7 +1295,7 @@ AMD：“嚄~~~还有这么好的事情，不用怎么改GPU，驱动还有人�
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">jzj1993</span>
+  <span class="author" itemprop="copyrightHolder">小明</span>
 </div>
   <div class="sitemap"><a href="/sitemap.xml" class="theme-link">站点地图</a>
   </div>

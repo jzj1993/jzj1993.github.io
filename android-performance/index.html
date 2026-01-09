@@ -17,25 +17,25 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"www.paincker.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"www.xiaoming.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta name="description" content="流程  确定指标：明确要优化哪些指标，指标如何定义和计算。 测试工具：定位问题使用到的工具，第三方工具，或者自行开发。 定位问题：使用工具定位问题，例如页面滚动卡顿，要定位到具体哪些代码逻辑耗时较多。 需求文档：编写技术需求文档。 任务分配、版本排期：如果是多个人负责，需要根据实际情况分配任务，并进行版本排期。 技术优化：具体进行优化。 成果验收：优化完成后，使用测试工具再次测试，对比分析优化前后">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Android性能优化流程与思路">
-<meta property="og:url" content="https://www.paincker.com/android-performance/">
-<meta property="og:site_name" content="Paincker">
+<meta property="og:url" content="https://www.xiaoming.io/android-performance/">
+<meta property="og:site_name" content="搬砖的小明">
 <meta property="og:description" content="流程  确定指标：明确要优化哪些指标，指标如何定义和计算。 测试工具：定位问题使用到的工具，第三方工具，或者自行开发。 定位问题：使用工具定位问题，例如页面滚动卡顿，要定位到具体哪些代码逻辑耗时较多。 需求文档：编写技术需求文档。 任务分配、版本排期：如果是多个人负责，需要根据实际情况分配任务，并进行版本排期。 技术优化：具体进行优化。 成果验收：优化完成后，使用测试工具再次测试，对比分析优化前后">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-03-04T02:43:30.000Z">
 <meta property="article:modified_time" content="2026-01-09T08:05:09.415Z">
-<meta property="article:author" content="jzj1993">
+<meta property="article:author" content="小明">
 <meta property="article:tag" content="Android">
 <meta property="article:tag" content="Java">
 <meta property="article:tag" content="性能">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="https://www.paincker.com/android-performance/">
+<link rel="canonical" href="https://www.xiaoming.io/android-performance/">
 
 
 <script id="page-configurations">
@@ -48,7 +48,7 @@
   };
 </script>
 
-  <title>Android性能优化流程与思路 | Paincker</title>
+  <title>Android性能优化流程与思路 | 搬砖的小明</title>
   
 
 
@@ -108,7 +108,7 @@
 
     <a href="/" class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">Paincker</h1>
+      <h1 class="site-title">搬砖的小明</h1>
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
@@ -201,16 +201,16 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://www.paincker.com/android-performance/">
+    <link itemprop="mainEntityOfPage" href="https://www.xiaoming.io/android-performance/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="jzj1993">
-      <meta itemprop="description" content="江子健的个人博客，90后理工男、微软程序员、互联网从业者，分享软件编程、开发技术、学习与思考">
+      <meta itemprop="name" content="小明">
+      <meta itemprop="description" content="小明的个人博客，90后理工男，先后就职于美团、微软，分享软件编程、开发技术、学习与思考">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Paincker">
+      <meta itemprop="name" content="搬砖的小明">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -334,7 +334,7 @@
 <p>平滑度的衡量，参考 <a target="_blank" rel="noopener" href="https://stats.stackexchange.com/questions/24607/how-to-measure-smoothness-of-a-time-series-in-r">https://stats.stackexchange.com/questions/24607/how-to-measure-smoothness-of-a-time-series-in-r</a></p>
 </li>
 </ul>
-<p>OOM崩溃率：应用的内存消耗其实对于用户而言没有很直接的感知，真正最影响用户体验的是OOM，发生OOM说明内存问题已经很严重了，需要引起重视。Crash上报可以使用现成的第三方SDK，也可以参考 <a target="_blank" rel="noopener" href="https://www.xiaoming.io/android-crash-sdk">Android Crash监控SDK设计思路</a> 。</p>
+<p>OOM崩溃率：应用的内存消耗其实对于用户而言没有很直接的感知，真正最影响用户体验的是OOM，发生OOM说明内存问题已经很严重了，需要引起重视。Crash上报可以使用现成的第三方SDK，也可以参考 <a href="https://www.xiaoming.io/android-crash-sdk">Android Crash监控SDK设计思路</a> 。</p>
 <p>App内存消耗：onResume-onPause期间，多次采样取平均值。</p>
 <ul>
 <li>内存消耗的指标<strong>参考价值有限</strong>。</li>
@@ -378,7 +378,7 @@
 <li>List二级View做缓存，例如List每个Item中又有很多小标签，这些标签可以放到一个缓存池中。具体实现是在bindView时，Container不是直接removeAllViews，而是将View保存到List中，然后在添加View时先从List取，取不到再创建。这样就避免了每次bindView时反复创建View。</li>
 <li>Release包移除Log，统计埋点移到后台。Log和埋点之类操作通常会有大量字符串拼接操作，特别是<code>String.format</code>耗时很多。</li>
 <li>布局层级降低，使用ConstraintLayout或自定义Layout。</li>
-<li>监控滚动速度，快速滚动时暂停图片加载。快速滚动时大量图片加载，频繁内存分配和回收，性能消耗大。参考 <a target="_blank" rel="noopener" href="https://www.xiaoming.io/android-scroll-velocity">Android滚动组件图片加载优化与滚动速度的精确监听</a> 。</li>
+<li>监控滚动速度，快速滚动时暂停图片加载。快速滚动时大量图片加载，频繁内存分配和回收，性能消耗大。参考 <a href="https://www.xiaoming.io/android-scroll-velocity">Android滚动组件图片加载优化与滚动速度的精确监听</a> 。</li>
 <li>过度绘制优化。</li>
 <li>特殊滚动组件的事件处理，要保证没有明显BUG，否则对用户体验影响很大。</li>
 </ol>
@@ -530,8 +530,8 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">jzj1993</p>
-  <div class="site-description" itemprop="description">江子健的个人博客，90后理工男、微软程序员、互联网从业者，分享软件编程、开发技术、学习与思考</div>
+  <p class="site-author-name" itemprop="name">小明</p>
+  <div class="site-description" itemprop="description">小明的个人博客，90后理工男，先后就职于美团、微软，分享软件编程、开发技术、学习与思考</div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
@@ -613,7 +613,7 @@
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">jzj1993</span>
+  <span class="author" itemprop="copyrightHolder">小明</span>
 </div>
   <div class="sitemap"><a href="/sitemap.xml" class="theme-link">站点地图</a>
   </div>

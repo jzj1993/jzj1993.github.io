@@ -17,62 +17,62 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"www.paincker.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+    var CONFIG = {"hostname":"www.xiaoming.io","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta name="description" content="前面一篇介绍了从新建工程一直到编写代码进行行为仿真，这篇继续进行介绍。 修改器件型号">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Xilinx Vivado的使用详细介绍（2）：综合、实现、管脚分配、时钟设置、烧写">
-<meta property="og:url" content="https://www.paincker.com/vivado-basic-usage-2/">
-<meta property="og:site_name" content="Paincker">
+<meta property="og:url" content="https://www.xiaoming.io/vivado-basic-usage-2/">
+<meta property="og:site_name" content="搬砖的小明">
 <meta property="og:description" content="前面一篇介绍了从新建工程一直到编写代码进行行为仿真，这篇继续进行介绍。 修改器件型号">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/dev/images/1ba09a463a3065583a6d921eed96db4c.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/dev/images/529b140e56096a4cb30c4765f434dff2.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/dev/images/3e7b0ae4893551712471c22faf4e3aee.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/dev/images/e67d1527018904cdb2e193d1eacbc1a7.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/dev/images/edefdd91101c6c2df0292a4092874316.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/dev/images/ed8c42dbe868bfdd9eb894d72c9dbb82.jpg">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/dev/images/a2e3782746fe5c1a3861c4f4df8942ab.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/dev/images/c91443d0f6a60558a7020b0750f50c28.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/dev/images/7914eac2c740bcb3d876fb5a3556a44c.jpg">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/dev/images/23ed5509c874e08bad3a516409a19d38.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/dev/images/b4341f5ae48744bedd39d2dd93507bbc.jpg">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/dev/images/b5809d9aa9f0796ab126b710547b1dfa.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/dev/images/5826d690081a076da4c1b6e8a0763c67.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/dev/images/43afabd98ec20eea897118fad40a85f8.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/dev/images/fc9b56bf1db4abd71c7dba42335fec38.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/dev/images/b101d1807d2bac9176074a396243012b.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/dev/images/2ca889be5e54a74de760cd8f71c13244.jpg">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/dev/images/180d850a122ee47e5108af5a7844c6e4.jpg">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/dev/images/b5809d9aa9f0796ab126b710547b1dfa.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/dev/images/5e1b394b8ba79073eda673296553a6db.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/dev/images/3a3b4ae1e293f6032263412c9f00b1ca.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/dev/images/2d3f83239cfab87aeaa6a16e9b84ff8d.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/dev/images/ecc35db32b4f5459da6c0bf840881361.jpg">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/dev/images/6eddafe97087e940c6044befbfb05f54.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/dev/images/188da922a075777df9f7400100ed9fac.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/dev/images/40d072defdba54f3defca406e49e553d.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/dev/images/151c7ce985ac1928a0b7bba5d377a0ce.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/dev/images/0dcfc9d2335100e19b9d24baa475685b.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/dev/images/86fb01fc917f2a23524ff33a1e58f8e3.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/dev/images/b1fe181a000fc83d7c8897d63445560a.png">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/dev/images/f10f52af3e5bd913969b0f06ea507662.jpg">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/dev/images/1c40e36f354208904f644556c409bdb1.jpg">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/dev/images/7d0d5de44428a25e08f352971a4dae73.jpg">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/dev/images/1c729a0973efdeb2c97e08e938a52475.jpg">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/dev/images/59c27ea1becbc23bb6adb855388ad204.jpg">
-<meta property="og:image" content="https://www.paincker.com/blog-imgs/dev/images/513243de60515a6e7a508f192bb0afb7.jpg">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/dev/images/1ba09a463a3065583a6d921eed96db4c.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/dev/images/529b140e56096a4cb30c4765f434dff2.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/dev/images/3e7b0ae4893551712471c22faf4e3aee.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/dev/images/e67d1527018904cdb2e193d1eacbc1a7.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/dev/images/edefdd91101c6c2df0292a4092874316.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/dev/images/ed8c42dbe868bfdd9eb894d72c9dbb82.jpg">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/dev/images/a2e3782746fe5c1a3861c4f4df8942ab.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/dev/images/c91443d0f6a60558a7020b0750f50c28.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/dev/images/7914eac2c740bcb3d876fb5a3556a44c.jpg">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/dev/images/23ed5509c874e08bad3a516409a19d38.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/dev/images/b4341f5ae48744bedd39d2dd93507bbc.jpg">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/dev/images/b5809d9aa9f0796ab126b710547b1dfa.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/dev/images/5826d690081a076da4c1b6e8a0763c67.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/dev/images/43afabd98ec20eea897118fad40a85f8.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/dev/images/fc9b56bf1db4abd71c7dba42335fec38.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/dev/images/b101d1807d2bac9176074a396243012b.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/dev/images/2ca889be5e54a74de760cd8f71c13244.jpg">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/dev/images/180d850a122ee47e5108af5a7844c6e4.jpg">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/dev/images/b5809d9aa9f0796ab126b710547b1dfa.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/dev/images/5e1b394b8ba79073eda673296553a6db.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/dev/images/3a3b4ae1e293f6032263412c9f00b1ca.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/dev/images/2d3f83239cfab87aeaa6a16e9b84ff8d.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/dev/images/ecc35db32b4f5459da6c0bf840881361.jpg">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/dev/images/6eddafe97087e940c6044befbfb05f54.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/dev/images/188da922a075777df9f7400100ed9fac.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/dev/images/40d072defdba54f3defca406e49e553d.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/dev/images/151c7ce985ac1928a0b7bba5d377a0ce.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/dev/images/0dcfc9d2335100e19b9d24baa475685b.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/dev/images/86fb01fc917f2a23524ff33a1e58f8e3.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/dev/images/b1fe181a000fc83d7c8897d63445560a.png">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/dev/images/f10f52af3e5bd913969b0f06ea507662.jpg">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/dev/images/1c40e36f354208904f644556c409bdb1.jpg">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/dev/images/7d0d5de44428a25e08f352971a4dae73.jpg">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/dev/images/1c729a0973efdeb2c97e08e938a52475.jpg">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/dev/images/59c27ea1becbc23bb6adb855388ad204.jpg">
+<meta property="og:image" content="https://www.xiaoming.io/blog-imgs/dev/images/513243de60515a6e7a508f192bb0afb7.jpg">
 <meta property="article:published_time" content="2015-04-24T05:19:16.000Z">
 <meta property="article:modified_time" content="2025-06-17T13:33:21.663Z">
-<meta property="article:author" content="jzj1993">
+<meta property="article:author" content="小明">
 <meta property="article:tag" content="硬件开发">
 <meta property="article:tag" content="FPGA">
 <meta property="article:tag" content="可编程逻辑">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://www.paincker.com/blog-imgs/dev/images/1ba09a463a3065583a6d921eed96db4c.png">
+<meta name="twitter:image" content="https://www.xiaoming.io/blog-imgs/dev/images/1ba09a463a3065583a6d921eed96db4c.png">
 
-<link rel="canonical" href="https://www.paincker.com/vivado-basic-usage-2/">
+<link rel="canonical" href="https://www.xiaoming.io/vivado-basic-usage-2/">
 
 
 <script id="page-configurations">
@@ -85,7 +85,7 @@
   };
 </script>
 
-  <title>Xilinx Vivado的使用详细介绍（2）：综合、实现、管脚分配、时钟设置、烧写 | Paincker</title>
+  <title>Xilinx Vivado的使用详细介绍（2）：综合、实现、管脚分配、时钟设置、烧写 | 搬砖的小明</title>
   
 
 
@@ -145,7 +145,7 @@
 
     <a href="/" class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">Paincker</h1>
+      <h1 class="site-title">搬砖的小明</h1>
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
@@ -238,16 +238,16 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://www.paincker.com/vivado-basic-usage-2/">
+    <link itemprop="mainEntityOfPage" href="https://www.xiaoming.io/vivado-basic-usage-2/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="jzj1993">
-      <meta itemprop="description" content="江子健的个人博客，90后理工男、微软程序员、互联网从业者，分享软件编程、开发技术、学习与思考">
+      <meta itemprop="name" content="小明">
+      <meta itemprop="description" content="小明的个人博客，90后理工男，先后就职于美团、微软，分享软件编程、开发技术、学习与思考">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Paincker">
+      <meta itemprop="name" content="搬砖的小明">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -526,8 +526,8 @@
 
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">jzj1993</p>
-  <div class="site-description" itemprop="description">江子健的个人博客，90后理工男、微软程序员、互联网从业者，分享软件编程、开发技术、学习与思考</div>
+  <p class="site-author-name" itemprop="name">小明</p>
+  <div class="site-description" itemprop="description">小明的个人博客，90后理工男，先后就职于美团、微软，分享软件编程、开发技术、学习与思考</div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
@@ -609,7 +609,7 @@
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">jzj1993</span>
+  <span class="author" itemprop="copyrightHolder">小明</span>
 </div>
   <div class="sitemap"><a href="/sitemap.xml" class="theme-link">站点地图</a>
   </div>

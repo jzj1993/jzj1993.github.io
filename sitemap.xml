@@ -29,15 +29,6 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/website-primer-2/</loc>
-    
-    <lastmod>2026-01-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.xiaoming.io/website-primer-4/</loc>
     
     <lastmod>2026-01-09</lastmod>
@@ -47,34 +38,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/android-test-5/</loc>
-    
-    <lastmod>2026-01-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/analog-circuit-design/</loc>
-    
-    <lastmod>2026-01-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/django-quick-start-1/</loc>
-    
-    <lastmod>2026-01-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/embedded/</loc>
+    <loc>https://www.xiaoming.io/website-primer-2/</loc>
     
     <lastmod>2026-01-09</lastmod>
     
@@ -92,7 +56,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/gson-study/</loc>
+    <loc>https://www.xiaoming.io/wx-mini-program-dev/</loc>
     
     <lastmod>2026-01-09</lastmod>
     
@@ -101,7 +65,16 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/gson-technic/</loc>
+    <loc>https://www.xiaoming.io/nginx-config/</loc>
+    
+    <lastmod>2026-01-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/supervisor-usage/</loc>
     
     <lastmod>2026-01-09</lastmod>
     
@@ -128,24 +101,6 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/mcu-engineer/</loc>
-    
-    <lastmod>2026-01-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/nginx-config/</loc>
-    
-    <lastmod>2026-01-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.xiaoming.io/publish-markdown-tech/</loc>
     
     <lastmod>2026-01-09</lastmod>
@@ -164,7 +119,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/slim-rest-api/</loc>
+    <loc>https://www.xiaoming.io/gson-technic/</loc>
     
     <lastmod>2026-01-09</lastmod>
     
@@ -173,7 +128,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/supervisor-usage/</loc>
+    <loc>https://www.xiaoming.io/gson-study/</loc>
     
     <lastmod>2026-01-09</lastmod>
     
@@ -182,25 +137,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/visio-quick-start/</loc>
-    
-    <lastmod>2026-01-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/vivado-ram-ip-core/</loc>
-    
-    <lastmod>2026-01-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/web-product-design/</loc>
+    <loc>https://www.xiaoming.io/android-test-5/</loc>
     
     <lastmod>2026-01-09</lastmod>
     
@@ -218,6 +155,15 @@
   </url>
   
   <url>
+    <loc>https://www.xiaoming.io/vivado-ram-ip-core/</loc>
+    
+    <lastmod>2026-01-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.xiaoming.io/wp-markdown-wiz-blog/</loc>
     
     <lastmod>2026-01-09</lastmod>
@@ -227,7 +173,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/wx-mini-program-dev/</loc>
+    <loc>https://www.xiaoming.io/slim-rest-api/</loc>
     
     <lastmod>2026-01-09</lastmod>
     
@@ -236,7 +182,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/android-3d-rotate-animation/</loc>
+    <loc>https://www.xiaoming.io/django-quick-start-1/</loc>
     
     <lastmod>2026-01-09</lastmod>
     
@@ -245,7 +191,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/android-gradle-basics/</loc>
+    <loc>https://www.xiaoming.io/visio-quick-start/</loc>
     
     <lastmod>2026-01-09</lastmod>
     
@@ -254,7 +200,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/android-lint-1-usage/</loc>
+    <loc>https://www.xiaoming.io/web-product-design/</loc>
     
     <lastmod>2026-01-09</lastmod>
     
@@ -263,7 +209,52 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/android-lint-2-implements/</loc>
+    <loc>https://www.xiaoming.io/analog-circuit-design/</loc>
+    
+    <lastmod>2026-01-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/embedded/</loc>
+    
+    <lastmod>2026-01-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/mcu-engineer/</loc>
+    
+    <lastmod>2026-01-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/microsoft-interview/</loc>
+    
+    <lastmod>2026-01-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/prepare-coding-interview/</loc>
+    
+    <lastmod>2026-01-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/leetcode-intervals/</loc>
     
     <lastmod>2026-01-09</lastmod>
     
@@ -290,124 +281,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/gradle-dependencies/</loc>
-    
-    <lastmod>2026-01-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/gradle-develop-basics/</loc>
-    
-    <lastmod>2026-01-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/mobile-develop/</loc>
-    
-    <lastmod>2026-01-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/gradle-plugin-and-principle/</loc>
-    
-    <lastmod>2026-01-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/android-test-1/</loc>
-    
-    <lastmod>2026-01-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/leetcode-intervals/</loc>
-    
-    <lastmod>2026-01-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.xiaoming.io/quick-sort/</loc>
-    
-    <lastmod>2026-01-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/mcu-primer-0/</loc>
-    
-    <lastmod>2026-01-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/mcu-primer-12/</loc>
-    
-    <lastmod>2026-01-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/lr-example2/</loc>
-    
-    <lastmod>2026-01-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/after-university-1/</loc>
-    
-    <lastmod>2026-01-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/after-university-2/</loc>
-    
-    <lastmod>2026-01-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/after-university-3/</loc>
-    
-    <lastmod>2026-01-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/analog-circuit/</loc>
     
     <lastmod>2026-01-09</lastmod>
     
@@ -425,7 +299,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/c-prog-language/</loc>
+    <loc>https://www.xiaoming.io/android-lint-2-implements/</loc>
     
     <lastmod>2026-01-09</lastmod>
     
@@ -434,7 +308,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/college-chat/</loc>
+    <loc>https://www.xiaoming.io/android-lint-1-usage/</loc>
     
     <lastmod>2026-01-09</lastmod>
     
@@ -443,7 +317,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/get-job/</loc>
+    <loc>https://www.xiaoming.io/gradle-develop-basics/</loc>
     
     <lastmod>2026-01-09</lastmod>
     
@@ -452,7 +326,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/life-meaning/</loc>
+    <loc>https://www.xiaoming.io/android-gradle-basics/</loc>
     
     <lastmod>2026-01-09</lastmod>
     
@@ -461,7 +335,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/job-apply/</loc>
+    <loc>https://www.xiaoming.io/gradle-plugin-and-principle/</loc>
     
     <lastmod>2026-01-09</lastmod>
     
@@ -470,7 +344,34 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/microsoft-interview/</loc>
+    <loc>https://www.xiaoming.io/android-3d-rotate-animation/</loc>
+    
+    <lastmod>2026-01-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/gradle-dependencies/</loc>
+    
+    <lastmod>2026-01-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/android-test-1/</loc>
+    
+    <lastmod>2026-01-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/lr-example2/</loc>
     
     <lastmod>2026-01-09</lastmod>
     
@@ -488,133 +389,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/prepare-coding-interview/</loc>
-    
-    <lastmod>2026-01-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/skip-classes/</loc>
-    
-    <lastmod>2026-01-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/solve-problem/</loc>
-    
-    <lastmod>2026-01-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/wiz-note/</loc>
-    
-    <lastmod>2026-01-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/tech-study-in-college/</loc>
-    
-    <lastmod>2026-01-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/website-primer-0/</loc>
-    
-    <lastmod>2026-01-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/website-primer-1/</loc>
-    
-    <lastmod>2026-01-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/website-primer-6/</loc>
-    
-    <lastmod>2026-01-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/website-primer-7/</loc>
-    
-    <lastmod>2026-01-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/website-primer-8/</loc>
-    
-    <lastmod>2026-01-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/website-primer-5/</loc>
-    
-    <lastmod>2026-01-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/sysinst-bios-example/</loc>
-    
-    <lastmod>2026-01-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/sysinst-boot/</loc>
-    
-    <lastmod>2026-01-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/sysinst-bios/</loc>
-    
-    <lastmod>2026-01-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/sysinst-follow-up/</loc>
+    <loc>https://www.xiaoming.io/sysinst-ubuntu/</loc>
     
     <lastmod>2026-01-09</lastmod>
     
@@ -632,7 +407,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/sysinst-harddisk-details/</loc>
+    <loc>https://www.xiaoming.io/sysinst-xp/</loc>
     
     <lastmod>2026-01-09</lastmod>
     
@@ -641,25 +416,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/sysinst-ghost/</loc>
-    
-    <lastmod>2026-01-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/sysinst-harddisk-op/</loc>
-    
-    <lastmod>2026-01-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/sysinst-harddisk/</loc>
+    <loc>https://www.xiaoming.io/sysinst-boot/</loc>
     
     <lastmod>2026-01-09</lastmod>
     
@@ -677,7 +434,16 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/sysinst-summary/</loc>
+    <loc>https://www.xiaoming.io/sysinst-ghost/</loc>
+    
+    <lastmod>2026-01-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/sysinst-follow-up/</loc>
     
     <lastmod>2026-01-09</lastmod>
     
@@ -695,7 +461,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/sysinst-ubuntu/</loc>
+    <loc>https://www.xiaoming.io/sysinst-harddisk-op/</loc>
     
     <lastmod>2026-01-09</lastmod>
     
@@ -704,7 +470,241 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/sysinst-xp/</loc>
+    <loc>https://www.xiaoming.io/sysinst-harddisk-details/</loc>
+    
+    <lastmod>2026-01-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/sysinst-harddisk/</loc>
+    
+    <lastmod>2026-01-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/sysinst-bios-example/</loc>
+    
+    <lastmod>2026-01-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/sysinst-bios/</loc>
+    
+    <lastmod>2026-01-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/sysinst-summary/</loc>
+    
+    <lastmod>2026-01-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/wiz-note/</loc>
+    
+    <lastmod>2026-01-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/after-university-3/</loc>
+    
+    <lastmod>2026-01-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/after-university-2/</loc>
+    
+    <lastmod>2026-01-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/after-university-1/</loc>
+    
+    <lastmod>2026-01-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/skip-classes/</loc>
+    
+    <lastmod>2026-01-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/life-meaning/</loc>
+    
+    <lastmod>2026-01-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/c-prog-language/</loc>
+    
+    <lastmod>2026-01-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/solve-problem/</loc>
+    
+    <lastmod>2026-01-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/job-apply/</loc>
+    
+    <lastmod>2026-01-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/website-primer-8/</loc>
+    
+    <lastmod>2026-01-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/college-chat/</loc>
+    
+    <lastmod>2026-01-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/website-primer-7/</loc>
+    
+    <lastmod>2026-01-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/mcu-primer-12/</loc>
+    
+    <lastmod>2026-01-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/website-primer-6/</loc>
+    
+    <lastmod>2026-01-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/website-primer-5/</loc>
+    
+    <lastmod>2026-01-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/website-primer-1/</loc>
+    
+    <lastmod>2026-01-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/website-primer-0/</loc>
+    
+    <lastmod>2026-01-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/mobile-develop/</loc>
+    
+    <lastmod>2026-01-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/get-job/</loc>
+    
+    <lastmod>2026-01-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/tech-study-in-college/</loc>
+    
+    <lastmod>2026-01-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/analog-circuit/</loc>
+    
+    <lastmod>2026-01-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/mcu-primer-0/</loc>
     
     <lastmod>2026-01-09</lastmod>
     
@@ -794,7 +794,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/buy-vs-rent-house/</loc>
+    <loc>https://www.xiaoming.io/redmi-flash/</loc>
     
     <lastmod>2025-06-17</lastmod>
     
@@ -821,7 +821,16 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/redmi-flash/</loc>
+    <loc>https://www.xiaoming.io/buy-vs-rent-house/</loc>
+    
+    <lastmod>2025-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/taibai-3/</loc>
     
     <lastmod>2025-06-17</lastmod>
     
@@ -848,16 +857,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/taibai-3/</loc>
-    
-    <lastmod>2025-06-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/sysinst-create-bootable-disk/</loc>
+    <loc>https://www.xiaoming.io/sysinst-pwd-crack/</loc>
     
     <lastmod>2025-06-17</lastmod>
     
@@ -875,7 +875,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/sysinst-pwd-crack/</loc>
+    <loc>https://www.xiaoming.io/sysinst-create-bootable-disk/</loc>
     
     <lastmod>2025-06-17</lastmod>
     
@@ -920,7 +920,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/ps-dof/</loc>
+    <loc>https://www.xiaoming.io/qujiang-park/</loc>
     
     <lastmod>2025-06-17</lastmod>
     
@@ -938,24 +938,6 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/safety-shutter/</loc>
-    
-    <lastmod>2025-06-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/qujiang-park/</loc>
-    
-    <lastmod>2025-06-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.xiaoming.io/macro-photography/</loc>
     
     <lastmod>2025-06-17</lastmod>
@@ -965,7 +947,16 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/dslr-lens-disassembly/</loc>
+    <loc>https://www.xiaoming.io/safety-shutter/</loc>
+    
+    <lastmod>2025-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/ps-dof/</loc>
     
     <lastmod>2025-06-17</lastmod>
     
@@ -975,6 +966,24 @@
   
   <url>
     <loc>https://www.xiaoming.io/optical-fiber-communication/</loc>
+    
+    <lastmod>2025-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/how-the-lens-works/</loc>
+    
+    <lastmod>2025-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/dslr-lens-disassembly/</loc>
     
     <lastmod>2025-06-17</lastmod>
     
@@ -993,15 +1002,6 @@
   
   <url>
     <loc>https://www.xiaoming.io/dress-color/</loc>
-    
-    <lastmod>2025-06-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/how-the-lens-works/</loc>
     
     <lastmod>2025-06-17</lastmod>
     
@@ -1037,15 +1037,6 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/mcu-primer-7/</loc>
-    
-    <lastmod>2025-06-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.xiaoming.io/mcu-primer-8/</loc>
     
     <lastmod>2025-06-17</lastmod>
@@ -1055,7 +1046,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/mcu-primer-13/</loc>
+    <loc>https://www.xiaoming.io/mcu-primer-7/</loc>
     
     <lastmod>2025-06-17</lastmod>
     
@@ -1064,7 +1055,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/mcu-primer-14/</loc>
+    <loc>https://www.xiaoming.io/mcu-primer-23/</loc>
     
     <lastmod>2025-06-17</lastmod>
     
@@ -1073,43 +1064,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/mcu-primer-15/</loc>
-    
-    <lastmod>2025-06-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/mcu-primer-16/</loc>
-    
-    <lastmod>2025-06-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/mcu-primer-17/</loc>
-    
-    <lastmod>2025-06-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/mcu-primer-18/</loc>
-    
-    <lastmod>2025-06-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/mcu-primer-2/</loc>
+    <loc>https://www.xiaoming.io/mcu-primer-22/</loc>
     
     <lastmod>2025-06-17</lastmod>
     
@@ -1145,7 +1100,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/mcu-primer-4/</loc>
+    <loc>https://www.xiaoming.io/mcu-primer-18/</loc>
     
     <lastmod>2025-06-17</lastmod>
     
@@ -1154,7 +1109,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/mcu-primer-22/</loc>
+    <loc>https://www.xiaoming.io/mcu-primer-17/</loc>
     
     <lastmod>2025-06-17</lastmod>
     
@@ -1163,7 +1118,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/mcu-primer-5/</loc>
+    <loc>https://www.xiaoming.io/mcu-primer-16/</loc>
     
     <lastmod>2025-06-17</lastmod>
     
@@ -1172,7 +1127,25 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/mcu-primer-23/</loc>
+    <loc>https://www.xiaoming.io/mcu-primer-15/</loc>
+    
+    <lastmod>2025-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/mcu-primer-14/</loc>
+    
+    <lastmod>2025-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/mcu-primer-13/</loc>
     
     <lastmod>2025-06-17</lastmod>
     
@@ -1190,6 +1163,24 @@
   </url>
   
   <url>
+    <loc>https://www.xiaoming.io/mcu-primer-5/</loc>
+    
+    <lastmod>2025-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/mcu-primer-4/</loc>
+    
+    <lastmod>2025-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.xiaoming.io/mcu-primer-3/</loc>
     
     <lastmod>2025-06-17</lastmod>
@@ -1199,16 +1190,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/mcu-primer-1/</loc>
-    
-    <lastmod>2025-06-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/mcu-primer-10/</loc>
+    <loc>https://www.xiaoming.io/mcu-primer-2/</loc>
     
     <lastmod>2025-06-17</lastmod>
     
@@ -1226,7 +1208,16 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/leetcode-place-flowers/</loc>
+    <loc>https://www.xiaoming.io/mcu-primer-10/</loc>
+    
+    <lastmod>2025-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/mcu-primer-1/</loc>
     
     <lastmod>2025-06-17</lastmod>
     
@@ -1253,6 +1244,15 @@
   </url>
   
   <url>
+    <loc>https://www.xiaoming.io/leetcode-place-flowers/</loc>
+    
+    <lastmod>2025-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.xiaoming.io/leetcode-next-permutation/</loc>
     
     <lastmod>2025-06-17</lastmod>
@@ -1271,7 +1271,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/msp430-study/</loc>
+    <loc>https://www.xiaoming.io/social-media/</loc>
     
     <lastmod>2025-06-17</lastmod>
     
@@ -1281,6 +1281,24 @@
   
   <url>
     <loc>https://www.xiaoming.io/optometry/</loc>
+    
+    <lastmod>2025-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/programmer-job-change/</loc>
+    
+    <lastmod>2025-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/msp430-study/</loc>
     
     <lastmod>2025-06-17</lastmod>
     
@@ -1307,24 +1325,6 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/programmer-job-change/</loc>
-    
-    <lastmod>2025-06-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/social-media/</loc>
-    
-    <lastmod>2025-06-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.xiaoming.io/xidian-course/</loc>
     
     <lastmod>2025-06-17</lastmod>
@@ -1343,43 +1343,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/books/</loc>
-    
-    <lastmod>2025-06-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/china-japan-difference/</loc>
-    
-    <lastmod>2025-06-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/college-last-three-month/</loc>
-    
-    <lastmod>2025-06-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/college-thoughts/</loc>
-    
-    <lastmod>2025-06-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/create-object/</loc>
+    <loc>https://www.xiaoming.io/how-to-write-a-resume/</loc>
     
     <lastmod>2025-06-17</lastmod>
     
@@ -1415,7 +1379,43 @@
   </url>
   
   <url>
+    <loc>https://www.xiaoming.io/create-object/</loc>
+    
+    <lastmod>2025-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.xiaoming.io/english/</loc>
+    
+    <lastmod>2025-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/china-japan-difference/</loc>
+    
+    <lastmod>2025-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/college-last-three-month/</loc>
+    
+    <lastmod>2025-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/books/</loc>
     
     <lastmod>2025-06-17</lastmod>
     
@@ -1433,7 +1433,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/how-to-write-a-resume/</loc>
+    <loc>https://www.xiaoming.io/college-thoughts/</loc>
     
     <lastmod>2025-06-17</lastmod>
     
@@ -1460,16 +1460,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/wordpress-send-email-via-plugins/</loc>
-    
-    <lastmod>2025-06-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/wordpress-user-module/</loc>
+    <loc>https://www.xiaoming.io/wp-log/</loc>
     
     <lastmod>2025-06-17</lastmod>
     
@@ -1496,7 +1487,16 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/wp-log/</loc>
+    <loc>https://www.xiaoming.io/wordpress-user-module/</loc>
+    
+    <lastmod>2025-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/wordpress-send-email-via-plugins/</loc>
     
     <lastmod>2025-06-17</lastmod>
     
@@ -1514,70 +1514,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/ubuntu-ftp-conf/</loc>
-    
-    <lastmod>2025-06-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/ubuntu-install/</loc>
-    
-    <lastmod>2025-06-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.xiaoming.io/ubuntu-lnmp/</loc>
-    
-    <lastmod>2025-06-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/ubuntu-nfs-conf/</loc>
-    
-    <lastmod>2025-06-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/virtualbox-ubuntu-network-conf/</loc>
-    
-    <lastmod>2025-06-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/verilog-sync-async/</loc>
-    
-    <lastmod>2025-06-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/ubuntu-ssh-conf/</loc>
-    
-    <lastmod>2025-06-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/vivado-basic-usage-2/</loc>
     
     <lastmod>2025-06-17</lastmod>
     
@@ -1595,16 +1532,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/vivado-crack/</loc>
-    
-    <lastmod>2025-06-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/win7-file-assoc/</loc>
+    <loc>https://www.xiaoming.io/vivado-basic-usage-2/</loc>
     
     <lastmod>2025-06-17</lastmod>
     
@@ -1622,6 +1550,24 @@
   </url>
   
   <url>
+    <loc>https://www.xiaoming.io/verilog-sync-async/</loc>
+    
+    <lastmod>2025-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/vivado-crack/</loc>
+    
+    <lastmod>2025-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.xiaoming.io/windows-django-setup/</loc>
     
     <lastmod>2025-06-17</lastmod>
@@ -1631,7 +1577,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/wiz-blog/</loc>
+    <loc>https://www.xiaoming.io/ubuntu-install/</loc>
     
     <lastmod>2025-06-17</lastmod>
     
@@ -1649,7 +1595,52 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/pdf-to-epub/</loc>
+    <loc>https://www.xiaoming.io/virtualbox-ubuntu-network-conf/</loc>
+    
+    <lastmod>2025-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/ubuntu-nfs-conf/</loc>
+    
+    <lastmod>2025-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/ubuntu-ftp-conf/</loc>
+    
+    <lastmod>2025-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/ubuntu-ssh-conf/</loc>
+    
+    <lastmod>2025-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/wiz-blog/</loc>
+    
+    <lastmod>2025-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/win7-file-assoc/</loc>
     
     <lastmod>2025-06-17</lastmod>
     
@@ -1667,52 +1658,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/proteus-51/</loc>
-    
-    <lastmod>2025-06-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/proteus-bus-and-lable/</loc>
-    
-    <lastmod>2025-06-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/proteus-component/</loc>
-    
-    <lastmod>2025-06-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/phpmyadmin-hidden-database/</loc>
-    
-    <lastmod>2025-06-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/proteus-keil/</loc>
-    
-    <lastmod>2025-06-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/quantum-physics/</loc>
+    <loc>https://www.xiaoming.io/shell-count-code-lines/</loc>
     
     <lastmod>2025-06-17</lastmod>
     
@@ -1730,7 +1676,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/python-django-sql-error/</loc>
+    <loc>https://www.xiaoming.io/phpmyadmin-hidden-database/</loc>
     
     <lastmod>2025-06-17</lastmod>
     
@@ -1739,7 +1685,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/regexp-study/</loc>
+    <loc>https://www.xiaoming.io/python-django-sql-error/</loc>
     
     <lastmod>2025-06-17</lastmod>
     
@@ -1757,7 +1703,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/self-made-pcb/</loc>
+    <loc>https://www.xiaoming.io/quantum-physics/</loc>
     
     <lastmod>2025-06-17</lastmod>
     
@@ -1775,6 +1721,42 @@
   </url>
   
   <url>
+    <loc>https://www.xiaoming.io/proteus-bus-and-lable/</loc>
+    
+    <lastmod>2025-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/proteus-keil/</loc>
+    
+    <lastmod>2025-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/proteus-51/</loc>
+    
+    <lastmod>2025-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/proteus-component/</loc>
+    
+    <lastmod>2025-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.xiaoming.io/trustedinstaller/</loc>
     
     <lastmod>2025-06-17</lastmod>
@@ -1784,7 +1766,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/shell-count-code-lines/</loc>
+    <loc>https://www.xiaoming.io/pdf-to-epub/</loc>
     
     <lastmod>2025-06-17</lastmod>
     
@@ -1793,7 +1775,16 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/java-tcp-socket/</loc>
+    <loc>https://www.xiaoming.io/regexp-study/</loc>
+    
+    <lastmod>2025-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/self-made-pcb/</loc>
     
     <lastmod>2025-06-17</lastmod>
     
@@ -1820,70 +1811,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/mac-tomcat/</loc>
-    
-    <lastmod>2025-06-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/markdown/</loc>
-    
-    <lastmod>2025-06-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/masonry-lazyload-waterfall/</loc>
-    
-    <lastmod>2025-06-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/matlab-dec2bin/</loc>
-    
-    <lastmod>2025-06-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/mysql-basic-usage/</loc>
-    
-    <lastmod>2025-06-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/js-get-self-url/</loc>
-    
-    <lastmod>2025-06-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/mysql57-change-password/</loc>
-    
-    <lastmod>2025-06-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/matlab-c-java/</loc>
+    <loc>https://www.xiaoming.io/npm-yarn-taobao-mirror/</loc>
     
     <lastmod>2025-06-17</lastmod>
     
@@ -1901,34 +1829,34 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/notepad-regexp/</loc>
-    
-    <lastmod>2025-06-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/npm-yarn-taobao-mirror/</loc>
-    
-    <lastmod>2025-06-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/nuedc/</loc>
-    
-    <lastmod>2025-06-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.xiaoming.io/online-video-download/</loc>
+    
+    <lastmod>2025-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/mysql-basic-usage/</loc>
+    
+    <lastmod>2025-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/mysql57-change-password/</loc>
+    
+    <lastmod>2025-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/mac-tomcat/</loc>
     
     <lastmod>2025-06-17</lastmod>
     
@@ -1946,7 +1874,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/infer/</loc>
+    <loc>https://www.xiaoming.io/matlab-dec2bin/</loc>
     
     <lastmod>2025-06-17</lastmod>
     
@@ -1955,7 +1883,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/ios-knowledge/</loc>
+    <loc>https://www.xiaoming.io/masonry-lazyload-waterfall/</loc>
     
     <lastmod>2025-06-17</lastmod>
     
@@ -1964,7 +1892,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/ios-kwmusic-2/</loc>
+    <loc>https://www.xiaoming.io/java-tcp-socket/</loc>
     
     <lastmod>2025-06-17</lastmod>
     
@@ -1973,7 +1901,43 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/ios-kwmusic-export-tools/</loc>
+    <loc>https://www.xiaoming.io/js-get-self-url/</loc>
+    
+    <lastmod>2025-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/matlab-c-java/</loc>
+    
+    <lastmod>2025-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/notepad-regexp/</loc>
+    
+    <lastmod>2025-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/markdown/</loc>
+    
+    <lastmod>2025-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/nuedc/</loc>
     
     <lastmod>2025-06-17</lastmod>
     
@@ -1991,7 +1955,34 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/fix-computer/</loc>
+    <loc>https://www.xiaoming.io/infer/</loc>
+    
+    <lastmod>2025-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/ios-kwmusic-export-tools/</loc>
+    
+    <lastmod>2025-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/ios-kwmusic-2/</loc>
+    
+    <lastmod>2025-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/ios-knowledge/</loc>
     
     <lastmod>2025-06-17</lastmod>
     
@@ -2001,15 +1992,6 @@
   
   <url>
     <loc>https://www.xiaoming.io/github-download-single-file/</loc>
-    
-    <lastmod>2025-06-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/how-to-use-github/</loc>
     
     <lastmod>2025-06-17</lastmod>
     
@@ -2036,6 +2018,24 @@
   </url>
   
   <url>
+    <loc>https://www.xiaoming.io/fix-computer/</loc>
+    
+    <lastmod>2025-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/how-to-use-github/</loc>
+    
+    <lastmod>2025-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.xiaoming.io/gprs-design/</loc>
     
     <lastmod>2025-06-17</lastmod>
@@ -2045,7 +2045,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/adc0832/</loc>
+    <loc>https://www.xiaoming.io/dynamic-proxy-java-bus/</loc>
     
     <lastmod>2025-06-17</lastmod>
     
@@ -2054,7 +2054,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/c-prog/</loc>
+    <loc>https://www.xiaoming.io/charles-charset-incorrect/</loc>
     
     <lastmod>2025-06-17</lastmod>
     
@@ -2081,7 +2081,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/css-js-tool/</loc>
+    <loc>https://www.xiaoming.io/domain-transfer/</loc>
     
     <lastmod>2025-06-17</lastmod>
     
@@ -2090,7 +2090,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/charles-charset-incorrect/</loc>
+    <loc>https://www.xiaoming.io/css-js-tool/</loc>
     
     <lastmod>2025-06-17</lastmod>
     
@@ -2108,15 +2108,6 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/domain-transfer/</loc>
-    
-    <lastmod>2025-06-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.xiaoming.io/eclipse-plugins-manage/</loc>
     
     <lastmod>2025-06-17</lastmod>
@@ -2126,7 +2117,16 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/dynamic-proxy-java-bus/</loc>
+    <loc>https://www.xiaoming.io/c-prog/</loc>
+    
+    <lastmod>2025-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/adc0832/</loc>
     
     <lastmod>2025-06-17</lastmod>
     
@@ -2162,6 +2162,24 @@
   </url>
   
   <url>
+    <loc>https://www.xiaoming.io/sparse-array/</loc>
+    
+    <lastmod>2025-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/time-tracer/</loc>
+    
+    <lastmod>2025-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.xiaoming.io/jenkins-android-setup/</loc>
     
     <lastmod>2025-06-17</lastmod>
@@ -2189,24 +2207,6 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/sparse-array/</loc>
-    
-    <lastmod>2025-06-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/time-tracer/</loc>
-    
-    <lastmod>2025-06-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.xiaoming.io/glide-study/</loc>
     
     <lastmod>2025-06-17</lastmod>
@@ -2225,97 +2225,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/android-key-simulation/</loc>
-    
-    <lastmod>2025-06-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/android-media-player-codec/</loc>
-    
-    <lastmod>2025-06-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/android-resource-naming/</loc>
-    
-    <lastmod>2025-06-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/android-popup-window/</loc>
-    
-    <lastmod>2025-06-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/android-scale-type/</loc>
-    
-    <lastmod>2025-06-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/android-screen/</loc>
-    
-    <lastmod>2025-06-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/android-studio-skill/</loc>
-    
-    <lastmod>2025-06-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/android-shortcut-intent/</loc>
-    
-    <lastmod>2025-06-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/android-virtual-device/</loc>
-    
-    <lastmod>2025-06-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.xiaoming.io/constraint-layout/</loc>
-    
-    <lastmod>2025-06-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/fragment-visibility/</loc>
     
     <lastmod>2025-06-17</lastmod>
     
@@ -2333,7 +2243,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/adb-usage/</loc>
+    <loc>https://www.xiaoming.io/android-resource-naming/</loc>
     
     <lastmod>2025-06-17</lastmod>
     
@@ -2342,7 +2252,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/android-7-ratingbar-bug/</loc>
+    <loc>https://www.xiaoming.io/android-studio-skill/</loc>
     
     <lastmod>2025-06-17</lastmod>
     
@@ -2351,7 +2261,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/android-9-patch/</loc>
+    <loc>https://www.xiaoming.io/fragment-visibility/</loc>
     
     <lastmod>2025-06-17</lastmod>
     
@@ -2360,7 +2270,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/android-animation-1/</loc>
+    <loc>https://www.xiaoming.io/android-scale-type/</loc>
     
     <lastmod>2025-06-17</lastmod>
     
@@ -2369,7 +2279,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/android-animation-3/</loc>
+    <loc>https://www.xiaoming.io/android-media-player-codec/</loc>
     
     <lastmod>2025-06-17</lastmod>
     
@@ -2378,7 +2288,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/android-animation-crash/</loc>
+    <loc>https://www.xiaoming.io/android-popup-window/</loc>
     
     <lastmod>2025-06-17</lastmod>
     
@@ -2387,7 +2297,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/android-async-message/</loc>
+    <loc>https://www.xiaoming.io/android-virtual-device/</loc>
     
     <lastmod>2025-06-17</lastmod>
     
@@ -2396,7 +2306,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/android-animation-4/</loc>
+    <loc>https://www.xiaoming.io/android-shortcut-intent/</loc>
     
     <lastmod>2025-06-17</lastmod>
     
@@ -2405,7 +2315,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/android-bitmap/</loc>
+    <loc>https://www.xiaoming.io/android-screen/</loc>
     
     <lastmod>2025-06-17</lastmod>
     
@@ -2414,7 +2324,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/android-build-error/</loc>
+    <loc>https://www.xiaoming.io/android-key-simulation/</loc>
     
     <lastmod>2025-06-17</lastmod>
     
@@ -2432,6 +2342,51 @@
   </url>
   
   <url>
+    <loc>https://www.xiaoming.io/android-build-error/</loc>
+    
+    <lastmod>2025-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/android-bitmap/</loc>
+    
+    <lastmod>2025-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/android-7-ratingbar-bug/</loc>
+    
+    <lastmod>2025-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/android-async-message/</loc>
+    
+    <lastmod>2025-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/android-9-patch/</loc>
+    
+    <lastmod>2025-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.xiaoming.io/android-device-connect-mac/</loc>
     
     <lastmod>2025-06-17</lastmod>
@@ -2441,7 +2396,43 @@
   </url>
   
   <url>
+    <loc>https://www.xiaoming.io/adb-usage/</loc>
+    
+    <lastmod>2025-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/android-animation-4/</loc>
+    
+    <lastmod>2025-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/android-animation-3/</loc>
+    
+    <lastmod>2025-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.xiaoming.io/android-animation-2/</loc>
+    
+    <lastmod>2025-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/android-animation-1/</loc>
     
     <lastmod>2025-06-17</lastmod>
     
@@ -2468,25 +2459,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/android-test-3/</loc>
-    
-    <lastmod>2025-06-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/android-test-4/</loc>
-    
-    <lastmod>2025-06-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/android-test-6/</loc>
+    <loc>https://www.xiaoming.io/android-animation-crash/</loc>
     
     <lastmod>2025-06-17</lastmod>
     
@@ -2504,7 +2477,25 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/2021-year-end-review/</loc>
+    <loc>https://www.xiaoming.io/android-test-6/</loc>
+    
+    <lastmod>2025-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/android-test-4/</loc>
+    
+    <lastmod>2025-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/android-test-3/</loc>
     
     <lastmod>2025-06-17</lastmod>
     
@@ -2522,25 +2513,7 @@
   </url>
   
   <url>
-    <loc>https://www.xiaoming.io/chromium-print-cpp-stack/</loc>
-    
-    <lastmod>2025-06-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/gn-chromium-android/</loc>
-    
-    <lastmod>2025-06-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.xiaoming.io/jni-in-chromium/</loc>
+    <loc>https://www.xiaoming.io/2021-year-end-review/</loc>
     
     <lastmod>2025-06-17</lastmod>
     
@@ -2558,7 +2531,34 @@
   </url>
   
   <url>
+    <loc>https://www.xiaoming.io/chromium-print-cpp-stack/</loc>
+    
+    <lastmod>2025-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/jni-in-chromium/</loc>
+    
+    <lastmod>2025-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://www.xiaoming.io/large-project-build-speed-up/</loc>
+    
+    <lastmod>2025-06-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.xiaoming.io/gn-chromium-android/</loc>
     
     <lastmod>2025-06-17</lastmod>
     

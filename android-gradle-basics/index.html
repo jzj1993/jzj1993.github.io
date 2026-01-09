@@ -674,6 +674,17 @@
 <p>用下面的方式依赖子模块或已经发布的AAR：</p>
 <figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">dependencies &#123;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Debug、Release版本APK，分别依赖Debug、Release版本子模块</span></span><br><span class="line">    debugCompile project(<span class="attr">path:</span> <span class="string">&#x27;:xxx&#x27;</span>, <span class="attr">configuration:</span> <span class="string">&#x27;flavorADebug&#x27;</span>)</span><br><span class="line">    releaseCompile project(<span class="attr">path:</span> <span class="string">&#x27;:xxx&#x27;</span>, <span class="attr">configuration:</span> <span class="string">&#x27;flavorARelease&#x27;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">// 指定依赖aar版本，并设置transitive为true</span></span><br><span class="line">    debugCompile(<span class="string">&#x27;com.xxx:library:1.0.5:flavorADebug@aar&#x27;</span>) &#123;</span><br><span class="line">    transitive = <span class="literal">true</span></span><br><span class="line">    &#125;</span><br><span class="line">    releaseCompile(<span class="string">&#x27;com.xxx:library:1.0.5:flavorARelease@aar&#x27;</span>) &#123;</span><br><span class="line">    transitive = <span class="literal">true</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
+        
+
+<div class="wechat-subscribe">
+  <p>如果觉得文章对你有帮助，欢迎关注我的微信公众号：</p>
+  <p style="text-align: center;">
+    <img src="/about/wechat-qrcode.jpg" alt="微信公众号二维码">
+  </p>
+  <p style="text-align: center;">搬砖的小明</p>
+</div>
+
+
     </div>
 
     

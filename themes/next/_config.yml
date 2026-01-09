@@ -285,6 +285,14 @@ follow_me:
   #WeChat: /images/wechat_channel.jpg || fab fa-weixin
   #RSS: /atom.xml || fa fa-rss
 
+# WeChat Official Account Subscribe
+# Display WeChat QR code at the end of each post
+wechat_subscribe:
+  enable: true
+  description: 如果觉得文章对你有帮助，欢迎关注我的微信公众号：
+  name: 搬砖的小明
+  qrcode: /about/wechat-qrcode.jpg
+
 # Related popular posts
 # Dependencies: https://github.com/tea3/hexo-related-popular-posts
 related_posts:

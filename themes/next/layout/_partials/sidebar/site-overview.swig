@@ -1,10 +1,12 @@
-<div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  {%- if theme.avatar.url %}
-    <img class="site-author-image" itemprop="image" alt="{{ author }}"
-      src="{{ url_for(theme.avatar.url) }}">
+<div class="site-overview motion-element">
+  <h3 class="site-overview-title">{{ config.overview_title or subtitle }}</h3>
+  <p class="site-description">{{ description }}</p>
+  {%- if theme.wechat_subscribe.enable %}
+  <div class="site-wechat-qrcode" style="text-align: center; margin-top: 15px;">
+    <p style="margin: 0; font-size: 13px; color: #999;">{{ '微信公众号' }}</p>
+    <img src="{{ url_for(theme.wechat_subscribe.qrcode) }}" alt="微信公众号二维码" style="width: 120px; height: 120px; max-width: 100%;">
+  </div>
   {%- endif %}
-  <p class="site-author-name" itemprop="name">{{ author }}</p>
-  <div class="site-description" itemprop="description">{{ description }}</div>
 </div>
 
 {%- if theme.site_state %}

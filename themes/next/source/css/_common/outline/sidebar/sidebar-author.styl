@@ -1,30 +1,13 @@
-.site-author-image {
-  border: $site-author-image-border-width solid $site-author-image-border-color;
-  display: block;
-  margin: 0 auto;
-  max-width: $site-author-image-width;
-  padding: 2px;
-
-  if (hexo-config('avatar.rounded')) {
-    border-radius: 50%;
-  }
-}
-
-if (hexo-config('avatar.rotated')) {
-  .site-author-image {
-    transition: transform 1s ease-out;
-  }
-
-  .site-author-image:hover {
-    transform: rotateZ(360deg);
-  }
-}
-
-.site-author-name {
-  color: $site-author-name-color;
-  font-weight: $site-author-name-weight;
-  margin: $site-author-name-margin;
+.site-overview {
   text-align: center;
+}
+
+.site-overview-title {
+  color: $site-overview-title-color;
+  font-weight: $site-overview-title-weight;
+  text-align: center;
+  font-size: 1em;
+  margin: 0 0 5px 0;
 }
 
 .site-description {

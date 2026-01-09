@@ -442,15 +442,13 @@
 </ol>
 <p>猜测在同时执行多个动画时，前一个动画的onAnimationEnd被回调时，后一个动画正在执行，因此DecorView的onDraw方法在执行，可能会导致DecorView.onDraw执行时，onAnimationEnd回调中的DecorView.removeView方法被调用，从而导致错误。没有具体深入的去分析源码，但是经过验证问题确实解决了。</p>
 
-        
+            
 
-<div class="wechat-subscribe">
-  <p>如果觉得文章对你有帮助，欢迎关注我的微信公众号：</p>
-  <p style="text-align: center;">
-    <img src="/about/wechat-qrcode.jpg" alt="微信公众号二维码">
-  </p>
-  <p style="text-align: center;">搬砖的小明</p>
-</div>
+<p>如果觉得文章对你有帮助，欢迎关注我的微信公众号：</p>
+<p style="text-align: center;">
+<img src="/about/wechat-qrcode.jpg" alt="微信公众号二维码">
+</p>
+<p style="text-align: center;">搬砖的小明</p>
 
 
     </div>

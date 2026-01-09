@@ -305,15 +305,13 @@ n 是非负整数，且不会超过输入数组的大小。</p>
 </ul>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">canPlaceFlowers</span><span class="params">(<span class="keyword">int</span>[] flowerbed, <span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (flowerbed == <span class="keyword">null</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (n == <span class="number">0</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">0</span>; i &lt; flowerbed.length;) &#123;</span><br><span class="line">            <span class="comment">// 左边有花的位置都被跳过了</span></span><br><span class="line">            <span class="keyword">if</span> (flowerbed[i] == <span class="number">0</span>) &#123; <span class="comment">// 当前没有花</span></span><br><span class="line">                <span class="keyword">if</span> (i == flowerbed.length-<span class="number">1</span>  flowerbed[i+<span class="number">1</span>]==<span class="number">0</span>) &#123; <span class="comment">// 右边没有花</span></span><br><span class="line">                    <span class="comment">// 种花</span></span><br><span class="line">                    --n;</span><br><span class="line">                    <span class="keyword">if</span> (n == <span class="number">0</span>) <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">                    i += <span class="number">2</span>; <span class="comment">// 下个位置不能种，直接跳过</span></span><br><span class="line">                &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                    i += <span class="number">3</span>; <span class="comment">// 右边有花，下个位置、下下个位置都不能种，直接跳过</span></span><br><span class="line">                &#125;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                i += <span class="number">2</span>; <span class="comment">// 当前有花，下个位置不能种，直接跳过</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-        
+            
 
-<div class="wechat-subscribe">
-  <p>如果觉得文章对你有帮助，欢迎关注我的微信公众号：</p>
-  <p style="text-align: center;">
-    <img src="/about/wechat-qrcode.jpg" alt="微信公众号二维码">
-  </p>
-  <p style="text-align: center;">搬砖的小明</p>
-</div>
+<p>如果觉得文章对你有帮助，欢迎关注我的微信公众号：</p>
+<p style="text-align: center;">
+<img src="/about/wechat-qrcode.jpg" alt="微信公众号二维码">
+</p>
+<p style="text-align: center;">搬砖的小明</p>
 
 
     </div>

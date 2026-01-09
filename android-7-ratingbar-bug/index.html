@@ -295,15 +295,13 @@
 <p>2、代码中进行取整控制</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">mRating.setOnRatingBarChangeListener(<span class="keyword">new</span> RatingBar.OnRatingBarChangeListener() &#123;</span><br><span class="line">  <span class="meta">@Override</span></span><br><span class="line">  <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">onRatingChanged</span><span class="params">(RatingBar ratingBar, <span class="keyword">float</span> rating, <span class="keyword">boolean</span> fromUser)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (fromUser) &#123; <span class="comment">// 用户点击才会响应，否则会死循环</span></span><br><span class="line">      <span class="keyword">int</span> r = (<span class="keyword">int</span>) (rating + <span class="number">0.5f</span>); <span class="comment">// 四舍五入</span></span><br><span class="line">      ratingBar.setRating(r);</span><br><span class="line">      Toast.makeText(RatingBarActivity.<span class="keyword">this</span>, rating + <span class="string">&quot;, &quot;</span> + r + <span class="string">&quot;&quot;</span>, Toast.LENGTH_SHORT).show();</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 
-        
+            
 
-<div class="wechat-subscribe">
-  <p>如果觉得文章对你有帮助，欢迎关注我的微信公众号：</p>
-  <p style="text-align: center;">
-    <img src="/about/wechat-qrcode.jpg" alt="微信公众号二维码">
-  </p>
-  <p style="text-align: center;">搬砖的小明</p>
-</div>
+<p>如果觉得文章对你有帮助，欢迎关注我的微信公众号：</p>
+<p style="text-align: center;">
+<img src="/about/wechat-qrcode.jpg" alt="微信公众号二维码">
+</p>
+<p style="text-align: center;">搬砖的小明</p>
 
 
     </div>

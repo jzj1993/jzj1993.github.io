@@ -1131,18 +1131,15 @@ pre .javascript .function {
 .cc-license img {
   display: inline-block;
 }
-.site-author-image {
-  border: 1px solid #eee;
-  display: block;
-  margin: 0 auto;
-  max-width: 120px;
-  padding: 2px;
+.site-overview {
+  text-align: center;
 }
-.site-author-name {
+.site-overview-title {
   color: var(--text-color);
   font-weight: 600;
-  margin: 0;
   text-align: center;
+  font-size: 1em;
+  margin: 0 0 5px 0;
 }
 .site-description {
   color: #999;
@@ -1164,7 +1161,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #b932ff;
+  background: #a69c77;
   border-radius: 50%;
   content: ' ';
   display: inline-block;

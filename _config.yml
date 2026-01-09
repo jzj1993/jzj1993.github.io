@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Paincker
+title: 搬砖的小明
 subtitle: ''
-description: '江子健的个人博客，90后理工男、微软程序员、互联网从业者，分享软件编程、开发技术、学习与思考'
+description: '小明的个人博客，90后理工男，先后就职于美团、微软，分享软件编程、开发技术、学习与思考'
 keywords: ['计算机','开发','编程','网站','博客','技术','学习']
-author: jzj1993
+author: 小明
 language: zh-CN
 timezone: 'Asia/Shanghai'
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://www.paincker.com
+url: https://www.xiaoming.io
 permalink: :url/
 permalink_defaults:
 pretty_urls:

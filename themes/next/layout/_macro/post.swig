@@ -204,10 +204,11 @@
         {%- endif %}
       {% else %}
         {{ post.content }}
-      {%- endif %}
 
-      {%- if theme.wechat_subscribe.enable %}
-        {{ partial('_partials/post/post-wechat.swig', {}, {cache: theme.cache.enable}) }}
+        {%- if theme.wechat_subscribe.enable %}
+            {{ partial('_partials/post/post-wechat.swig', {}, {cache: theme.cache.enable}) }}
+        {%- endif %}
+
       {%- endif %}
 
     </div>

@@ -34,7 +34,7 @@
 <meta property="og:image" content="https://www.paincker.com/blog-imgs/dev/images/1ef1f653a0f4c757549da16b0bfb9822.png">
 <meta property="og:image" content="https://www.paincker.com/blog-imgs/dev/images/9842a3d5a5c5de1359e4629aa323c688.png">
 <meta property="article:published_time" content="2020-02-03T17:43:51.000Z">
-<meta property="article:modified_time" content="2025-06-17T13:33:21.662Z">
+<meta property="article:modified_time" content="2026-01-09T08:05:09.416Z">
 <meta property="article:author" content="jzj1993">
 <meta property="article:tag" content="编程">
 <meta property="article:tag" content="Markdown">
@@ -291,8 +291,8 @@
 
       
         <h2 id="背景">背景</h2>
-<p><a href="http://www.paincker.com/tag/wordpress">WordPress</a> 是一种被广泛使用的博客框架，功能强大，拥有丰富的主题和插件生态。无论是专业的软件工程师，还是不了解软件开发技术的其他人员，WordPress都可以很方便的使用。</p>
-<p><a href="http://www.paincker.com/tag/markdown">Markdown</a> 是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档，通过工具导出为HTML 、Word、图像、PDF等文件格式，大大节约了写文章的排版耗时。特别是扩展的Markdown语法，还能支持代码高亮、MathJax数学公式、流程图等功能，对相关领域的人员使用非常友好。</p>
+<p><a target="_blank" rel="noopener" href="http://www.xiaoming.io/tag/wordpress">WordPress</a> 是一种被广泛使用的博客框架，功能强大，拥有丰富的主题和插件生态。无论是专业的软件工程师，还是不了解软件开发技术的其他人员，WordPress都可以很方便的使用。</p>
+<p><a target="_blank" rel="noopener" href="http://www.xiaoming.io/tag/markdown">Markdown</a> 是一种轻量级标记语言，它允许人们使用易读易写的纯文本格式编写文档，通过工具导出为HTML 、Word、图像、PDF等文件格式，大大节约了写文章的排版耗时。特别是扩展的Markdown语法，还能支持代码高亮、MathJax数学公式、流程图等功能，对相关领域的人员使用非常友好。</p>
 <p><a target="_blank" rel="noopener" href="https://github.com/jzj1993/PublishMarkdown">PublishMarkdown</a> 是由本人开发的一款将本地Markdown文件发布到博客的开源工具，基于Electron实现，支持中英文，兼容Windows、Linux、MacOS平台。功能特点如下。</p>
 <ol>
 <li>支持主流Markdown语法、TOC、代码高亮、MathJax数学公式，支持本地预览和简易编辑功能（建议使用Haroopad、Typora等工具编写好后，再使用本工具发布）。</li>
@@ -307,7 +307,7 @@
 <p><strong>写文章时图片上传图床</strong>。对于本地图片的上传问题，一些用户会选择在写文章时直接把图片上传到图床，获得图片外链（URL），插入到Markdown。发布到博客时也是通过外链直接引用图床中的图片，因此发布博客时直接粘贴HTML代码即可，不需要再传图。图床传图工具有成熟的工具iPic、PicGo等，单张图上传后可以自动复制图片外链到剪贴板，然后粘贴到Markdown编辑器即可。除了发布博客时更加容易，这种方式对于个人博客站点来说，还可以节约图片带来的服务器存储和流量消耗。</p>
 <p>任何事情都是有利有弊。写文章时直接传图，和使用在线编辑器写文章有着相似的缺点。首先是写文章的同时需要完成图片上传的任务，<strong>容易分散注意力</strong>，并且必须在良好的网络环境下写文章，网络故障、传图太慢、传图工具故障等都可能打断写文章的思路。图片在本地没有备份，并且使用了第三方图床，一旦图床出现问题，可能导致所有博客配图挂掉，甚至图片源文件彻底丢失。图片一旦上传后，就没法享受本地各种图片编辑工具的批量编辑功能，除非逐一下载下来修改后再上传。还有时候文章图片可能是批量生成的，例如有些Word、PDF等格式的文章，可以输出为HTML+本地图片，再转换为Markdown（Typora可以直接粘贴HTML富文本，会自动转成Markdown），此时如果自己传图就需要逐一替换图片外链了。</p>
 <h2 id="基于为知笔记的博客方案">基于为知笔记的博客方案</h2>
-<p>基于以上种种问题，就需要有一套<strong>全自动本地Markdown发布方案</strong>。15年初的时候，经过了不少研究和实践，我实现了一套基于WordPress+为知笔记的博客方案，并发表文章<a href="http://www.paincker.com/wp-markdown-wiz-blog">WordPress+Markdown+为知笔记，实现高质量笔记和博客</a>。个人博客没太花时间推广，但是这篇文章有了累计2w+的阅读量。</p>
+<p>基于以上种种问题，就需要有一套<strong>全自动本地Markdown发布方案</strong>。15年初的时候，经过了不少研究和实践，我实现了一套基于WordPress+为知笔记的博客方案，并发表文章<a target="_blank" rel="noopener" href="http://www.xiaoming.io/wp-markdown-wiz-blog">WordPress+Markdown+为知笔记，实现高质量笔记和博客</a>。个人博客没太花时间推广，但是这篇文章有了累计2w+的阅读量。</p>
 <h2 id="基于Hexo的博客方案">基于Hexo的博客方案</h2>
 <p>在我使用了为知笔记方案之后，发现开始流行用免费的GitHub Pages和Hexo搭建静态博客。Hexo原生就是用Markdown编辑的，在本地渲染成静态HTML后直接同步到GitHub Pages即可。</p>
 <p>这种方案现在已经被广泛使用，但也存在一些问题。</p>
@@ -344,7 +344,7 @@
 <h2 id="基于PublishMarkdown-WordPress的博客方案">基于PublishMarkdown+WordPress的博客方案</h2>
 <p>和为知笔记相同，PublishMarkdown目前支持广泛使用的MetaWeblog接口发布博客，兼容WordPress以及其他支持此接口的博客（据说CSDN、CNBlogs、OSChina等都可以，但是没有实际测试，可以自行研究）。这里只介绍PublishMarkdown配合WordPress实现博客的典型方案。</p>
 <h3 id="WordPress搭建">WordPress搭建</h3>
-<p>WordPress的搭建网上有很多文章。对于没有技术开发基础但有一定动手能力的人，或者不想花很多时间折腾的人，可以考虑直接用现成的WordPress空间，或者用 <a target="_blank" rel="noopener" href="https://www.linode.com/?r=baff17e0c1775a672155224968a18a59f17a1292">Linode</a> 等提供一键配置WordPress的主机服务商。一些相关基础知识例如域名、主机，也可以参考我写过的系列文章 <a href="http://www.paincker.com/tag/website-primer">网站搭建从零开始</a>。</p>
+<p>WordPress的搭建网上有很多文章。对于没有技术开发基础但有一定动手能力的人，或者不想花很多时间折腾的人，可以考虑直接用现成的WordPress空间，或者用 <a target="_blank" rel="noopener" href="https://www.linode.com/?r=baff17e0c1775a672155224968a18a59f17a1292">Linode</a> 等提供一键配置WordPress的主机服务商。一些相关基础知识例如域名、主机，也可以参考我写过的系列文章 <a target="_blank" rel="noopener" href="http://www.xiaoming.io/tag/website-primer">网站搭建从零开始</a>。</p>
 <h3 id="WordPress配置">WordPress配置</h3>
 <p>1、固定链接设置（可选）</p>
 <p>PublishMarkdown支持为文章设置固定链接，即url参数，详见下文Markdown的编写。建议在WordPress后台设置固定链接为<code>%postname%</code>，如图所示。</p>
@@ -375,7 +375,7 @@
 <p>在菜单中打开要发布的<code>.md</code>文件，确认渲染后的结果是否正确，然后在菜单中点击发布，勾选要发布的博客，点击发布即可。PublishMarkdown会自动渲染文章，上传文章中的所有本地图到WordPress，最后将文章发布到博客，发布完成后会弹出系统通知提示。</p>
 <p><img data-src="/blog-imgs/dev/images/9842a3d5a5c5de1359e4629aa323c688.png" alt=""></p>
 <h2 id="PublishMarkdown的技术实现">PublishMarkdown的技术实现</h2>
-<p>如果对PublishMarkdown的技术实现有兴趣，或者想了解更细节的原理，以及开发过程中遇到的问题，可访问我的另一篇博客<a href="http://www.paincker.com/publish-markdown-tech">PublishMarkdown技术实现</a>，也欢迎到<a target="_blank" rel="noopener" href="https://github.com/jzj1993/PublishMarkdown/">GitHub</a>提交<a target="_blank" rel="noopener" href="https://github.com/jzj1993/PublishMarkdown/issues">Issue</a>和<a target="_blank" rel="noopener" href="https://github.com/jzj1993/PublishMarkdown/pulls">PullRequest</a>。</p>
+<p>如果对PublishMarkdown的技术实现有兴趣，或者想了解更细节的原理，以及开发过程中遇到的问题，可访问我的另一篇博客<a target="_blank" rel="noopener" href="http://www.xiaoming.io/publish-markdown-tech">PublishMarkdown技术实现</a>，也欢迎到<a target="_blank" rel="noopener" href="https://github.com/jzj1993/PublishMarkdown/">GitHub</a>提交<a target="_blank" rel="noopener" href="https://github.com/jzj1993/PublishMarkdown/issues">Issue</a>和<a target="_blank" rel="noopener" href="https://github.com/jzj1993/PublishMarkdown/pulls">PullRequest</a>。</p>
 
     </div>
 

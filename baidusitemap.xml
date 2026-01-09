@@ -1,11 +1,319 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.paincker.com/learning-from-house/</loc>
-    <lastmod>2026-01-08</lastmod>
+    <loc>https://www.paincker.com/website-primer-3/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/wordpress-theme-404/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/website-primer-4/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/website-primer-2/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/graph-theory/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/wx-mini-program-dev/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/nginx-config/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/supervisor-usage/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/java-collections/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/java-thread/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/publish-markdown-tech/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/publish-markdown/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/gson-technic/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/gson-study/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/android-test-5/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/wp-auto-postname/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/vivado-ram-ip-core/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/wp-markdown-wiz-blog/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/slim-rest-api/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/django-quick-start-1/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/visio-quick-start/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/web-product-design/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/analog-circuit-design/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/embedded/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/mcu-engineer/</loc>
+    <lastmod>2026-01-09</lastmod>
   </url>
   <url>
     <loc>https://www.paincker.com/microsoft-interview/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/prepare-coding-interview/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/leetcode-intervals/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/android-performance/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/android-scroll-velocity/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/quick-sort/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/code-design/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/android-lint-2-implements/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/android-lint-1-usage/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/gradle-develop-basics/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/android-gradle-basics/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/gradle-plugin-and-principle/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/android-3d-rotate-animation/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/gradle-dependencies/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/android-test-1/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/lr-example2/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/mountain-climbing-tech/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/sysinst-ubuntu/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/sysinst-customize-bootable-disk/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/sysinst-xp/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/sysinst-boot/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/sysinst-prepare/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/sysinst-ghost/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/sysinst-follow-up/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/sysinst-win-nt6/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/sysinst-harddisk-op/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/sysinst-harddisk-details/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/sysinst-harddisk/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/sysinst-bios-example/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/sysinst-bios/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/sysinst-summary/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/wiz-note/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/after-university-3/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/after-university-2/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/after-university-1/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/skip-classes/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/life-meaning/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/c-prog-language/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/solve-problem/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/job-apply/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/website-primer-8/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/college-chat/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/website-primer-7/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/mcu-primer-12/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/website-primer-6/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/website-primer-5/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/website-primer-1/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/website-primer-0/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/mobile-develop/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/get-job/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/tech-study-in-college/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/analog-circuit/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/mcu-primer-0/</loc>
+    <lastmod>2026-01-09</lastmod>
+  </url>
+  <url>
+    <loc>https://www.paincker.com/learning-from-house/</loc>
     <lastmod>2026-01-08</lastmod>
   </url>
   <url>
@@ -53,42 +361,6 @@
     <lastmod>2025-06-17</lastmod>
   </url>
   <url>
-    <loc>https://www.paincker.com/website-primer-8/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.paincker.com/website-primer-7/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.paincker.com/website-primer-6/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.paincker.com/website-primer-5/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.paincker.com/website-primer-4/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.paincker.com/website-primer-3/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.paincker.com/website-primer-2/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.paincker.com/website-primer-1/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.paincker.com/website-primer-0/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
     <loc>https://www.paincker.com/taibai-3/</loc>
     <lastmod>2025-06-17</lastmod>
   </url>
@@ -105,46 +377,6 @@
     <lastmod>2025-06-17</lastmod>
   </url>
   <url>
-    <loc>https://www.paincker.com/sysinst-ubuntu/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.paincker.com/sysinst-customize-bootable-disk/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.paincker.com/sysinst-xp/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.paincker.com/sysinst-prepare/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.paincker.com/sysinst-ghost/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.paincker.com/sysinst-follow-up/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.paincker.com/sysinst-win-nt6/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.paincker.com/sysinst-harddisk-op/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.paincker.com/sysinst-harddisk-details/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.paincker.com/sysinst-harddisk/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
     <loc>https://www.paincker.com/sysinst-bootable-disk-manual/</loc>
     <lastmod>2025-06-17</lastmod>
   </url>
@@ -153,31 +385,11 @@
     <lastmod>2025-06-17</lastmod>
   </url>
   <url>
-    <loc>https://www.paincker.com/sysinst-summary/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.paincker.com/sysinst-boot/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.paincker.com/sysinst-bios-example/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.paincker.com/sysinst-bios/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
     <loc>https://www.paincker.com/pve-config-nic/</loc>
     <lastmod>2025-06-17</lastmod>
   </url>
   <url>
     <loc>https://www.paincker.com/pve-cannot-connect-network/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.paincker.com/lr-example2/</loc>
     <lastmod>2025-06-17</lastmod>
   </url>
   <url>
@@ -293,10 +505,6 @@
     <lastmod>2025-06-17</lastmod>
   </url>
   <url>
-    <loc>https://www.paincker.com/mcu-primer-12/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
     <loc>https://www.paincker.com/mcu-primer-6/</loc>
     <lastmod>2025-06-17</lastmod>
   </url>
@@ -329,10 +537,6 @@
     <lastmod>2025-06-17</lastmod>
   </url>
   <url>
-    <loc>https://www.paincker.com/mcu-primer-0/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
     <loc>https://www.paincker.com/leetcode-top-k/</loc>
     <lastmod>2025-06-17</lastmod>
   </url>
@@ -342,14 +546,6 @@
   </url>
   <url>
     <loc>https://www.paincker.com/leetcode-place-flowers/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.paincker.com/prepare-coding-interview/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.paincker.com/leetcode-intervals/</loc>
     <lastmod>2025-06-17</lastmod>
   </url>
   <url>
@@ -369,22 +565,6 @@
     <lastmod>2025-06-17</lastmod>
   </url>
   <url>
-    <loc>https://www.paincker.com/mountain-climbing-tech/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.paincker.com/wiz-note/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.paincker.com/skip-classes/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.paincker.com/solve-problem/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
     <loc>https://www.paincker.com/programmer-job-change/</loc>
     <lastmod>2025-06-17</lastmod>
   </url>
@@ -401,10 +581,6 @@
     <lastmod>2025-06-17</lastmod>
   </url>
   <url>
-    <loc>https://www.paincker.com/tech-study-in-college/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
     <loc>https://www.paincker.com/xidian-course/</loc>
     <lastmod>2025-06-17</lastmod>
   </url>
@@ -413,19 +589,7 @@
     <lastmod>2025-06-17</lastmod>
   </url>
   <url>
-    <loc>https://www.paincker.com/life-meaning/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.paincker.com/job-apply/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
     <loc>https://www.paincker.com/how-to-write-a-resume/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.paincker.com/code-design/</loc>
     <lastmod>2025-06-17</lastmod>
   </url>
   <url>
@@ -445,14 +609,6 @@
     <lastmod>2025-06-17</lastmod>
   </url>
   <url>
-    <loc>https://www.paincker.com/after-university-3/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.paincker.com/c-prog-language/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
     <loc>https://www.paincker.com/english/</loc>
     <lastmod>2025-06-17</lastmod>
   </url>
@@ -465,10 +621,6 @@
     <lastmod>2025-06-17</lastmod>
   </url>
   <url>
-    <loc>https://www.paincker.com/college-chat/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
     <loc>https://www.paincker.com/books/</loc>
     <lastmod>2025-06-17</lastmod>
   </url>
@@ -477,15 +629,7 @@
     <lastmod>2025-06-17</lastmod>
   </url>
   <url>
-    <loc>https://www.paincker.com/get-job/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
     <loc>https://www.paincker.com/college-thoughts/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.paincker.com/analog-circuit/</loc>
     <lastmod>2025-06-17</lastmod>
   </url>
   <url>
@@ -494,22 +638,6 @@
   </url>
   <url>
     <loc>https://www.paincker.com/abstract-thinking/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.paincker.com/after-university-2/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.paincker.com/after-university-1/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.paincker.com/wx-mini-program-dev/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.paincker.com/wp-auto-postname/</loc>
     <lastmod>2025-06-17</lastmod>
   </url>
   <url>
@@ -522,14 +650,6 @@
   </url>
   <url>
     <loc>https://www.paincker.com/xampp-mysql-password/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.paincker.com/wp-markdown-wiz-blog/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.paincker.com/wordpress-theme-404/</loc>
     <lastmod>2025-06-17</lastmod>
   </url>
   <url>
@@ -546,10 +666,6 @@
   </url>
   <url>
     <loc>https://www.paincker.com/ubuntu-lnmp/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.paincker.com/vivado-ram-ip-core/</loc>
     <lastmod>2025-06-17</lastmod>
   </url>
   <url>
@@ -574,14 +690,6 @@
   </url>
   <url>
     <loc>https://www.paincker.com/windows-django-setup/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.paincker.com/visio-quick-start/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.paincker.com/web-product-design/</loc>
     <lastmod>2025-06-17</lastmod>
   </url>
   <url>
@@ -617,27 +725,11 @@
     <lastmod>2025-06-17</lastmod>
   </url>
   <url>
-    <loc>https://www.paincker.com/supervisor-usage/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
     <loc>https://www.paincker.com/pm2-restart-process/</loc>
     <lastmod>2025-06-17</lastmod>
   </url>
   <url>
     <loc>https://www.paincker.com/shell-count-code-lines/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.paincker.com/quick-sort/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.paincker.com/publish-markdown-tech/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.paincker.com/publish-markdown/</loc>
     <lastmod>2025-06-17</lastmod>
   </url>
   <url>
@@ -650,10 +742,6 @@
   </url>
   <url>
     <loc>https://www.paincker.com/python-django-sql-error/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.paincker.com/slim-rest-api/</loc>
     <lastmod>2025-06-17</lastmod>
   </url>
   <url>
@@ -705,15 +793,7 @@
     <lastmod>2025-06-17</lastmod>
   </url>
   <url>
-    <loc>https://www.paincker.com/nginx-config/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
     <loc>https://www.paincker.com/linux-copy-many-files/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.paincker.com/java-thread/</loc>
     <lastmod>2025-06-17</lastmod>
   </url>
   <url>
@@ -765,10 +845,6 @@
     <lastmod>2025-06-17</lastmod>
   </url>
   <url>
-    <loc>https://www.paincker.com/mcu-engineer/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
     <loc>https://www.paincker.com/notepad-regexp/</loc>
     <lastmod>2025-06-17</lastmod>
   </url>
@@ -785,10 +861,6 @@
     <lastmod>2025-06-17</lastmod>
   </url>
   <url>
-    <loc>https://www.paincker.com/java-collections/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
     <loc>https://www.paincker.com/infer/</loc>
     <lastmod>2025-06-17</lastmod>
   </url>
@@ -802,18 +874,6 @@
   </url>
   <url>
     <loc>https://www.paincker.com/ios-knowledge/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.paincker.com/graph-theory/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.paincker.com/gson-technic/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.paincker.com/gson-study/</loc>
     <lastmod>2025-06-17</lastmod>
   </url>
   <url>
@@ -834,10 +894,6 @@
   </url>
   <url>
     <loc>https://www.paincker.com/how-to-use-github/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.paincker.com/embedded/</loc>
     <lastmod>2025-06-17</lastmod>
   </url>
   <url>
@@ -873,15 +929,7 @@
     <lastmod>2025-06-17</lastmod>
   </url>
   <url>
-    <loc>https://www.paincker.com/django-quick-start-1/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
     <loc>https://www.paincker.com/eclipse-plugins-manage/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.paincker.com/analog-circuit-design/</loc>
     <lastmod>2025-06-17</lastmod>
   </url>
   <url>
@@ -925,35 +973,11 @@
     <lastmod>2025-06-17</lastmod>
   </url>
   <url>
-    <loc>https://www.paincker.com/mobile-develop/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.paincker.com/gradle-develop-basics/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
     <loc>https://www.paincker.com/glide-study/</loc>
     <lastmod>2025-06-17</lastmod>
   </url>
   <url>
-    <loc>https://www.paincker.com/gradle-plugin-and-principle/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.paincker.com/gradle-dependencies/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
     <loc>https://www.paincker.com/gradle-download-jar-file/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.paincker.com/android-performance/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.paincker.com/android-scroll-velocity/</loc>
     <lastmod>2025-06-17</lastmod>
   </url>
   <url>
@@ -966,14 +990,6 @@
   </url>
   <url>
     <loc>https://www.paincker.com/android-resource-naming/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.paincker.com/android-lint-2-implements/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.paincker.com/android-lint-1-usage/</loc>
     <lastmod>2025-06-17</lastmod>
   </url>
   <url>
@@ -1021,10 +1037,6 @@
     <lastmod>2025-06-17</lastmod>
   </url>
   <url>
-    <loc>https://www.paincker.com/android-gradle-basics/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
     <loc>https://www.paincker.com/android-bitmap/</loc>
     <lastmod>2025-06-17</lastmod>
   </url>
@@ -1046,10 +1058,6 @@
   </url>
   <url>
     <loc>https://www.paincker.com/adb-usage/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.paincker.com/android-3d-rotate-animation/</loc>
     <lastmod>2025-06-17</lastmod>
   </url>
   <url>
@@ -1086,10 +1094,6 @@
   </url>
   <url>
     <loc>https://www.paincker.com/android-test-6/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.paincker.com/android-test-5/</loc>
     <lastmod>2025-06-17</lastmod>
   </url>
   <url>
@@ -1130,10 +1134,6 @@
   </url>
   <url>
     <loc>https://www.paincker.com/android-test-2/</loc>
-    <lastmod>2025-06-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.paincker.com/android-test-1/</loc>
     <lastmod>2025-06-17</lastmod>
   </url>
 </urlset> 

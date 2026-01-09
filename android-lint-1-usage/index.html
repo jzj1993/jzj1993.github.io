@@ -27,11 +27,11 @@
 <meta property="og:site_name" content="Paincker">
 <meta property="og:description" content="说明 本文部分内容要求读者有一定的Gradle基础，例如Gradle基本操作、Gradle插件开发基础等。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://www.paincker.com/android-lint-1-usage/img/https://www.paincker.com/wp-content/uploads/2020/04/android-studio-lint.png">
-<meta property="og:image" content="https://www.paincker.com/android-lint-1-usage/img/https://www.paincker.com/wp-content/uploads/2020/04/inspect-code.png">
-<meta property="og:image" content="https://www.paincker.com/android-lint-1-usage/img/https://www.paincker.com/wp-content/uploads/2020/04/gradle-lint.png">
+<meta property="og:image" content="https://www.paincker.com/android-lint-1-usage/img/https://www.xiaoming.io/wp-content/uploads/2020/04/android-studio-lint.png">
+<meta property="og:image" content="https://www.paincker.com/android-lint-1-usage/img/https://www.xiaoming.io/wp-content/uploads/2020/04/inspect-code.png">
+<meta property="og:image" content="https://www.paincker.com/android-lint-1-usage/img/https://www.xiaoming.io/wp-content/uploads/2020/04/gradle-lint.png">
 <meta property="article:published_time" content="2017-12-30T08:14:43.000Z">
-<meta property="article:modified_time" content="2025-06-17T13:33:21.573Z">
+<meta property="article:modified_time" content="2026-01-09T08:05:09.415Z">
 <meta property="article:author" content="jzj1993">
 <meta property="article:tag" content="Android">
 <meta property="article:tag" content="安卓">
@@ -39,7 +39,7 @@
 <meta property="article:tag" content="编程">
 <meta property="article:tag" content="Lint">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://www.paincker.com/android-lint-1-usage/img/https://www.paincker.com/wp-content/uploads/2020/04/android-studio-lint.png">
+<meta name="twitter:image" content="https://www.paincker.com/android-lint-1-usage/img/https://www.xiaoming.io/wp-content/uploads/2020/04/android-studio-lint.png">
 
 <link rel="canonical" href="https://www.paincker.com/android-lint-1-usage/">
 
@@ -296,15 +296,15 @@
 <h2 id="Lint检查执行方式">Lint检查执行方式</h2>
 <p>Lint有多种执行方式，这里做个简单总结。</p>
 <p>也可以参考谷歌官方文档 <a target="_blank" rel="noopener" href="https://developer.android.com/studio/write/lint.html">https://developer.android.com/studio/write/lint.html</a></p>
-<p>Android Studio相关的使用技巧可以参考 <a href="http://www.paincker.com/android-studio-skill">http://www.paincker.com/android-studio-skill</a></p>
+<p>Android Studio相关的使用技巧可以参考 <a target="_blank" rel="noopener" href="http://www.xiaoming.io/android-studio-skill">http://www.xiaoming.io/android-studio-skill</a></p>
 <h3 id="Android-Studio的Code-Inspections">Android Studio的Code Inspections</h3>
 <p>Inspections是IDEA中用于代码静态检查的组件，包括语法检查、拼写检查等，Android Studio在IDEA的Inspections基础上实现了Lint检查。</p>
 <h4 id="实时执行">实时执行</h4>
 <p>在Android Studio中写代码时，Inspections会实时执行，其中包括Android定义的Lint规则，并在代码中直接标为黄色警告或红色错误。还可以使用Andorid Studio的<code>Intentions</code>工具快速添加<code>SupressLint</code>或自动修复。</p>
 <blockquote>
-<p>Intentions的使用可参考 <a href="http://www.paincker.com/android-studio-skill">http://www.paincker.com/android-studio-skill</a></p>
+<p>Intentions的使用可参考 <a target="_blank" rel="noopener" href="http://www.xiaoming.io/android-studio-skill">http://www.xiaoming.io/android-studio-skill</a></p>
 </blockquote>
-<p><img data-src="img/https://www.paincker.com/wp-content/uploads/2020/04/android-studio-lint.png" alt=""></p>
+<p><img data-src="img/https://www.xiaoming.io/wp-content/uploads/2020/04/android-studio-lint.png" alt=""></p>
 <p>可在Android Studio的设置中配置代码实时检查时，要检查的项</p>
 <ol>
 <li>Preference - Editor - Inspections：代码检查</li>
@@ -312,7 +312,7 @@
 </ol>
 <h4 id="手动执行">手动执行</h4>
 <p>在Android Studio中可从菜单<code>Analyze - Inspect Code</code>手动执行Inspections，可选择要检查代码的范围（Inspection Scope），以及要检查的问题（Inspection Profile）。执行完成后效果如图，可以双击结果定位有问题的代码</p>
-<p><img data-src="img/https://www.paincker.com/wp-content/uploads/2020/04/inspect-code.png" alt=""></p>
+<p><img data-src="img/https://www.xiaoming.io/wp-content/uploads/2020/04/inspect-code.png" alt=""></p>
 <h3 id="Gradle-Task执行">Gradle Task执行</h3>
 <p>Gradle中编译代码时，会以任务（Task）的形式组织每一步操作，Task之间可以存在依赖关系，执行一个Task前，会先执行它所依赖的Task。</p>
 <p>Android的Gradle环境下，有下面几个常见的Task。</p>
@@ -325,7 +325,7 @@
 </ul>
 <p>在命令行中可调用gradle执行Task，例如在命令行中调用<code>gradle lint</code>即可执行lint任务。对于某个具体的BuildType（例如Debug）和ProductFlavor（例如Huawei），还可以执行<code>gradle lintHuaweiDebug</code>只对这种Build版本做Lint检查。</p>
 <p>Lint默认会把所有结果以XML和HTML格式，输出到<code>build/reports/lint-results-xxx</code>中，可以在此查看所有Lint问题，包括具体在哪一行，以及Lint问题对应的ID。</p>
-<p><img data-src="img/https://www.paincker.com/wp-content/uploads/2020/04/gradle-lint.png" alt=""></p>
+<p><img data-src="img/https://www.xiaoming.io/wp-content/uploads/2020/04/gradle-lint.png" alt=""></p>
 <h3 id="Lint命令行">Lint命令行</h3>
 <p>直接执行<code>lint</code>命令，可执行文件位于<code>&lt;android-home&gt;/tools/lint</code>(<code>&lt;android-home&gt;</code>即AndroidSDK所在目录)。结果也会输出到报表中。具体参数配置可以用<code>lint --help</code>查看。</p>
 <h2 id="Lint配置">Lint配置</h2>
@@ -413,7 +413,7 @@
 </li>
 <li>
 <p>你可能不知道的Android Studio/IDEA使用技巧<br>
-<a href="http://www.paincker.com/android-studio-skill">http://www.paincker.com/android-studio-skill</a></p>
+<a target="_blank" rel="noopener" href="http://www.xiaoming.io/android-studio-skill">http://www.xiaoming.io/android-studio-skill</a></p>
 </li>
 <li>
 <p>Android自定义Lint实践<br>
@@ -421,11 +421,11 @@
 </li>
 <li>
 <p>Android Gradle配置快速入门<br>
-<a href="http://www.paincker.com/android-gradle-basics">http://www.paincker.com/android-gradle-basics</a></p>
+<a target="_blank" rel="noopener" href="http://www.xiaoming.io/android-gradle-basics">http://www.xiaoming.io/android-gradle-basics</a></p>
 </li>
 <li>
 <p>Gradle开发快速入门——DSL语法原理与常用API介绍<br>
-<a href="http://www.paincker.com/gradle-develop-basics">http://www.paincker.com/gradle-develop-basics</a></p>
+<a target="_blank" rel="noopener" href="http://www.xiaoming.io/gradle-develop-basics">http://www.xiaoming.io/gradle-develop-basics</a></p>
 </li>
 <li>
 <p>Viewing PSI Structure<br>

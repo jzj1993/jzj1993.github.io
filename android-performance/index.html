@@ -28,7 +28,7 @@
 <meta property="og:description" content="流程  确定指标：明确要优化哪些指标，指标如何定义和计算。 测试工具：定位问题使用到的工具，第三方工具，或者自行开发。 定位问题：使用工具定位问题，例如页面滚动卡顿，要定位到具体哪些代码逻辑耗时较多。 需求文档：编写技术需求文档。 任务分配、版本排期：如果是多个人负责，需要根据实际情况分配任务，并进行版本排期。 技术优化：具体进行优化。 成果验收：优化完成后，使用测试工具再次测试，对比分析优化前后">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-03-04T02:43:30.000Z">
-<meta property="article:modified_time" content="2025-06-17T13:33:21.573Z">
+<meta property="article:modified_time" content="2026-01-09T08:05:09.415Z">
 <meta property="article:author" content="jzj1993">
 <meta property="article:tag" content="Android">
 <meta property="article:tag" content="Java">
@@ -334,7 +334,7 @@
 <p>平滑度的衡量，参考 <a target="_blank" rel="noopener" href="https://stats.stackexchange.com/questions/24607/how-to-measure-smoothness-of-a-time-series-in-r">https://stats.stackexchange.com/questions/24607/how-to-measure-smoothness-of-a-time-series-in-r</a></p>
 </li>
 </ul>
-<p>OOM崩溃率：应用的内存消耗其实对于用户而言没有很直接的感知，真正最影响用户体验的是OOM，发生OOM说明内存问题已经很严重了，需要引起重视。Crash上报可以使用现成的第三方SDK，也可以参考 <a href="https://www.paincker.com/android-crash-sdk">Android Crash监控SDK设计思路</a> 。</p>
+<p>OOM崩溃率：应用的内存消耗其实对于用户而言没有很直接的感知，真正最影响用户体验的是OOM，发生OOM说明内存问题已经很严重了，需要引起重视。Crash上报可以使用现成的第三方SDK，也可以参考 <a target="_blank" rel="noopener" href="https://www.xiaoming.io/android-crash-sdk">Android Crash监控SDK设计思路</a> 。</p>
 <p>App内存消耗：onResume-onPause期间，多次采样取平均值。</p>
 <ul>
 <li>内存消耗的指标<strong>参考价值有限</strong>。</li>
@@ -378,7 +378,7 @@
 <li>List二级View做缓存，例如List每个Item中又有很多小标签，这些标签可以放到一个缓存池中。具体实现是在bindView时，Container不是直接removeAllViews，而是将View保存到List中，然后在添加View时先从List取，取不到再创建。这样就避免了每次bindView时反复创建View。</li>
 <li>Release包移除Log，统计埋点移到后台。Log和埋点之类操作通常会有大量字符串拼接操作，特别是<code>String.format</code>耗时很多。</li>
 <li>布局层级降低，使用ConstraintLayout或自定义Layout。</li>
-<li>监控滚动速度，快速滚动时暂停图片加载。快速滚动时大量图片加载，频繁内存分配和回收，性能消耗大。参考 <a href="https://www.paincker.com/android-scroll-velocity">Android滚动组件图片加载优化与滚动速度的精确监听</a> 。</li>
+<li>监控滚动速度，快速滚动时暂停图片加载。快速滚动时大量图片加载，频繁内存分配和回收，性能消耗大。参考 <a target="_blank" rel="noopener" href="https://www.xiaoming.io/android-scroll-velocity">Android滚动组件图片加载优化与滚动速度的精确监听</a> 。</li>
 <li>过度绘制优化。</li>
 <li>特殊滚动组件的事件处理，要保证没有明显BUG，否则对用户体验影响很大。</li>
 </ol>

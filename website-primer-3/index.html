@@ -20,12 +20,12 @@
     var CONFIG = {"hostname":"www.paincker.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="系列博客说明  《网站搭建从零开始》系列博客 http:&#x2F;&#x2F;www.paincker.com&#x2F;tag&#x2F;website-primer 对于完整的学习，强烈建议先阅读《网站搭建从零开始（〇） 内容概要与学习方法》 http:&#x2F;&#x2F;www.paincker.com&#x2F;website-primer-0">
+  <meta name="description" content="系列博客说明  《网站搭建从零开始》系列博客 http:&#x2F;&#x2F;www.xiaoming.io&#x2F;tag&#x2F;website-primer 对于完整的学习，强烈建议先阅读《网站搭建从零开始（〇） 内容概要与学习方法》 http:&#x2F;&#x2F;www.xiaoming.io&#x2F;website-primer-0">
 <meta property="og:type" content="article">
 <meta property="og:title" content="网站搭建从零开始（三） 服务器空间的配置">
 <meta property="og:url" content="https://www.paincker.com/website-primer-3/">
 <meta property="og:site_name" content="Paincker">
-<meta property="og:description" content="系列博客说明  《网站搭建从零开始》系列博客 http:&#x2F;&#x2F;www.paincker.com&#x2F;tag&#x2F;website-primer 对于完整的学习，强烈建议先阅读《网站搭建从零开始（〇） 内容概要与学习方法》 http:&#x2F;&#x2F;www.paincker.com&#x2F;website-primer-0">
+<meta property="og:description" content="系列博客说明  《网站搭建从零开始》系列博客 http:&#x2F;&#x2F;www.xiaoming.io&#x2F;tag&#x2F;website-primer 对于完整的学习，强烈建议先阅读《网站搭建从零开始（〇） 内容概要与学习方法》 http:&#x2F;&#x2F;www.xiaoming.io&#x2F;website-primer-0">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://www.paincker.com/blog-imgs/website-primer/images/f2226aa9220bac89329a982ff2a7dc95.png">
 <meta property="og:image" content="https://www.paincker.com/blog-imgs/website-primer/images/7e2b9371f2174e896842a9e31e972e99.png">
@@ -34,7 +34,7 @@
 <meta property="og:image" content="https://www.paincker.com/blog-imgs/website-primer/images/a23e678955c97d75834cde21e42a0cd3.jpg">
 <meta property="og:image" content="https://www.paincker.com/blog-imgs/website-primer/images/8c2e3fbb6bb0d600485f556f7633f8b9.png">
 <meta property="article:published_time" content="2014-10-17T17:38:42.000Z">
-<meta property="article:modified_time" content="2025-06-17T13:33:21.940Z">
+<meta property="article:modified_time" content="2026-01-09T08:08:50.637Z">
 <meta property="article:author" content="jzj1993">
 <meta property="article:tag" content="网站">
 <meta property="article:tag" content="#网站搭建从零开始#">
@@ -290,8 +290,8 @@
       
         <h2 id="系列博客说明">系列博客说明</h2>
 <blockquote>
-<p>《网站搭建从零开始》系列博客 <a href="http://www.paincker.com/tag/website-primer">http://www.paincker.com/tag/website-primer</a></p>
-<p>对于完整的学习，强烈建议先阅读《网站搭建从零开始（〇） 内容概要与学习方法》 <a href="http://www.paincker.com/website-primer-0">http://www.paincker.com/website-primer-0</a></p>
+<p>《网站搭建从零开始》系列博客 <a target="_blank" rel="noopener" href="http://www.xiaoming.io/tag/website-primer">http://www.xiaoming.io/tag/website-primer</a></p>
+<p>对于完整的学习，强烈建议先阅读《网站搭建从零开始（〇） 内容概要与学习方法》 <a target="_blank" rel="noopener" href="http://www.xiaoming.io/website-primer-0">http://www.xiaoming.io/website-primer-0</a></p>
 </blockquote>
 <hr>
 <h2 id="基础知识">基础知识</h2>
@@ -307,15 +307,15 @@
 <p>通过FTP可以管理服务器空间中的文件，也有些空间提供商会提供SSH服务、在线文件管理服务等。</p>
 <p>这里配置FTP的账号、文件根目录、访问权限。FTP账号你可以配置多个，比如多个人在同一个服务器空间管理不同的站点文件。</p>
 <blockquote>
-<p>我举个例子。例如我的服务器上可以有<code>paincker.com</code>和<code>hainter2.com</code>两个站点，其站点根目录分别绑定在空间根目录下的<code>&quot;/hainter_com/&quot;</code>和<code>&quot;/hainter2_com/&quot;</code>子文件夹。</p>
+<p>我举个例子。例如我的服务器上可以有<code>test1.io</code>和<code>test2.io</code>两个站点，其站点根目录分别绑定在空间根目录下的<code>&quot;/test1_io/&quot;</code>和<code>&quot;/test2_io/&quot;</code>子文件夹。</p>
 <p>我给自己新建一个FTP账号，其根目录对应空间根目录<code>&quot;/&quot;</code>，登录该账号就可以同时管理这两个站点的文件，因为两个站点的根目录都在空间根目录之下。</p>
-<p>再新建一个账号，其根目录对应空间的<code>&quot;/hainter2_com/&quot;</code>目录，这个FTP账号就只能管理<code>hainter2.com</code>网站的文件，但是不能访问<code>paincker.com</code>网站文件，以及其他<code>&quot;/hainter2_com/&quot;</code>目录以外的内容。</p>
+<p>再新建一个账号，其根目录对应空间的<code>&quot;/test2_io/&quot;</code>目录，这个FTP账号就只能管理<code>test2.io</code>网站的文件，但是不能访问<code>test1.io</code>网站文件，以及其他<code>&quot;/test2_io/&quot;</code>目录以外的内容。</p>
 </blockquote>
 <p>至于FTP的访问权限，如果是管理员，一般是设置成读写都可以。如果我想利用服务器搭建一个FTP的资源共享站点，就可以设置一个只读FTP账号并公开，这样大家就可以通过这个账号下载我共享给大家的文件，但是不能删除、修改、添加文件。下图是我设置的FTP账号（我的空间只能设置一个FTP账号）。</p>
 <p><img data-src="/blog-imgs/website-primer/images/7e2b9371f2174e896842a9e31e972e99.png" alt=""></p>
 <p>用FTP软件如FileZilla，设置好IP地址、用户名、密码后，登录FTP账号，即可打开服务器网站中FTP账号的根目录。</p>
 <p><img data-src="/blog-imgs/website-primer/images/50604ab091d01f5b147470517a3dbf95.png" alt=""><br>
-我的FTP账号直接设置绑定到服务器的根目录，就可以看到hainter子目录了，也就是我的网站根目录。</p>
+我的FTP账号直接设置绑定到服务器的根目录，就可以看到test子目录了，也就是我的网站根目录。</p>
 <h3 id="MySQL数据库的配置">MySQL数据库的配置</h3>
 <p>在控制面板里可以看到MySQL数据库的选项，点击进入，可以对MySQL数据库的用户名和密码进行设置。</p>
 <p>MySQL数据库附带了一个phpMyAdmin工具，可以在里面可视化查看和修改数据库。我在zPanel控制面板中点击phpMyAdmin，即可用刚刚设置好的MySQL数据库密码登录，如图所示。</p>

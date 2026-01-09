@@ -20,15 +20,15 @@
     var CONFIG = {"hostname":"www.paincker.com","root":"/","scheme":"Pisces","version":"7.8.0","exturl":false,"sidebar":{"position":"right","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":true,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":true,"lazyload":true,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":false,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="系列博客说明  《网站搭建从零开始》系列博客 http:&#x2F;&#x2F;www.paincker.com&#x2F;tag&#x2F;website-primer 对于完整的学习，强烈建议先阅读《网站搭建从零开始（〇） 内容概要与学习方法》 http:&#x2F;&#x2F;www.paincker.com&#x2F;website-primer-0">
+  <meta name="description" content="系列博客说明  《网站搭建从零开始》系列博客 http:&#x2F;&#x2F;www.xiaoming.io&#x2F;tag&#x2F;website-primer 对于完整的学习，强烈建议先阅读《网站搭建从零开始（〇） 内容概要与学习方法》 http:&#x2F;&#x2F;www.xiaoming.io&#x2F;website-primer-0">
 <meta property="og:type" content="article">
 <meta property="og:title" content="网站搭建从零开始（八） 网站加速技术">
 <meta property="og:url" content="https://www.paincker.com/website-primer-8/">
 <meta property="og:site_name" content="Paincker">
-<meta property="og:description" content="系列博客说明  《网站搭建从零开始》系列博客 http:&#x2F;&#x2F;www.paincker.com&#x2F;tag&#x2F;website-primer 对于完整的学习，强烈建议先阅读《网站搭建从零开始（〇） 内容概要与学习方法》 http:&#x2F;&#x2F;www.paincker.com&#x2F;website-primer-0">
+<meta property="og:description" content="系列博客说明  《网站搭建从零开始》系列博客 http:&#x2F;&#x2F;www.xiaoming.io&#x2F;tag&#x2F;website-primer 对于完整的学习，强烈建议先阅读《网站搭建从零开始（〇） 内容概要与学习方法》 http:&#x2F;&#x2F;www.xiaoming.io&#x2F;website-primer-0">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2014-12-17T09:02:27.000Z">
-<meta property="article:modified_time" content="2025-06-17T13:33:21.941Z">
+<meta property="article:modified_time" content="2026-01-09T08:05:09.415Z">
 <meta property="article:author" content="jzj1993">
 <meta property="article:tag" content="WordPress">
 <meta property="article:tag" content="网站">
@@ -284,8 +284,8 @@
       
         <h2 id="系列博客说明">系列博客说明</h2>
 <blockquote>
-<p>《网站搭建从零开始》系列博客 <a href="http://www.paincker.com/tag/website-primer">http://www.paincker.com/tag/website-primer</a></p>
-<p>对于完整的学习，强烈建议先阅读《网站搭建从零开始（〇） 内容概要与学习方法》 <a href="http://www.paincker.com/website-primer-0">http://www.paincker.com/website-primer-0</a></p>
+<p>《网站搭建从零开始》系列博客 <a target="_blank" rel="noopener" href="http://www.xiaoming.io/tag/website-primer">http://www.xiaoming.io/tag/website-primer</a></p>
+<p>对于完整的学习，强烈建议先阅读《网站搭建从零开始（〇） 内容概要与学习方法》 <a target="_blank" rel="noopener" href="http://www.xiaoming.io/website-primer-0">http://www.xiaoming.io/website-primer-0</a></p>
 </blockquote>
 <hr>
 <p>网站搭建好以后，有一个很重要的事情，就是对网站的访问速度进行优化。特别是国外服务器，网络速度比较慢，如果网站访问速度又没有去做优化，访客等太久会严重影响访问体验。</p>
@@ -299,12 +299,12 @@
 <h3 id="使用CDN引用jQuery等公用库">使用CDN引用jQuery等公用库</h3>
 <p>在很多网站中都会用到jQuery等公用库，其本质上也就是一个几十到几百KB的一个js文件。对于一个网页来说，几百KB其实已经算是一个不小的容量了。如果你的jQuery库就放在自己的服务器上，并且服务器访问速度不理想，这样的话用户访问你的站点时，还需要从你的服务器上下载完jQuery库才能正常打开页面。一个简便易行的做法，就是使用CDN引用jQuery公用库，例如新浪、百度、Bootstrap等网站，都会提供公用jQuery库的引用地址。这样的话，用户浏览器可以直接从那些高速站点下载这个公用库文件，大大加快了访问速度。这里要给出的一个建议是，为了保险起见，对于一个库可以设置多重引用，如果前一个站点的引用加载失败，就自动使用下一个站点的引用；可以把对自己站点中相应库文件的引用放在最后。</p>
 <blockquote>
-<p>可参考《推荐一些国内的Jquery CDN免费服务》 <a href="http://www.paincker.com/jquery-cdn">http://www.paincker.com/jquery-cdn</a></p>
+<p>可参考《推荐一些国内的Jquery CDN免费服务》 <a target="_blank" rel="noopener" href="http://www.xiaoming.io/jquery-cdn">http://www.xiaoming.io/jquery-cdn</a></p>
 </blockquote>
 <h3 id="禁用谷歌字体">禁用谷歌字体</h3>
 <p>WordPress较新的版本中默认使用了谷歌字体，但是谷歌在国内几乎无法访问，这样页面就会卡在那等待字体加载完成。为了避免这种情况，就需要禁用默认的谷歌字体了。</p>
 <blockquote>
-<p>可参考《WordPress后台禁用Google Open Sans字体提高加载速度》 <a href="http://www.paincker.com/wordpress-disable-google-font">http://www.paincker.com/wordpress-disable-google-font</a></p>
+<p>可参考《WordPress后台禁用Google Open Sans字体提高加载速度》 <a target="_blank" rel="noopener" href="http://www.xiaoming.io/wordpress-disable-google-font">http://www.xiaoming.io/wordpress-disable-google-font</a></p>
 </blockquote>
 <h2 id="二、优化服务器响应时间">二、优化服务器响应时间</h2>
 <h3 id="使用高配置服务器">使用高配置服务器</h3>
@@ -327,7 +327,7 @@
 <h3 id="JavaScript代码压缩">JavaScript代码压缩</h3>
 <p>JavaScript压缩和前面的HTML、CSS压缩类似，推荐使用的压缩工具是 <a target="_blank" rel="noopener" href="http://css-js.cn">http://css-js.cn</a> 。</p>
 <blockquote>
-<p>可参考《CSS和JavaScript在线代码压缩工具推荐》 <a href="http://www.paincker.com/css-js-tool">http://www.paincker.com/css-js-tool</a></p>
+<p>可参考《CSS和JavaScript在线代码压缩工具推荐》 <a target="_blank" rel="noopener" href="http://www.xiaoming.io/css-js-tool">http://www.xiaoming.io/css-js-tool</a></p>
 </blockquote>
 <h2 id="四、图片的优化">四、图片的优化</h2>
 <h3 id="减小图片尺寸和显示质量">减小图片尺寸和显示质量</h3>
@@ -336,7 +336,7 @@
 <p>图片可以通过一些手段进行压缩，同时保证其显示效果没有明显变化。对于JPG图片，可以使用WP Smush.it插件进行压缩，可以设置在上传时自动压缩，也可以压缩已有图片。对于PNG图片，可以通过TinyPNG网站进行压缩，一张PNG图片的尺寸减小到了1/5甚至更小，但是显示效果却几乎没有变化。也可以使用插件Compress PNG for WP，调用TinyPNG的API进行PNG图片的自动压缩，但是TinyPNG的免费服务有一定的使用限制。</p>
 <blockquote>
 <p>TinyPNG的官网：<a target="_blank" rel="noopener" href="https://tinypng.com">https://tinypng.com</a><br>
-可参考《使用TinyPNG和Compress PNG for WP插件自动压缩上传的PNG文件》 <a href="http://www.paincker.com/compress-png-for-wp">http://www.paincker.com/compress-png-for-wp</a></p>
+可参考《使用TinyPNG和Compress PNG for WP插件自动压缩上传的PNG文件》 <a target="_blank" rel="noopener" href="http://www.xiaoming.io/compress-png-for-wp">http://www.xiaoming.io/compress-png-for-wp</a></p>
 </blockquote>
 <h3 id="使用CSS绘制图表和切割小图片">使用CSS绘制图表和切割小图片</h3>
 <p>网页中常常有一些很小的图标之类，一方面可以考虑使用CSS直接进行绘制；另一方面，可以把多张图标放到一张图片中，利用CSS进行切割，比单独加载每张图片速度会快一些。</p>
@@ -346,11 +346,11 @@
 <h3 id="使用gzip压缩页面">使用gzip压缩页面</h3>
 <p>页面压缩对于网页访问速度也很好的提升效果，很多站点都采用了页面压缩技术。网页采用gzip进行压缩后，再传输到用户浏览器，然后解压并显示出来。传输的过程中往往会节省超过一半的流量，甚至达到70%~80%，大大加快了访问速度。</p>
 <blockquote>
-<p>具体操作可参考《在WordPress中启动Gzip网页压缩》 <a href="http://www.paincker.com/wordpress-gzip">http://www.paincker.com/wordpress-gzip</a></p>
+<p>具体操作可参考《在WordPress中启动Gzip网页压缩》 <a target="_blank" rel="noopener" href="http://www.xiaoming.io/wordpress-gzip">http://www.xiaoming.io/wordpress-gzip</a></p>
 </blockquote>
 <h3 id="页面缓存技术">页面缓存技术</h3>
 <p>对于WordPress，使用WP-SuperCache插件对动态页面进行缓存，避免每次请求时都临时生成页面，这样也会加快访问速度。</p>
-<p>本篇介绍就到这里，如果考虑到了这么多因素之后，网站访问速度应该会比较快了。欢迎大家访问我的站点 <a href="http://www.paincker.com">http://www.paincker.com</a> 。我的站点采用了一定的加速优化，但是由于服务器的原因，部分网络下还是不能较快的访问甚至访问不了，只能有机会换国内的服务器了。</p>
+<p>本篇介绍就到这里，如果考虑到了这么多因素之后，网站访问速度应该会比较快了。欢迎大家访问我的站点 <a target="_blank" rel="noopener" href="http://www.xiaoming.io">http://www.xiaoming.io</a> 。我的站点采用了一定的加速优化，但是由于服务器的原因，部分网络下还是不能较快的访问甚至访问不了，只能有机会换国内的服务器了。</p>
 
     </div>
 

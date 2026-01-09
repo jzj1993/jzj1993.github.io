@@ -28,7 +28,7 @@
 <meta property="og:description" content="背景 在Android应用中，ListView &#x2F; RecyclerView &#x2F; ScrollView 滚动时，如果有过多图片加载容易导致卡顿，特别是快速滚动时，bindView中大量图片加载操作，会导致系统频繁分配回收内存，不仅消耗大量CPU和网络流量资源，而且极端情况下还会因为内存来不及回收产生OOM。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-03-04T01:44:04.000Z">
-<meta property="article:modified_time" content="2025-06-17T13:33:21.573Z">
+<meta property="article:modified_time" content="2026-01-09T08:05:09.415Z">
 <meta property="article:author" content="jzj1993">
 <meta property="article:tag" content="Android">
 <meta property="article:tag" content="性能">
@@ -293,7 +293,7 @@
 <p>计算速度需要知道滚动距离和时间，时间很容易计算，滚动距离相对复杂一点。</p>
 <h3 id="ScrollView获取滚动距离">ScrollView获取滚动距离</h3>
 <p>ScrollView可以通过<code>View.OnScrollChangeListener</code>获取滚动距离，高版本系统可以直接调用<code>View.setOnScrollChangeListener</code>设置，低版本系统覆写View的<code>onScrollChanged</code>方法即可。</p>
-<p>还可以参考：<a href="https://www.paincker.com/observable-scroll-view">ScrollView滚动事件和滚动状态的监听实现</a></p>
+<p>还可以参考：<a target="_blank" rel="noopener" href="https://www.xiaoming.io/observable-scroll-view">ScrollView滚动事件和滚动状态的监听实现</a></p>
 <h3 id="RecyclerView获取滚动距离">RecyclerView获取滚动距离</h3>
 <p>RecyclerView的OnScrollListener可以直接获取滚动像素值，不需要特殊处理。</p>
 <h3 id="ListView滚动距离的精确监听">ListView滚动距离的精确监听</h3>
